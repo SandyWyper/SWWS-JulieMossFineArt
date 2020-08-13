@@ -2,7 +2,7 @@
 title: another art
 category: Wallpapers
 date: 2020-08-13T12:17:29.976Z
-isFeatured: false
+isFeatured: true
 images:
   - image: screenshot-from-2020-05-08-18-50-15.png
     alt: sdfasdf
