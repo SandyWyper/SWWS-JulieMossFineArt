@@ -1,10 +1,20 @@
 //-------------- Create slugs for every Blog and Artwork post ------------//
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
+
+// for handling frontmatter images with netlify CMS
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+// exports.onCreateNode = ({ node }) => {
+//   fmImagesToRelative(node);
+// };
+
+// lodash function for organising collections
 var groupBy = require('lodash.groupby');
 
+// create nodes on markdown to indicate path
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
+  fmImagesToRelative(node);
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
@@ -26,8 +36,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogTemplate = require.resolve(`./src/templates/blogTemplate.js`);
   const artworkTemplate = require.resolve(`./src/templates/artworkTemplate.js`);
   const blogLandingTemplate = require.resolve(`./src/templates/blogLandingTemplate.js`);
-
-  const collectionsLandingTemplate = require.resolve(`./src/templates/collectionsLandingTemplate.js`);
   const collectionTemplate = require.resolve(`./src/templates/collectionTemplate.js`);
 
   const result = await graphql(`
@@ -117,7 +125,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   });
 
-  // /// ------------------------------------ Create landing page for each artwork collection ---------------------  ///
+  // /// ------------------------------------ Create artwork collection pages---------------------  ///
   const artworkData = await graphql(`
     {
       allMarkdownRemark(filter: { fields: { slug: { regex: "/artwork/" } } }, sort: { order: DESC, fields: frontmatter___date }) {
@@ -149,10 +157,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 
   const collectionCategories = Object.keys(grouped);
-  createPage({
-    path: `/collections`,
-    component: collectionsLandingTemplate,
-  });
 
   // Create art collections pages
   const artworkPerPagePerCollection = 20;

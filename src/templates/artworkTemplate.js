@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 const ArtworkTemplate = (props) => {
   const { markdownRemark } = props.data; // data.markdownRemark holds the post data
   const { frontmatter } = markdownRemark;
+  console.log(props);
   return (
     <>
       <SEO title="Artwork" description={`${frontmatter.title}`} />
@@ -34,7 +35,7 @@ const ArtworkTemplate = (props) => {
   );
 };
 
-export const pageQuery = graphql`
+export const data = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {

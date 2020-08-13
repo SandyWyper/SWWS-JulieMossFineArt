@@ -12,13 +12,13 @@ collections:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     image1:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: Alt text
     image2:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: alt text
     image3:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: aLT TEXT
   - title: Sketches
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,12 +29,12 @@ collections:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     image1:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: alt text
     image2:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: alt-text
     image3:
-      image: /img/dawn-resized.jpg
+      image: /uploads/dawn-resized.jpg
       alt: alt etxt
 ---
