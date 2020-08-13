@@ -29,6 +29,12 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss')],
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         // CommonMark mode (default: true)
@@ -77,6 +83,15 @@ module.exports = {
         theme_color: `#FFFFFF`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: false, // Enable while using `gatsby develop`
+        tailwind: true, // Enable tailwindcss support
+        ignore: ['/src/styles/unpurgedStyles.scss'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

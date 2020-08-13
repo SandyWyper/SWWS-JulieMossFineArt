@@ -1,0 +1,21 @@
+// stylelint config for tailwind scss syntax
+module.exports = {
+  extends: ["stylelint-config-recommended"],
+  rules: {
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+          "extend",
+        ],
+      },
+    ],
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null,
+  },
+}

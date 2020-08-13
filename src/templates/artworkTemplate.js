@@ -1,34 +1,25 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import Img from 'gatsby-image';
+import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 
 const ArtworkTemplate = (props) => {
-  const { markdownRemark } = props.data; // data.markdownRemark holds the post data
-  const { frontmatter } = markdownRemark;
-  console.log(props);
+  const { frontmatter, html } = props.data.markdownRemark;
+  console.log(frontmatter);
   return (
     <>
-      <SEO title="Artwork" description={`${frontmatter.title}`} />
+      <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
       <section className="">
-        <div className="" />
         <div className="">
-          <div className="">
-            {/* <div>
-              <Img className="" fluid={frontmatter.cover.childImageSharp.fluid} alt={frontmatter.coverAlt} loading="eager" />
-              <div className=""> */}
-            <h2 className="">{frontmatter.title}</h2>
-            {/* 
-                <div className="">
-                  <p className="">{frontmatter.date}</p>
-                </div>
-              </div>
-            </div> */}
-          </div>
+          <h2 className="">{frontmatter.title}</h2>
+          <p>{frontmatter.date}</p>
+          <div className="" dangerouslySetInnerHTML={{ __html: html }} />
+          {frontmatter.images.map((art, i) => {
+            return <Img key={art.alt + i} className="" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />;
+          })}
 
-          {/* <article className="" dangerouslySetInnerHTML={{ __html: html }} /> */}
-          {/* Maybe a link to the next article */}
+          {/* Maybe a link to the next piece */}
         </div>
       </section>
     </>
@@ -38,8 +29,20 @@ const ArtworkTemplate = (props) => {
 export const data = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         title
+        date(formatString: "DD/MM/YYYY")
+        images {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1500) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -4,3 +4,4 @@
 
 - Add site_url to admin/config.yml
 - Add my logo to the admin/config.yml
+- Adjust image references to size appropriately
