@@ -1,6 +1,7 @@
 ---
 title: Image testing
-catagory: Wallpapers
+category: Wallpapers
+date: 2020-09-12T13:12:16.359Z
 images:
   image: waterfall-wallpaper-13.jpg
 list-images:
