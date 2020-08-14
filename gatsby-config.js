@@ -6,6 +6,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/layout/index.js`),
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -27,7 +36,6 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -71,8 +79,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

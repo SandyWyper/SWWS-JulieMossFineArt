@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+import Link from 'gatsby-plugin-transition-link';
 
 import PropTypes from 'prop-types';
 
@@ -61,7 +62,12 @@ const BlogList = (props) => {
 
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(filter: { fields: { slug: { regex: "/blog/" } } }, sort: { fields: [frontmatter___date], order: DESC }, limit: $limit, skip: $skip) {
+    allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/blog/" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           id

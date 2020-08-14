@@ -11,10 +11,9 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <SEO title={title} description={description} />
-      <section className="container relative mx-auto bg-yellow-300 shadow">
+      <section className="">
         <h1>Julie Moss</h1>
         <h2>Fine Art</h2>
-        <input placeholder="testing" type="text" name="test-field" />
       </section>
     </Layout>
   );
