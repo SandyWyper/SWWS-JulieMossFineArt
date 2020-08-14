@@ -1,5 +1,5 @@
 ---
-title: Another sketch
+title: Yet Another sketch
 category: Sketches
 date: 2020-08-11T13:13:55.365Z
 isFeatured: true
