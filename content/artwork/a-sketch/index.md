@@ -1,6 +1,6 @@
 ---
-title: Just Another Sketch
-category: Sketches
+title: My awesome art
+category: Wallpapers
 date: 2020-08-11T13:13:55.365Z
 isFeatured: true
 images:
