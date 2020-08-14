@@ -2,10 +2,12 @@
 // See 'gatsby-config.js' transition-link set-up
 
 import React from 'react';
+import Nav from './nav';
 
 export default function index({ children }) {
   return (
-    <div className="bg-red-200">
+    <div className="relative bg-red-200">
+      <Nav />
       <main>{children}</main>
     </div>
   );

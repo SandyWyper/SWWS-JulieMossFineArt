@@ -1,0 +1,37 @@
+.nav-open {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+// ----------------------------------------------- Mobile Nav button
+
+button:focus {
+  outline: none;
+}
+
+.hamburger {
+  z-index: 151;
+
+  &:hover,
+  &.is-active:hover {
+    opacity: 1;
+  }
+
+  .hamburger-inner:before,
+  .hamburger-inner:after,
+  .hamburger-inner {
+    background: black;
+  }
+
+  &.is-active {
+    color: black;
+
+    .hamburger-inner:before,
+    .hamburger-inner:after,
+    .hamburger-inner {
+      background-color: black;
+      --bg-opacity: 1;
+    }
+  }
+}
