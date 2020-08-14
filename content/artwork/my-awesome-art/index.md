@@ -1,6 +1,6 @@
 ---
-title: My awesome art 7
-category: Sketches
+title: My awesome art 8
+category: Paper Planes
 date: 2020-08-14T13:30:11.646Z
 isFeatured: false
 images:
