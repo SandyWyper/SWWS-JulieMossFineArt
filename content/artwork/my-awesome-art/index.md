@@ -1,5 +1,5 @@
 ---
-title: My awesome art 2
+title: My awesome art 3
 category: Wallpapers
 date: 2020-08-14T13:30:11.646Z
 isFeatured: false
