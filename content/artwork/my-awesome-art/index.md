@@ -1,6 +1,6 @@
 ---
 title: My awesome art 4
-category: Wallpapers
+category: Sketches
 date: 2020-08-14T13:30:11.646Z
 isFeatured: false
 images:
