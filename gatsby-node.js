@@ -164,7 +164,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const numCollectionPages = Math.ceil(grouped[category].length / artworkPerPagePerCollection);
     Array.from({ length: numCollectionPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/${category.toLowerCase()}` : `/${category.toLowerCase}${i + 1}`,
+        path: i === 0 ? `/${category.replace(' ', '-').toLowerCase()}` : `/${category.replace(' ', '-').toLowerCase()}${i + 1}`,
         component: collectionTemplate,
         context: {
           limit: artworkPerPagePerCollection,
