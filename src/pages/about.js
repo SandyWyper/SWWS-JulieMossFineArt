@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const About = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <SEO title="pageData.frontmatter.title" />

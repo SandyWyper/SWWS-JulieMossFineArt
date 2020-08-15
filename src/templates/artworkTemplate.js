@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
-  console.log(frontmatter);
+
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
@@ -47,6 +47,7 @@ export const data = graphql`
     }
   }
 `;
+
 ArtworkTemplate.propTypes = {
   data: PropTypes.object.isRequired,
 };

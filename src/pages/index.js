@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const IndexPage = (props) => {
-  console.log(props);
+  // console.log(props);
   const { description, title } = props.data.allSite.edges[0].node.siteMetadata;
   return (
     <Layout>
@@ -18,6 +18,7 @@ const IndexPage = (props) => {
     </Layout>
   );
 };
+
 export const data = graphql`
   query MyQuery {
     allSite {

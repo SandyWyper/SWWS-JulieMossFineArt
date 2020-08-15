@@ -72,6 +72,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         context: {
           // additional data can be passed via context
           slug: node.fields.slug,
+          artworkNav: true,
         },
       });
     }
@@ -171,6 +172,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           totalPages: numCollectionPages,
           currentPage: i + 1,
           collectionName: category,
+          artworkNav: true,
         },
       });
     });

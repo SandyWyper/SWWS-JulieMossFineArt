@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 
 const Collections = (props) => {
   const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <SEO title={title} description="XXXXXXX" />

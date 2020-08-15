@@ -35,3 +35,14 @@ button:focus {
     }
   }
 }
+
+.art-nav {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  // bottom: 0;
+  transform: translateY(-50%);
+  height: auto;
+  background-color: white;
+  z-index: 100;
+}
