@@ -41,8 +41,8 @@ const Nav = ({ data }) => {
         </span>
       </button>
 
-      <animated.div className="fixed top-0 right-0 z-10" style={spring}>
-        <div className="relative flex flex-col justify-center w-screen h-screen p-10 bg-orange-400">
+      <animated.div className="fixed top-0 right-0 z-10 bg-white" style={spring}>
+        <div className="relative flex flex-col justify-center w-screen h-screen p-10">
           <div className="max-w-md mx-auto">
             {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>}
             <ul className="text-2xl">
@@ -67,8 +67,8 @@ const Nav = ({ data }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/wallpapers" onClick={toggle} onKeyDown={handleKeyDown}>
-                  wallpapers
+                <Link to="/typography-test" onClick={toggle} onKeyDown={handleKeyDown}>
+                  typography-test
                 </Link>
               </li>
             </ul>

@@ -17,7 +17,7 @@ const Index = (props) => {
   }, [pageContext.artworkNav, path, showArtworkNav]);
 
   return (
-    <div className="relative h-screen bg-red-200">
+    <div className="relative h-screen">
       <Nav />
       <ArtworkNav show={showArtworkNav} />
       <main className="w-full">{props.children}</main>

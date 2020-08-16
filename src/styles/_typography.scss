@@ -1,0 +1,77 @@
+html {
+  font-size: 18px;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  color: var(--text);
+}
+
+h1 {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 3.5rem;
+  color: var(--text);
+  @screen md {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 3rem;
+  // font-weight: normal;
+  color: var(--text);
+
+  @screen md {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 2.4rem;
+  // font-weight: bold;
+  color: var(--text);
+  @screen md {
+    font-size: 2.4rem;
+  }
+}
+
+h4 {
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text);
+
+  @screen md {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-family: 'Open Sans Extra Bold', Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  @screen sm {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+  @screen md {
+    font-size: 1rem;
+  }
+}
+
+blockquote {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 2rem;
+  color: var(--text);
+}
