@@ -1,13 +1,13 @@
 ---
 intro:
-  introText: "Julie Moss’s work hint to a wider narrative, the subjects reflective
+  introText: 'Julie Moss’s work hint to a wider narrative, the subjects reflective
     of much larger social and humanitarian issues. The resulting paintings are a
     mix of a factual record of a moment in time and an emotional response to
     being in a particular place. It is in the shift between what is remembered
     and imagined that the works take shape, a dichotomy of fragility and
-    preservation. "
+    preservation. '
   introImage:
-    image: /img/julie.jpg
+    image: /uploads/julie.jpg
     imageAlt: Julie at her studio
 myArt:
   title: My Art
@@ -15,11 +15,11 @@ myArt:
     her choice of materials, a factor that is clear throughout her subtle and
     poetic work.
   myArtImage:
-    image: /img/image00001.jpg
+    image: /uploads/image00001.jpg
     imageAlt: Art cover image
 myBlog:
   myBlogImage:
-    image: /img/insta-blog-cover.png
+    image: /uploads/insta-blog-cover.png
     imageAlt: Blog cover
   title: Happenings
   description: ‘What silences our intuition is our need for certainty, nature is a
