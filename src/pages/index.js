@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import SEO from '../components/seo';
-
+import Link from 'gatsby-plugin-transition-link';
 import FeaturedArt from '../components/featuredArt';
 import FeaturedArticle from '../components/featuredArticle';
 
@@ -27,7 +27,9 @@ const IndexPage = ({
         </div>
 
         <div>
-          <h3>{myArt.title}</h3>
+          <Link to="/collections">
+            <h3>{myArt.title}</h3>
+          </Link>
           <p>{myArt.description}</p>
           <Img className="w-64" fluid={{ ...myArt.myArtImage.image.childImageSharp.fluid }} alt={myArt.myArtImage.imageAlt} />
         </div>

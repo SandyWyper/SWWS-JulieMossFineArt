@@ -20,6 +20,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "Details", name: "details", widget: "string", required: false  }
       - { label: "Date", name: "date", widget: "datetime", dateFormat: "DD.MM.YYYY" }
       - { label: "Description excerpt", name: "excerpt", widget: "string", required: false }
       - { label: "Description", name: "body", widget: "markdown", required: false }

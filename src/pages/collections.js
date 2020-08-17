@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
-import Img from 'gatsby-image';
+import EachCollection from '../components/eachCollection';
 
 const Collections = (props) => {
   const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
@@ -10,20 +10,12 @@ const Collections = (props) => {
   return (
     <>
       <SEO title={title} description="XXXXXXX" />
-      <section className="">
+      <section className="max-w-lg mx-auto">
         <h1>{heading}</h1>
         <h4>{subheading}</h4>
         <div>
           {collections.map((collection) => {
-            return (
-              <div key={`${collection.title}-container`}>
-                <h3>{collection.title}</h3>
-                <p>{collection.description}</p>
-                <Img className="" fluid={{ ...collection.image1.image.childImageSharp.fluid, sizes: '400px' }} alt={collection.image1.alt} />
-                <Img className="" fluid={{ ...collection.image2.image.childImageSharp.fluid, sizes: '400px' }} alt={collection.image2.alt} />
-                <Img className="" fluid={{ ...collection.image3.image.childImageSharp.fluid, sizes: '400px' }} alt={collection.image3.alt} />
-              </div>
-            );
+            return <EachCollection collection={collection} key={`${collection.title}-container`} />;
           })}
         </div>
       </section>

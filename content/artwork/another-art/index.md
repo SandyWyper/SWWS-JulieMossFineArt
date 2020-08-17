@@ -1,6 +1,7 @@
 ---
 title: another art
 category: Wallpapers
+details: oil on canvas 98cm x 78cm 2013
 date: 2020-08-13T12:17:29.976Z
 isFeatured: true
 excerpt: This piece is ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

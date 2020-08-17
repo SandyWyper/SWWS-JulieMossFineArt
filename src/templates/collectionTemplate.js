@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import find from 'lodash.find';
 import Img from 'gatsby-image';
+import Link from 'gatsby-plugin-transition-link';
 
 const CollectionTemplate = (props) => {
   const collectionArtwork = props.data.allMarkdownRemark.edges;
@@ -17,8 +18,13 @@ const CollectionTemplate = (props) => {
       </div>
       <div className="flex flex-col items-end w-full">
         {collectionArtwork.map((art, i) => {
+          console.log(art);
           const firstImage = art.node.frontmatter.images['0'];
-          return <Img key={`${firstImage.alt}-${i}`} className="w-64" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />;
+          return (
+            <Link to={art.node.fields.slug} key={`${firstImage.alt}-${i}`}>
+              <Img className="w-64" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />
+            </Link>
+          );
         })}
       </div>
     </section>
@@ -31,6 +37,9 @@ export const artQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date(formatString: "DD/MM/YY")

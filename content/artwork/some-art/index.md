@@ -1,6 +1,7 @@
 ---
 title: Some art
 category: Wallpapers
+details: oil on canvas 98cm x 78cm 2013
 date: 2020-08-13T12:15:52.956Z
 isFeatured: false
 images:
@@ -9,6 +10,7 @@ images:
   - image: screenshot-from-2020-05-18-16-20-25.png
     alt: lanhydrock
 ---
+
 **Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also [create your own](https://www.netlifycms.org/docs/custom-widgets)!**
 
 Widgets are specified as collection fields in the Netlify CMS `config.yml` file. Note that [YAML syntax](https://en.wikipedia.org/wiki/YAML#Basic_components) allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.

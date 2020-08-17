@@ -16,7 +16,9 @@ const FeaturedArt = () => {
               frontmatter {
                 title
                 category
+                excerpt
                 images {
+                  alt
                   image {
                     childImageSharp {
                       fluid(maxWidth: 1500) {
@@ -32,14 +34,16 @@ const FeaturedArt = () => {
       }
     `
   );
-  const featuredArtData = data.allMarkdownRemark.edges['0'].node;
-  const { title, category, images } = featuredArtData.frontmatter;
-  console.log(featuredArtData);
+  const { title, category, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
+  console.log(images);
   return (
     <div className="p-4 m-4 border">
       <h5>Latest piece - {title}</h5>
       <p>{category}</p>
-      <Img className="w-64" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
+      <div className="md:flex">
+        <Img className="w-64" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
+        <p className="md:w-1/2 md:pl-4">{excerpt}</p>
+      </div>
     </div>
   );
 };

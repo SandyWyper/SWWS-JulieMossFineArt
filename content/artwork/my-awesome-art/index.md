@@ -1,6 +1,7 @@
 ---
 title: My awesome art 8
 category: Paper Planes
+details: oil on canvas 98cm x 78cm 2013
 date: 2018-08-14T13:30:11.646Z
 isFeatured: false
 images:
