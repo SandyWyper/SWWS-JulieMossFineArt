@@ -21,6 +21,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", dateFormat: "DD.MM.YYYY" }
+      - { label: "Description excerpt", name: "excerpt", widget: "string", required: false }
       - { label: "Description", name: "body", widget: "markdown", required: false }
       - { label: "Featured Artwork", name: "isFeatured", widget: "boolean", default: false }
       - { label: "Images", name: "images", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, { label: "Image description", name: "alt", widget: "string"}] }

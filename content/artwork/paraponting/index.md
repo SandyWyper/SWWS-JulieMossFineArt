@@ -3,6 +3,7 @@ title: Paraponting
 category: Wallpapers
 date: 2020-08-14T14:03:38.786Z
 isFeatured: true
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 images:
   - image: screenshot-from-2020-05-08-18-51-29.png
     alt: sdc
