@@ -18,7 +18,6 @@ const CollectionTemplate = (props) => {
       <div className="flex flex-col items-end w-full">
         {collectionArtwork.map((art, i) => {
           const firstImage = art.node.frontmatter.images['0'];
-          console.log(firstImage);
           return <Img key={`${firstImage.alt}-${i}`} className="w-64" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />;
         })}
       </div>
