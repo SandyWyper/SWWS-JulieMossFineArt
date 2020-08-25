@@ -34,7 +34,9 @@ const IndexPage = ({
         </div>
 
         <div>
-          <h3>{myBlog.title}</h3>
+          <Link to="/blog">
+            <h3>{myBlog.title}</h3>
+          </Link>
           <p>{myBlog.description}</p>
           <Img className="w-64" fluid={{ ...myBlog.myBlogImage.image.childImageSharp.fluid }} alt={myBlog.myBlogImage.imageAlt} />
         </div>

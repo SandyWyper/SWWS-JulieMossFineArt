@@ -20,11 +20,11 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
         location={location}
         enter={{
           opacity: 0,
-          config: { duration: 600 },
+          config: { duration: 1000 },
         }}
         leave={{
           opacity: 1,
-          config: { duration: 300 },
+          config: { duration: 3000 },
         }}
       >
         <TransitionViews>{children}</TransitionViews>

@@ -1,12 +1,13 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-// import Img from 'gatsby-image';
+import { graphql, Link } from 'gatsby';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 
 const BlogTemplate = (props) => {
-  const { markdownRemark } = props.data; // data.markdownRemark holds the post data
-  const { frontmatter, html } = markdownRemark;
+  const { next, prev } = props.pageContext;
+  const { frontmatter, html } = props.data.markdownRemark;
+
   return (
     <>
       <SEO title="Blog" description={`${frontmatter.title} / ${frontmatter.description}`} />
@@ -14,20 +15,31 @@ const BlogTemplate = (props) => {
         <div className="" />
         <div className="">
           <div className="">
-            {/* <div>
-              <Img className="" fluid={frontmatter.cover.childImageSharp.fluid} alt={frontmatter.coverAlt} loading="eager" />
+            <div>
               <div className="">
                 <h2 className="">{frontmatter.title}</h2>
 
+                <Img className="" fluid={frontmatter.mainImage.image.childImageSharp.fluid} alt={frontmatter.mainImage.imageAlt} loading="eager" />
                 <div className="">
                   <p className="">{frontmatter.date}</p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <article className="" dangerouslySetInnerHTML={{ __html: html }} />
-          {/* Maybe a link to the next article */}
+          <div>
+            {prev && (
+              <Link to={prev} rel="prev">
+                ← Previous Post
+              </Link>
+            )}
+            {next && (
+              <Link to={next} rel="next">
+                Next Post →
+              </Link>
+            )}
+          </div>
         </div>
       </section>
     </>
@@ -39,6 +51,16 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        mainImage {
+          imageAlt
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
       }
       html
     }

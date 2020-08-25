@@ -1,11 +1,12 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
+  const { next, prev } = props.pageContext;
 
   return (
     <>
@@ -18,8 +19,18 @@ const ArtworkTemplate = (props) => {
           {frontmatter.images.map((art, i) => {
             return <Img key={art.alt + i} className="" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />;
           })}
-
-          {/* Maybe a link to the next piece */}
+        </div>
+        <div className="flex justify-around">
+          {prev && (
+            <Link to={prev} rel="prev">
+              ← Previous
+            </Link>
+          )}
+          {next && (
+            <Link to={next} rel="next">
+              Next →
+            </Link>
+          )}
         </div>
       </section>
     </>

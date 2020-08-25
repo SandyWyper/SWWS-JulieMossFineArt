@@ -27,9 +27,10 @@ const Nav = ({ data }) => {
 
   const spring = useSpring({
     to: {
-      opacity: !isOpen ? 0 : 1,
-      // width: !isOpen ? '0%' : '100%',
+      // opacity: !isOpen ? 0 : 1,
+      width: !isOpen ? '0%' : '100%',
       height: !isOpen ? '0%' : '100%',
+      // zIndex: !isOpen ? '0' : '50',
     },
   });
 
@@ -41,7 +42,7 @@ const Nav = ({ data }) => {
         </span>
       </button>
 
-      <animated.div className="fixed top-0 right-0 z-10 bg-white" style={spring}>
+      <animated.div className="fixed top-0 right-0 z-40 bg-white" style={spring}>
         <div className="relative flex flex-col justify-center w-screen h-screen p-10">
           <div className="max-w-md mx-auto">
             {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>}

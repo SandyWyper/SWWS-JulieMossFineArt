@@ -32,16 +32,20 @@ const BlogList = (props) => {
           <h1>Blog</h1>
           <h2>Latest blog: {featuredPost.frontmatter.title}</h2>
           <div className="">
-            {posts.map(({ node }, index) => (
-              <div key={node.id}>
-                {/* <ArticleCard
+            {posts.map(({ node }, index) => {
+              return (
+                <div key={node.id}>
+                  {/* <ArticleCard
                   articleDetails={node.frontmatter}
                   path={node.fields.slug}
                 /> */}
-                <h3>{node.frontmatter.title}</h3>
-                {index !== posts.length - 1 && <hr key={`${node.id}-hr`} />}
-              </div>
-            ))}
+                  <Link to={node.fields.slug}>
+                    <h3>{node.frontmatter.title}</h3>
+                  </Link>
+                  {index !== posts.length - 1 && <hr key={`${node.id}-hr`} />}
+                </div>
+              );
+            })}
             {!isFirst && (
               <Link to={`/projects/${prevPage}`} rel="prev">
                 ← Previous Page

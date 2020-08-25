@@ -5,6 +5,11 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 // lodash function for organising collections
 var groupBy = require('lodash.groupby');
 
+// -------------------------------------------------------------------   This is a utility for logging out objetcs
+// const util = require('util');
+// console.log(util.inspect(blogPosts, { showHidden: false, depth: null }));
+// -----------------------------------------------------------------------------------------------------------------  ///
+
 //-------------- Create slugs for every Blog and Artwork post ------------//
 
 // create nodes on markdown to indicate path
@@ -55,30 +60,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if (node.fields.slug.includes('blog')) {
-      createPage({
-        path: node.fields.slug,
-        component: blogTemplate,
-        context: {
-          // additional data can be passed via context
-          slug: node.fields.slug,
-        },
-      });
-    } else if (node.fields.slug.includes('artwork')) {
-      createPage({
-        path: node.fields.slug,
-        component: artworkTemplate,
-        context: {
-          // additional data can be passed via context
-          slug: node.fields.slug,
-          artworkNav: true,
-        },
-      });
-    }
-  });
-
-  /// ------------------------------------ Create landing page for blog articles ---------------------  ///
+  /// ------------------------------------ Create pages for blog articles and landing page---------------------  ///
   // / --- I must query allMarkdownRemark for posts test them against a regex value in order to get only the ones with '/blog/' in the slug ---- ///
   // / --- Then create however many landing pages are needed to allow for pagination --------------------  ///
   // / --- Feed the template with some variables to tell that page which and how many articles to show --- ///
@@ -87,6 +69,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark(filter: { fields: { slug: { regex: "/blog/" } } }, sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
+            fields {
+              slug
+            }
             id
             frontmatter {
               title
@@ -117,18 +102,32 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         skip: i * blogPostsPerPage,
         numBlogPages,
         currentPage: i + 1,
-        homeLayout: false,
-        navTitle: 'blog',
       },
     });
   });
 
+  // Create pages for each blog post
+  blogPosts.forEach(({ node }, index) => {
+    createPage({
+      path: node.fields.slug,
+      component: blogTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.fields.slug,
+        prev: index === 0 ? null : blogPosts[index - 1].node.fields.slug,
+        next: index === blogPosts.length - 1 ? null : blogPosts[index + 1].node.fields.slug,
+      },
+    });
+  });
   // /// ------------------------------------ Create artwork collection pages---------------------  ///
   const artworkData = await graphql(`
     {
       allMarkdownRemark(filter: { fields: { slug: { regex: "/artwork/" } } }, sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
+            fields {
+              slug
+            }
             id
             frontmatter {
               title
@@ -149,8 +148,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Simplify data tree
   const artwork = artworkData.data.allMarkdownRemark.edges;
-  // const util = require('util');
-  // console.log(util.inspect(artwork, { showHidden: false, depth: null }));
   // organise artworks into their categories
   const grouped = groupBy(artwork, function (item) {
     return item.node.frontmatter.category;
@@ -162,6 +159,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create art collections pages
   for (const category in grouped) {
     const numCollectionPages = Math.ceil(grouped[category].length / artworkPerPagePerCollection);
+
     Array.from({ length: numCollectionPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/${category.replace(' ', '-').toLowerCase()}` : `/${category.replace(' ', '-').toLowerCase()}${i + 1}`,
@@ -176,7 +174,36 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         },
       });
     });
+    // /// ------------------------------------ Create individual artwork pages---------------------  ///
+    grouped[category].forEach(({ node }, index) => {
+      createPage({
+        path: node.fields.slug,
+        component: artworkTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.fields.slug,
+          prev: index === 0 ? null : grouped[category][index - 1].node.fields.slug,
+          next: index === grouped[category].length - 1 ? null : grouped[category][index + 1].node.fields.slug,
+          artworkNav: true,
+        },
+      });
+    });
   }
+
+  // // Create pages for each blog post
+  // artwork.forEach(({ node }, index) => {
+  //   createPage({
+  //     path: node.fields.slug,
+  //     component: blogTemplate,
+  //     context: {
+  //       // additional data can be passed via context
+  //       slug: node.fields.slug,
+  //       prev: index === 0 ? null : artwork[index - 1].node.fields.slug,
+  //       next: index === artwork.length - 1 ? null : artwork[index + 1].node.fields.slug,
+  //       artworkNav: true,
+  //     },
+  //   });
+  // });
 };
 
 /// ------------------------------------------------------------------------------------------------  ///
