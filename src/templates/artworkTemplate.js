@@ -10,11 +10,11 @@ const ArtworkTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
-      <section className="">
+      <section className="max-w-lg mx-auto">
         <div className="">
           <h2 className="">{frontmatter.title}</h2>
-          <p>{frontmatter.date}</p>
-          <div className="" dangerouslySetInnerHTML={{ __html: html }} />
+          <p>{frontmatter.details}</p>
+          <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
           {frontmatter.images.map((art, i) => {
             return <Img key={art.alt + i} className="" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />;
           })}
@@ -32,7 +32,7 @@ export const data = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD/MM/YYYY")
+        details
         images {
           alt
           image {

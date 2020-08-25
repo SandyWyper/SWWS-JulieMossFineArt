@@ -35,7 +35,7 @@ const FeaturedArt = () => {
     `
   );
   const { title, category, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
-  console.log(images);
+
   return (
     <div className="p-4 m-4 border">
       <h5>Latest piece - {title}</h5>

@@ -1,9 +1,8 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import SEO from '../components/seo';
-import Link from 'gatsby-plugin-transition-link';
 import FeaturedArt from '../components/featuredArt';
 import FeaturedArticle from '../components/featuredArticle';
 

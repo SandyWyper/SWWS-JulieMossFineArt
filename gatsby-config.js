@@ -9,12 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: 'gatsby-plugin-transition-link',
-      options: {
-        layout: require.resolve(`./src/layout/index.js`),
-      },
-    },
+    'gatsby-plugin-layout',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Link from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 
 const Thankyou = () => (
   <>

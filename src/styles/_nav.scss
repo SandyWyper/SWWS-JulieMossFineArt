@@ -43,6 +43,9 @@ button:focus {
   height: auto;
   background-color: white;
   z-index: 100;
+  nav {
+    width: 12rem;
+  }
 }
 
 .art-category-nav {
@@ -70,12 +73,16 @@ button:focus {
     }
   }
 }
+
 .category-image-grid {
   position: relative;
   height: 0;
   overflow: hidden;
   transition: height 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-
+  &.isActive {
+    height: 250px;
+    overflow-y: scroll;
+  }
   // scroll shadows
   background: linear-gradient(white 30%, hsla(0, 0%, 100%, 0)), linear-gradient(hsla(0, 0%, 100%, 0) 10px, white 70%) bottom,
     radial-gradient(at top, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, 0.2), transparent 70%) bottom;
@@ -102,11 +109,6 @@ button:focus {
   //   background-color: darkgrey;
   //   outline: 1px solid slategrey;
   // }
-
-  &.isActive {
-    height: 100px;
-    overflow-y: scroll;
-  }
 }
 
 // .scrollGradient {
@@ -120,3 +122,10 @@ button:focus {
 //   background-attachment: local, local, scroll, scroll;
 //   background-size: 100% 39px, 100% 39px, 100% 13px, 100% 13px;
 // }
+
+.artThumb {
+  opacity: 0.5;
+  &.isActive {
+    opacity: 1;
+  }
+}

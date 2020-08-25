@@ -1,12 +1,10 @@
-// This component wraps every page and persists through page navigation.
-// See 'gatsby-config.js' transition-link set-up
-
 import React, { useState, useEffect } from 'react';
 import Nav from './nav';
 import ArtworkNav from './artworkNav';
 import PropTypes from 'prop-types';
+import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 
-const Index = ({ path, pageContext: { artworkNav }, children }) => {
+const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
   const [showArtworkNav, setShowingArtworkNav] = useState(false);
 
   useEffect(() => {
@@ -17,8 +15,20 @@ const Index = ({ path, pageContext: { artworkNav }, children }) => {
   return (
     <div className="relative min-h-screen">
       <Nav />
-      <ArtworkNav show={showArtworkNav} />
-      <main className="w-full">{children}</main>
+      <ArtworkNav show={showArtworkNav} path={path} />
+      <TransitionProvider
+        location={location}
+        enter={{
+          opacity: 0,
+          config: { duration: 600 },
+        }}
+        leave={{
+          opacity: 1,
+          config: { duration: 300 },
+        }}
+      >
+        <TransitionViews>{children}</TransitionViews>
+      </TransitionProvider>
     </div>
   );
 };

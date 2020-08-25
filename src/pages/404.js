@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 import SEO from '../components/seo';
 
 const NotFoundPage = () => (

@@ -1,6 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import Link from 'gatsby-plugin-transition-link';
+import { graphql, Link } from 'gatsby';
 
 import PropTypes from 'prop-types';
 

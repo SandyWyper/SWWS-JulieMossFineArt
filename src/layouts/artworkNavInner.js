@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Link from 'gatsby-plugin-transition-link';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import groupBy from 'lodash.groupby';
 
-const ArtworkNavInner = (props) => {
+const ArtworkNavInner = ({ path }) => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(filter: { fields: { slug: { regex: "/artwork/" } } }, sort: { order: ASC, fields: frontmatter___date }) {
@@ -22,7 +21,6 @@ const ArtworkNavInner = (props) => {
                 alt
                 image {
                   id
-
                   childImageSharp {
                     fixed(width: 75) {
                       ...GatsbyImageSharpFixed_withWebp
@@ -63,17 +61,21 @@ const ArtworkNavInner = (props) => {
   // Array of categories
   const collectionCategories = Object.keys(groupedCollections);
 
-  const collectionImageArray = collectionCategories.map((category, i) => {
+  return collectionCategories.map((category, i) => {
     const collectionImages = groupedCollections[category].map((eachArt) => {
       const eachArtImage = eachArt.node.frontmatter.images['0'];
+      const isCurrent = path === eachArt.node.fields.slug;
+      // return for groupCollections map
       return (
-        <li key={eachArtImage.image.id} className="p-1">
+        <li key={eachArtImage.image.id} className={`p-1 artThumb ${isCurrent && 'isActive'}`}>
           <Link to={eachArt.node.fields.slug.slice(0, -1)}>
             <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
           </Link>
         </li>
       );
     });
+
+    // return for collectionCategories map
     return (
       <React.Fragment key={`${category.replace(' ', '-')}-container-${i}`}>
         <Link
@@ -84,7 +86,7 @@ const ArtworkNavInner = (props) => {
         >
           {category}
         </Link>
-        <nav className="w-64">
+        <nav className="">
           <ul className={`flex flex-wrap items-center category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
             {collectionImages.map((image) => image)}
           </ul>
@@ -92,8 +94,6 @@ const ArtworkNavInner = (props) => {
       </React.Fragment>
     );
   });
-
-  return collectionImageArray;
 };
 
 export default ArtworkNavInner;

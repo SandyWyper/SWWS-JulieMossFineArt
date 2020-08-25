@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 import { useSpring, animated } from 'react-spring';
 // import PropTypes from 'prop-types';
 
@@ -28,7 +28,7 @@ const Nav = ({ data }) => {
   const spring = useSpring({
     to: {
       opacity: !isOpen ? 0 : 1,
-      width: !isOpen ? '0%' : '100%',
+      // width: !isOpen ? '0%' : '100%',
       height: !isOpen ? '0%' : '100%',
     },
   });
