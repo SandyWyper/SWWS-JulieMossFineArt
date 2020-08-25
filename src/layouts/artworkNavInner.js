@@ -45,7 +45,7 @@ const ArtworkNavInner = ({ path }) => {
       if (header.classList.contains('isActive')) {
         header.classList.remove('isActive');
       } else {
-        header.classList.add('isActive');
+        evt.target.classList.add('isActive');
       }
       setActiveTab(index);
     });
