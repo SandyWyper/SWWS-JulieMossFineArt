@@ -1,5 +1,5 @@
 ---
-title: About page title
+title: A little about me
 mainImage:
   image: /img/julie.jpg
   imageAlt: Julie at her studio
