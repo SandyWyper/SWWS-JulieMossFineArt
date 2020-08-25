@@ -1,0 +1,9 @@
+---
+title: Fig Tree
+category: Paintings
+date: 2020-08-25T14:21:26.012Z
+isFeatured: false
+images:
+  - image: fig-tree-.jpg
+    alt: Fig Tree
+---
