@@ -12,7 +12,7 @@ const ArtworkNav = ({ show, path }) => {
   });
 
   return (
-    <animated.div style={navSpring} className="z-50 bg-white art-nav">
+    <animated.div style={navSpring} className="z-30 bg-white art-nav">
       <div className="p-4">
         <Link to="/collections">My Art</Link>
         <ArtworkNavInner path={path} />

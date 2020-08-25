@@ -14,20 +14,25 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
 
   return (
     <div className="relative min-h-screen">
-      <Nav />
-      <ArtworkNav show={showArtworkNav} path={path} />
       <TransitionProvider
         location={location}
         enter={{
           opacity: 0,
-          config: { duration: 1000 },
+          config: { duration: 600 },
         }}
         leave={{
+          opacity: 0,
+          config: { duration: 200 },
+        }}
+        usual={{
           opacity: 1,
-          config: { duration: 3000 },
         }}
       >
-        <TransitionViews>{children}</TransitionViews>
+        <Nav />
+        <ArtworkNav show={showArtworkNav} path={path} />
+        <main>
+          <TransitionViews>{children}</TransitionViews>
+        </main>
       </TransitionProvider>
     </div>
   );

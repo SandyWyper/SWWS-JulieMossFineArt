@@ -189,21 +189,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       });
     });
   }
-
-  // // Create pages for each blog post
-  // artwork.forEach(({ node }, index) => {
-  //   createPage({
-  //     path: node.fields.slug,
-  //     component: blogTemplate,
-  //     context: {
-  //       // additional data can be passed via context
-  //       slug: node.fields.slug,
-  //       prev: index === 0 ? null : artwork[index - 1].node.fields.slug,
-  //       next: index === artwork.length - 1 ? null : artwork[index + 1].node.fields.slug,
-  //       artworkNav: true,
-  //     },
-  //   });
-  // });
 };
 
 /// ------------------------------------------------------------------------------------------------  ///
