@@ -6,7 +6,7 @@ import groupBy from 'lodash.groupby';
 const ArtworkNavInner = ({ path }) => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: { fields: { slug: { regex: "/artwork/" } } }, sort: { order: ASC, fields: frontmatter___date }) {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "/artwork/" } } }, sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
             id
