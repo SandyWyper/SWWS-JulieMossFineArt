@@ -6,10 +6,10 @@ html {
 
 h1 {
   font-family: 'Libre Caslon Display', 'Times New Roman', serif;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   color: var(--text);
   @screen md {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -29,6 +29,7 @@ h3 {
   font-size: 2.4rem;
   // font-weight: bold;
   color: var(--text);
+  margin-bottom: 2rem;
   @screen md {
     font-size: 2.4rem;
   }
@@ -47,31 +48,130 @@ h4 {
 }
 
 h5 {
-  font-family: 'Open Sans Extra Bold', Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 1.5rem;
   color: var(--text);
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: underline;
+  // font-weight: 500;
   @screen sm {
-    font-size: 1rem;
+    // font-size: 1rem;
   }
 }
 
 p {
   font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--text);
   @screen md {
     font-size: 1rem;
   }
 }
 
-blockquote {
-  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+blockquote,
+blockquote p {
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-weight: normal;
   font-style: italic;
-  margin: 2rem;
+  font-size: 1.3rem;
+  margin: 2rem 1rem;
   color: var(--text);
+  @screen md {
+    margin: 2rem;
+  }
+}
+
+// --------------------------
+
+.sub-heading {
+  position: relative;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-size: 1.25rem;
+
+  color: var(--text);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  width: fit-content;
+  margin: 0 auto 2rem;
+  // overflow: hidden;
+  @screen md {
+    // font-size: 1rem;
+  }
+}
+
+.sub-heading:before,
+.sub-heading:after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+
+  bottom: 0.9rem;
+  background: var(--text);
+}
+
+.sub-heading:before {
+  left: -2.5rem;
+}
+.sub-heading:after {
+  right: -2.4rem;
+}
+//-------------------------------------
+
+// .btn {
+//   font-family: 'Open Sans Light', Helvetica, sans-serif;
+//   background: var(--text);
+//   padding: 0.5rem 1.4rem;
+//   // text-transform: uppercase;
+//   color: white;
+//   @apply shadow-lg rounded-sm;
+// }
+
+.btn {
+  font-weight: bold;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.1em;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn:before {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background: var(--text);
+  transition: width 300ms ease-in;
+  margin: 0 auto;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+.blog-text {
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin: 0 2rem;
+}
+
+// .bg-op-rad {
+//   background: rgb(255, 255, 255);
+//   background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8365721288515406) 62%, rgba(255, 255, 255, 0) 100%);
+//   background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8365721288515406) 62%, rgba(255, 255, 255, 0) 100%);
+//   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8365721288515406) 62%, rgba(255, 255, 255, 0) 100%);
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+// }
+
+.footer-link {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }

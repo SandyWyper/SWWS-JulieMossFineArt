@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 const FeaturedArt = () => {
@@ -13,6 +13,9 @@ const FeaturedArt = () => {
         ) {
           edges {
             node {
+              fields {
+                slug
+              }
               frontmatter {
                 title
                 category
@@ -34,15 +37,24 @@ const FeaturedArt = () => {
       }
     `
   );
-  const { title, category, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
-
+  // const { title, category, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
+  const { title, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
+  const { slug } = data.allMarkdownRemark.edges['0'].node.fields;
   return (
-    <div className="p-4 m-4 border">
-      <h5>Latest piece - {title}</h5>
-      <p>{category}</p>
-      <div className="md:flex">
-        <Img className="w-64" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
-        <p className="md:w-1/2 md:pl-4">{excerpt}</p>
+    <div className="container mx-auto md:flex md:items-end">
+      <div className="md:w-2/4">
+        <Img className="" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
+      </div>
+      <div className="h-full md:w-2/4 md:pl-24">
+        <h5 className="mb-auto">Latest Piece</h5>
+        <div className="">
+          <Link to={slug}>
+            <h5>{title}</h5>
+          </Link>
+          {/* <p>{category}</p> */}
+          <p className="mb-0">{excerpt}</p>
+          {/* <p className="mx-auto mb-0 btn">view ...</p> */}
+        </div>
       </div>
     </div>
   );

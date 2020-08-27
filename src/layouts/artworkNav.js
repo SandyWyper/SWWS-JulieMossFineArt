@@ -7,17 +7,21 @@ import ArtworkNavInner from './artworkNavInner';
 const ArtworkNav = ({ show, path }) => {
   const navSpring = useSpring({
     opacity: show ? 1 : 0,
-    top: show ? '50%' : '60%',
-    display: show ? 'block' : 'none',
+    // top: show ? '50%' : '60%',
+    transform: show ? 'translate( 0%, 0% )' : 'translate( -100% , 0% )',
   });
 
   return (
-    <animated.div style={navSpring} className="z-30 bg-white art-nav">
-      <div className="p-4">
-        <Link to="/collections">My Art</Link>
-        <ArtworkNavInner path={path} />
-      </div>
-    </animated.div>
+    <div className="relative z-30 max-w-5xl mx-auto">
+      <animated.div style={navSpring} className="bg-white art-nav">
+        <div className="p-4">
+          <Link to="/collections" className="heading">
+            Collections
+          </Link>
+          <ArtworkNavInner path={path} />
+        </div>
+      </animated.div>
+    </div>
   );
 };
 

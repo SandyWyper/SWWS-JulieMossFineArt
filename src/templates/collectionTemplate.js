@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import find from 'lodash.find';
 import Img from 'gatsby-image';
+import Footer from '../components/footer';
+import SEO from '../components/seo';
 
 const CollectionTemplate = (props) => {
   const collectionArtwork = props.data.allMarkdownRemark.edges;
@@ -10,22 +12,30 @@ const CollectionTemplate = (props) => {
   const { description } = find(allCollectionInfo, ['title', collectionName]) || {};
 
   return (
-    <section>
-      <div>
-        <h1>{props.pageContext.collectionName}</h1>
-        {description !== undefined && <p>{description}</p>}
-      </div>
-      <div className="flex flex-col items-end w-full">
-        {collectionArtwork.map((art, i) => {
-          const firstImage = art.node.frontmatter.images['0'];
-          return (
-            <Link to={art.node.fields.slug} key={`${firstImage.alt}-${i}`}>
-              <Img className="w-64" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />
-            </Link>
-          );
-        })}
-      </div>
-    </section>
+    <>
+      <SEO title={`Julie Moss -`} description="XXXXXX" />
+      <section className="max-w-5xl px-4 pt-12 mx-auto mb-24 text-left lg:pt-24">
+        <div className="flex flex-col w-full lg:pl-64">
+          <div>
+            <h1>{props.pageContext.collectionName}</h1>
+          </div>
+          {description !== undefined && <p>{description}</p>}
+          <div className="grid items-center grid-cols-2 gap-4 md:gap-10">
+            {collectionArtwork.map((art, i) => {
+              const firstImage = art.node.frontmatter.images['0'];
+              return (
+                <div className="w-full" key={`${firstImage.alt}-${i}`}>
+                  <Link to={art.node.fields.slug}>
+                    <Img className="" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 

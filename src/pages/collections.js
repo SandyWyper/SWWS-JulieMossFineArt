@@ -3,22 +3,32 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import EachCollection from '../components/eachCollection';
+import Footer from '../components/footer';
 
 const Collections = (props) => {
   const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
-  // console.log(props);
+
   return (
     <>
       <SEO title={title} description="XXXXXXX" />
-      <section className="max-w-lg mx-auto">
-        <h1>{heading}</h1>
-        <h4>{subheading}</h4>
-        <div>
-          {collections.map((collection) => {
-            return <EachCollection collection={collection} key={`${collection.title}-container`} />;
+      <section className="max-w-5xl px-4 pt-12 mx-auto text-center lg:pt-24">
+        <div className="mb-24">
+          <h1 className="leading-tight">{heading}</h1>
+          {subheading && <h4 className="sub-heading">{subheading}</h4>}
+        </div>
+        <div className="text-left ">
+          {collections.map((collection, i) => {
+            const isLast = i === collections.length - 1;
+
+            return (
+              <React.Fragment key={`${collection.title}-container`}>
+                <EachCollection collection={collection} /> {isLast ? <div className="w-full mb-16" /> : <hr />}
+              </React.Fragment>
+            );
           })}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

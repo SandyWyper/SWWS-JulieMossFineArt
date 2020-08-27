@@ -8,12 +8,12 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
   const [showArtworkNav, setShowingArtworkNav] = useState(false);
 
   useEffect(() => {
-    const shouldShow = artworkNav === true || path === '/collections/';
+    const shouldShow = artworkNav === true;
     if (shouldShow !== showArtworkNav) setShowingArtworkNav(!showArtworkNav);
   }, [artworkNav, path, showArtworkNav]);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen mx-auto overflow-hidden">
       <TransitionProvider
         location={location}
         enter={{
@@ -28,7 +28,7 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
           opacity: 1,
         }}
       >
-        <Nav />
+        <Nav path={path} />
         <ArtworkNav show={showArtworkNav} path={path} />
         <main>
           <TransitionViews>{children}</TransitionViews>

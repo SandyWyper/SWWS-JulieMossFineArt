@@ -34,10 +34,10 @@ const ArtworkNavInner = ({ path }) => {
       }
     }
   `);
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(null);
 
   const activateTab = (evt) => {
-    evt.preventDefault();
+    // evt.preventDefault();
     const index = parseInt(evt.target.getAttribute('index'));
     if (index === activeTab) return;
     let categoryHeaders = document.querySelectorAll('.art-category-nav');
@@ -86,11 +86,11 @@ const ArtworkNavInner = ({ path }) => {
         >
           {category}
         </Link>
-        <nav className="">
+        <div className="">
           <ul className={`flex flex-wrap items-center category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
             {collectionImages.map((image) => image)}
           </ul>
-        </nav>
+        </div>
       </React.Fragment>
     );
   });

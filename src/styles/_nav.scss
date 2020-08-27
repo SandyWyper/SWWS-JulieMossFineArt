@@ -1,3 +1,12 @@
+.home-link {
+  font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+  font-size: 2rem;
+  color: var(--text);
+  @screen md {
+    font-size: 2.5rem;
+  }
+}
+
 .nav-open {
   margin: 0;
   height: 100vh;
@@ -21,16 +30,16 @@ button:focus {
   .hamburger-inner:before,
   .hamburger-inner:after,
   .hamburger-inner {
-    background: black;
+    background: var(--text);
   }
 
   &.is-active {
-    color: black;
+    color: var(--text);
 
     .hamburger-inner:before,
     .hamburger-inner:after,
     .hamburger-inner {
-      background-color: black;
+      background-color: var(--text);
       --bg-opacity: 1;
     }
   }
@@ -38,12 +47,19 @@ button:focus {
 // -------------------------- artNav
 .art-nav {
   position: fixed;
-  left: 0;
-  transform: translateY(-50%);
+  // transform: translateY(50%);
   height: auto;
   background-color: white;
-  nav {
-    width: 12rem;
+  width: 15rem;
+  display: none;
+  margin-top: 10rem;
+  @screen lg {
+    display: block;
+  }
+  .heading {
+    font-family: 'Libre Caslon Display', 'Times New Roman', serif;
+    font-size: 2rem;
+    color: var(--text);
   }
 }
 
