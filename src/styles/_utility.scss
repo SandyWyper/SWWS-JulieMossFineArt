@@ -14,8 +14,20 @@
 }
 
 hr {
-  margin: 4rem auto;
+  border-top: 1px solid var(--text);
+
+  margin: 4rem 3rem;
+  @screen sm {
+    margin: 4rem 8rem;
+  }
+  @screen md {
+    margin: 4rem 12rem;
+  }
+  @screen lg {
+    margin: 4rem 15rem;
+  }
 }
+
 .z-100 {
   z-index: 100;
 }

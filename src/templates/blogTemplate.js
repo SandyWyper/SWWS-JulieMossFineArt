@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import Footer from '../components/footer';
 
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
@@ -11,37 +12,35 @@ const BlogTemplate = (props) => {
   return (
     <>
       <SEO title="Blog" description={`${frontmatter.title} / ${frontmatter.description}`} />
-      <section className="">
-        <div className="" />
-        <div className="">
-          <div className="">
-            <div>
-              <div className="">
-                <h2 className="">{frontmatter.title}</h2>
+      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
+        <Img
+          className="max-w-md mx-auto mb-4"
+          fluid={frontmatter.mainImage.image.childImageSharp.fluid}
+          alt={frontmatter.mainImage.imageAlt}
+          loading="eager"
+        />
 
-                <Img className="" fluid={frontmatter.mainImage.image.childImageSharp.fluid} alt={frontmatter.mainImage.imageAlt} loading="eager" />
-                <div className="">
-                  <p className="">{frontmatter.date}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <article className="">
+          <h3 className="text-center">{frontmatter.title}</h3>
+          <p className="">{frontmatter.date}</p>
 
-          <article className="" dangerouslySetInnerHTML={{ __html: html }} />
-          <div>
-            {prev && (
-              <Link to={prev} rel="prev">
-                ← Previous Post
-              </Link>
-            )}
-            {next && (
-              <Link to={next} rel="next">
-                Next Post →
-              </Link>
-            )}
-          </div>
+          <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
+
+        <div className="max-w-2xl mx-auto">
+          {prev && (
+            <Link to={prev} rel="prev">
+              ← Previous Post
+            </Link>
+          )}
+          {next && (
+            <Link to={next} rel="next">
+              Next Post →
+            </Link>
+          )}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

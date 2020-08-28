@@ -6,17 +6,28 @@ import useScrollPosition from '../lib/useScrollPosition';
 import PropTypes from 'prop-types';
 import HomeTitleLink from './homeTitleLink';
 
+function timeout(delay) {
+  return new Promise((res) => setTimeout(res, delay));
+}
+
 const Nav = ({ path }) => {
   // Nav open or not state
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+
+  // two toggle method to allow for page fadeout animation when linking to a different page
+  const menuToggle = () => setIsOpen(!isOpen);
+  const linkToggle = async () => {
+    await timeout(300);
+    setIsOpen(!isOpen);
+  };
+
   // nav bar at the top shown or not
   const [isShown, setIsShown] = useState(true);
 
   const handleKeyDown = ({ key }) => {
     switch (key) {
       case 'Escape':
-        toggle();
+        menuToggle();
         break;
       default:
     }
@@ -60,8 +71,8 @@ const Nav = ({ path }) => {
     <animated.nav style={showNavSpring} className="fixed inset-x-0 z-40 w-full bg-white">
       <div className="relative max-w-5xl mx-auto">
         <HomeTitleLink path={path} />
-        <div className="absolute top-0 right-0 mt-1">
-          <button onClick={toggle} className={`hamburger hamburger--collapse relative ${isOpen && 'is-active'}`} type="button">
+        <div className="absolute top-0 right-0 mt-2 md:mt-3">
+          <button onClick={menuToggle} className={`hamburger hamburger--collapse relative ${isOpen && 'is-active'}`} type="button">
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
             </span>
@@ -73,27 +84,32 @@ const Nav = ({ path }) => {
                 {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>}
                 <ul className="text-2xl">
                   <li className="">
-                    <Link to="/" onClick={toggle} onKeyDown={handleKeyDown}>
+                    <Link to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link to="/collections" onClick={toggle} onKeyDown={handleKeyDown}>
+                    <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       My Art
                     </Link>
                   </li>
                   <li>
-                    <Link to="/blog" onClick={toggle} onKeyDown={handleKeyDown}>
+                    <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       Happenings
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact" onClick={toggle} onKeyDown={handleKeyDown}>
+                    <Link to="/about" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       Get In Touch
                     </Link>
                   </li>
                   <li>
-                    <Link to="/typography-test" onClick={toggle} onKeyDown={handleKeyDown}>
+                    <Link to="/typography-test" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       typography-test
                     </Link>
                   </li>

@@ -14,13 +14,13 @@ const CollectionTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss -`} description="XXXXXX" />
-      <section className="max-w-5xl px-4 pt-12 mx-auto mb-24 text-left lg:pt-24">
+      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left">
         <div className="flex flex-col w-full lg:pl-64">
           <div>
             <h1>{props.pageContext.collectionName}</h1>
           </div>
           {description !== undefined && <p>{description}</p>}
-          <div className="grid items-center grid-cols-2 gap-4 md:gap-10">
+          <div className="grid items-start grid-cols-2 gap-4 md:gap-10">
             {collectionArtwork.map((art, i) => {
               const firstImage = art.node.frontmatter.images['0'];
               return (

@@ -20,8 +20,8 @@ const ArtworkTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
-      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left lg:pt-24">
-        <div className="lg:pl-64">
+      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left">
+        <div className="lg:pl-64 ">
           {frontmatter.images.map((art, i) => {
             if (i === 0) {
               return (

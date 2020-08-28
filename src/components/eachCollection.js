@@ -7,7 +7,7 @@ const EachCollection = ({ collection }) => {
   return (
     <>
       <div className="lg:flex-row-reverse lg:flex lg:items-end">
-        <div className="max-w-lg lg:w-1/2 lg:pl-8">
+        <div className="max-w-xl mx-auto lg:w-1/2 lg:pl-8">
           <Link to={`/${collection.title.replace(' ', '-').toLowerCase()}`}>
             <h3>{collection.title}</h3>
           </Link>
@@ -15,7 +15,7 @@ const EachCollection = ({ collection }) => {
         </div>
         <div className="lg:w-1/2">
           <Link to={`/${collection.title.replace(' ', '-').toLowerCase()}`}>
-            <div className="flex max-w-lg ">
+            <div className="flex max-w-xl mx-auto">
               <Img className="w-2/3 mr-2" fluid={{ ...collection.image1.image.childImageSharp.fluid }} alt={collection.image1.alt} />
               <div className="w-1/3">
                 <div className="flex flex-col h-full">

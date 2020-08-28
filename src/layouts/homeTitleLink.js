@@ -6,7 +6,7 @@ import { useSpring, animated } from 'react-spring';
 
 const HomeTitleLink = ({ path }) => {
   // for top nav hide and show
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   useLayoutEffect(() => {
     if (path === '/') {
@@ -36,7 +36,7 @@ const HomeTitleLink = ({ path }) => {
   });
 
   return (
-    <animated.div style={showSpring}>
+    <animated.div style={showSpring} className="py-2">
       <Link to="/" className="pl-4 home-link">
         Julie Moss
       </Link>

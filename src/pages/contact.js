@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { navigate } from 'gatsby';
-
+import Footer from '../components/footer';
+import NewsletterSignup from '../components/newsletterSignup';
 import SEO from '../components/seo';
 
 const encode = (data) => {
@@ -39,16 +40,16 @@ class Contact extends Component {
     return (
       <>
         <SEO title="Contact" description="I would love to hear from you, so please do get in touch." />
-        <section className="">
-          <div className="">
-            <div className="">
-              <div className="">
-                <h4>Get in touch!</h4>
-                <h5>I'll get back to you as soon as I can.</h5>
-              </div>
+        <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
+          <div className="mb-12 lg:pl-16">
+            <h4>Get in touch!</h4>
+            <h6>I'll get back to you as soon as I can.</h6>
+          </div>
+          <div className="divide-x-2 md:flex">
+            <div className="md:w-1/2 lg:pl-16 md:pr-6">
               <div className="">
                 <form
-                  className="w-full max-w-xl mx-auto"
+                  className="w-full max-w-xl"
                   method="post"
                   name="Julie-Moss-Contact"
                   data-netlify="true"
@@ -58,56 +59,46 @@ class Contact extends Component {
                 >
                   <input type="hidden" name="bot-field" value="Julie-Moss-Contact" />
 
-                  <div className="mb-6 md:flex md:items-center">
-                    <div className="md:w-1/4">
-                      <label className="block pr-4 mb-1 md:text-right md:mb-0" htmlFor="name">
+                  <div className="">
+                    <div className="w-full mb-6">
+                      <label className="mb-2" htmlFor="name">
                         Name
                       </label>
-                    </div>
-                    <div className="md:w-3/4">
                       <input
                         type="text"
                         name="name"
                         id="name"
-                        className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none focus:outline-none contact-field"
+                        className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none focus:outline-none"
                         onChange={this.handleChange}
                         required
                       />
                     </div>
                   </div>
-                  <div className="mb-6 md:flex md:items-center">
-                    <div className="md:w-1/4">
-                      <label htmlFor="email" className="block pr-4 mb-1 md:text-right md:mb-0">
-                        Email
-                      </label>
-                    </div>
-                    <div className="md:w-3/4">
-                      <input
-                        type="text"
-                        name="email"
-                        id="email"
-                        className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none contact-field focus:border-custom-blue"
-                        onChange={this.handleChange}
-                        required
-                      />
-                    </div>
+                  <div className="w-full mb-6">
+                    <label htmlFor="email" className="mb-2">
+                      Email
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none focus:border-custom-blue"
+                      onChange={this.handleChange}
+                      required
+                    />
                   </div>
-                  <div className="mb-6 md:flex md:items-center">
-                    <div className="md:w-1/4">
-                      <label className="block pr-4 mb-1 md:text-right md:mb-0" htmlFor="message">
-                        Message
-                      </label>
-                    </div>
-                    <div className="md:w-3/4">
-                      <textarea
-                        name="message"
-                        id="message"
-                        rows="4"
-                        className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none contact-field focus:border-custom-blue"
-                        onChange={this.handleChange}
-                        required
-                      ></textarea>
-                    </div>
+                  <div className="w-full mb-6">
+                    <label className="mb-2" htmlFor="message">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="4"
+                      className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none contact-field focus:border-custom-blue"
+                      onChange={this.handleChange}
+                      required
+                    ></textarea>
                   </div>
                   <div className="mb-6 md:flex md:items-center">
                     <div className="md:w-1/4" />
@@ -115,22 +106,27 @@ class Contact extends Component {
                       <input
                         type="submit"
                         value="Send Message"
-                        className="w-full px-4 py-2 font-bold rounded shadow-lg cursor-pointer text-custom-gray background-primary hover:opacity-75 focus:shadow-outline focus:outline-none"
+                        className="w-full px-4 py-2 font-bold shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
                       />
                     </div>
                     <div className="md:ml-2 md:w-1/4">
                       <input
                         type="reset"
                         value="Reset"
-                        className="w-full px-4 py-2 font-bold rounded shadow-md cursor-pointer text-contrast background-contrast hover:opacity-75 focus:shadow-outline focus:outline-none"
+                        className="w-full px-4 py-2 font-bold shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
                       />
                     </div>
                   </div>
                 </form>
               </div>
             </div>
+            <div className="md:w-1/2 md:pl-6">
+              <hr className="md:hidden" />
+              <NewsletterSignup />
+            </div>
           </div>
         </section>
+        <Footer />
       </>
     );
   }
