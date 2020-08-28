@@ -11,12 +11,12 @@ const Collections = (props) => {
   return (
     <>
       <SEO title={title} description="XXXXXXX" />
-      <section className="max-w-5xl px-4 pt-12 mx-auto text-center lg:pt-24">
-        <div className="mb-24">
+      <section className="max-w-5xl px-4 pt-24 mx-auto ">
+        <div className="mb-12 text-center">
           <h1 className="leading-tight">{heading}</h1>
           {subheading && <h4 className="sub-heading">{subheading}</h4>}
         </div>
-        <div className="text-left ">
+        <div className="">
           {collections.map((collection, i) => {
             const isLast = i === collections.length - 1;
 

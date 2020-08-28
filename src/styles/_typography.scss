@@ -175,3 +175,20 @@ blockquote p {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
 }
+
+.featured-blog-text {
+  right: 0;
+  left: 0;
+  top: 30%;
+  // bottom: 50%;
+  // transform: translate(-10%, -50%);
+  margin: 0 1rem;
+  @screen sm {
+    margin: 0;
+    right: 0;
+    top: 50%;
+    left: auto;
+    // bottom: 50%;
+    transform: translate(-10%, -30%);
+  }
+}

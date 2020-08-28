@@ -10,24 +10,24 @@ import Footer from '../components/footer';
 const IndexPage = ({
   data: {
     markdownRemark: {
-      frontmatter: { intro, myArt, myBlog, isFeaturedArtShown, isFeaturedArticleShown },
+      frontmatter: { intro, myArt, myBlog },
     },
   },
 }) => {
   return (
     <>
       <SEO title="homeXXXX" description="page description XXX" />
-      <section className="max-w-5xl px-4 pt-12 mx-auto text-center lg:pt-24">
+      <section className="max-w-5xl px-4 pt-24 mx-auto text-center">
         <div className="max-w-lg mx-auto mb-12 lg:max-w-full lg:flex lg:items-center lg:mb-24">
           <div className="mb-8 lg:w-2/5 lg:pr-4">
             <h1>Julie Moss</h1>
-
             <h2 className="sub-heading">Fine Art</h2>
             <p className="">{intro.introText}</p>
             <Link to="/about" className=" btn">
               about Julie ...
             </Link>
           </div>
+
           <div className="lg:w-3/5 lg:pl-4">
             <Img className="mb-4" fluid={{ ...intro.introImage.image.childImageSharp.fluid }} alt={intro.introImage.imageAlt} />
           </div>
