@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-layout',
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://juliemossfineart.us8.list-manage.com/subscribe/post?u=a77444a76102b8e81bdeec13d&amp;id=89df6d8a8f',
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/uploads`,
