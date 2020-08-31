@@ -20,7 +20,7 @@ const BlogList = (props) => {
   const LatestArticle = () => (
     <div className="max-w-2xl mx-auto">
       <div className="relative max-w-sm mx-auto sm:max-w-2xl">
-        <p className="absolute top-0 z-50 pt-1 pl-4 text-sm text-white uppercase">latest article</p>
+        <h6 className="absolute top-0 z-50 pt-1 pl-2 text-white">latest article</h6>
         <Link to={featuredPost.fields.slug} className="">
           <Img
             className="max-w-sm shadow-lg min-h-400"
@@ -42,7 +42,7 @@ const BlogList = (props) => {
       <SEO title="Blog" description="XXXXXXX" />
 
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-32 text-center">
-        <div className="max-w-md mx-auto mb-20">
+        <div className="max-w-lg mx-auto mb-20">
           <h1 className="mb-4">{title}</h1>
           <p className="text-lg">{description}</p>
         </div>
@@ -72,17 +72,21 @@ const BlogList = (props) => {
           </div>
         </div>
         {!isFirst && (
-          <Link to={`/projects/${prevPage}`} rel="prev">
+          <Link to={`/projects/${prevPage}`} rel="prev" className="font-bold">
             ← Previous Page
           </Link>
         )}
         {!isLast && (
-          <Link to={`/projects/${nextPage}`} rel="next">
+          <Link to={`/projects/${nextPage}`} rel="next" className="font-bold">
             Next Page →
           </Link>
         )}
       </section>
-      <NewsletterSignup />
+
+      <section className="max-w-md px-4 mx-auto mb-20 text-center">
+        <NewsletterSignup />
+      </section>
+
       <Footer />
     </>
   );

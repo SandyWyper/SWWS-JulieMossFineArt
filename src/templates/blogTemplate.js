@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import Footer from '../components/footer';
+import NewsletterSignup from '../components/newsletterSignup';
 
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
@@ -27,7 +28,7 @@ const BlogTemplate = (props) => {
           <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
         </article>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto font-bold">
           {prev && (
             <Link to={prev} rel="prev">
               ← Previous Post
@@ -39,6 +40,10 @@ const BlogTemplate = (props) => {
             </Link>
           )}
         </div>
+      </section>
+      <hr />
+      <section className="max-w-md px-4 mx-auto mb-16 text-center">
+        <NewsletterSignup />
       </section>
       <Footer />
     </>

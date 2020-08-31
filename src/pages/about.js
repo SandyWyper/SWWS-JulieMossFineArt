@@ -13,8 +13,8 @@ const About = (props) => {
     <>
       <SEO title={title} />
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
-        <Img className="max-w-xl mx-auto mb-4" fluid={{ ...mainImage.image.childImageSharp.fluid }} alt={mainImage.imageAlt} />
-        <h1 className="mb-4 text-center">{title}</h1>
+        <Img className="max-w-xl mx-auto mb-6" fluid={{ ...mainImage.image.childImageSharp.fluid }} alt={mainImage.imageAlt} />
+        <h1 className="text-center h2">{title}</h1>
         <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
       </section>
       <Footer />

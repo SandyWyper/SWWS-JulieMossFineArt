@@ -30,7 +30,9 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
       >
         <Nav path={path} />
         <ArtworkNav show={showArtworkNav} path={path} />
-        <main>
+        <main
+        // className="relative z-40"
+        >
           <TransitionViews>{children}</TransitionViews>
         </main>
       </TransitionProvider>

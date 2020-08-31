@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import { useSpring, animated } from 'react-spring';
 import useScrollPosition from '../lib/useScrollPosition';
 
@@ -11,6 +11,36 @@ function timeout(delay) {
 }
 
 const Nav = ({ path }) => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(fields: { slug: { eq: "/collections/" } }) {
+          frontmatter {
+            collections {
+              title
+            }
+          }
+        }
+        allMarkdownRemark(filter: { fields: { slug: { regex: "/blog/" } } }, sort: { fields: [frontmatter___date], order: DESC }, limit: 2) {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+  // destructure data
+  const { collections } = data.markdownRemark.frontmatter;
+  const posts = data.allMarkdownRemark.edges;
+
   // Nav open or not state
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,7 +93,7 @@ const Nav = ({ path }) => {
   );
 
   const showNavSpring = useSpring({
-    marginTop: isShown ? '0rem' : '-4rem',
+    marginTop: isShown ? '0rem' : '-5rem',
     config: { mass: 1, tension: 200, friction: 30 },
   });
 
@@ -80,22 +110,12 @@ const Nav = ({ path }) => {
 
           <animated.div className="fixed top-0 right-0 z-50 bg-white" style={spring}>
             <div className="relative flex flex-col justify-center w-screen h-screen p-10">
-              <div className="max-w-md mx-auto">
-                {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>}
-                <ul className="text-2xl">
-                  <li className="">
-                    <Link to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
+              <nav className="max-w-lg md:mx-auto nav">
+                {/* {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>} */}
+                <ul>
+                  <li>
+                    <Link className="" to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
                       Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      My Art
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      Happenings
                     </Link>
                   </li>
                   <li>
@@ -109,43 +129,45 @@ const Nav = ({ path }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/typography-test" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      typography-test
+                    <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                      My Art
                     </Link>
+                    <ul>
+                      {collections.slice(0, 3).map((collection, i) => (
+                        <li key={`${i}-${collection.title}`}>
+                          <Link
+                            className="sub-link"
+                            to={`/${collection.title.replace(' ', '-').toLowerCase()}`}
+                            onClick={linkToggle}
+                            onKeyDown={handleKeyDown}
+                          >
+                            {collection.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                      Happenings
+                    </Link>
+                    <ul>
+                      {posts.map((post, i) => (
+                        <li key={post.node.id}>
+                          <Link className="sub-link" to={post.node.fields.slug} onClick={linkToggle} onKeyDown={handleKeyDown}>
+                            {post.node.frontmatter.title}
+                          </Link>
+                        </li>
+                      ))}
+                      <li>
+                        <Link className="sub-link" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                          more ...
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-                {/* <ul>
-              <li className="text-3xl text-primary">
-              <Link to="/collections" onClick={toggle} onKeyDown={handleKeyDown}>
-              Collections
-              </Link>
-              </li>
-              {data.projects.edges.map((post) => (
-                <li className="post" key={post.node.id}>
-                <Link to={post.node.fields.slug} onClick={toggle} onKeyDown={handleKeyDown}>
-                {post.node.frontmatter.title}
-                </Link>
-                </li>
-                ))}
-                <li className="pt-2 text-3xl text-primary">
-                <Link to="/blog" onClick={toggle} onKeyDown={handleKeyDown}>
-                Blog
-                </Link>
-                </li>
-                {data.blog.edges.map((post) => (
-                  <li className="post" key={post.node.id}>
-                  <Link to={post.node.fields.slug} onClick={toggle} onKeyDown={handleKeyDown}>
-                  {post.node.frontmatter.title}
-                  </Link>
-                  </li>
-                  ))}
-                  <li className="pt-2 text-3xl text-primary">
-                  <Link to="/contact" onClick={toggle} onKeyDown={handleKeyDown}>
-                  Contact
-                  </Link>
-                  </li>
-                </ul> */}
-              </div>
+              </nav>
             </div>
           </animated.div>
         </div>
@@ -157,4 +179,5 @@ const Nav = ({ path }) => {
 Nav.propTypes = {
   path: PropTypes.string.isRequired,
 };
+
 export default Nav;

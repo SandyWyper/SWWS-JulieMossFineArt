@@ -43,10 +43,10 @@ const FeaturedArt = () => {
   return (
     <div className="container mx-auto md:flex md:items-end">
       <div className="md:w-2/4">
-        <Img className="" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
+        <Img className="mb-4" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
       </div>
-      <div className="h-full md:w-2/4 md:pl-24">
-        <h5 className="mb-auto">Latest Piece</h5>
+      <div className="h-full md:w-2/4 md:pl-12 lg:pl-24">
+        <h6 className="mb-0">Latest Piece</h6>
         <div className="">
           <Link to={slug}>
             <h5>{title}</h5>

@@ -1,63 +1,80 @@
 html {
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Open Sans Light', Helvetica, sans-serif;
   color: var(--text);
 }
 
-h1 {
+h1,
+.h1 {
   font-family: 'Libre Caslon Display', 'Times New Roman', serif;
   font-size: 3.2rem;
   color: var(--text);
+  margin-bottom: 2rem;
   @screen md {
     font-size: 3.7rem;
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-family: 'Libre Caslon Display', 'Times New Roman', serif;
   font-size: 3rem;
   // font-weight: normal;
   color: var(--text);
-
+  margin-bottom: 1.5rem;
   @screen md {
-    font-size: 3rem;
+    // font-size: 3rem;
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-family: 'Libre Caslon Display', 'Times New Roman', serif;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   // font-weight: bold;
   color: var(--text);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   @screen md {
-    font-size: 2.4rem;
+    // font-size: 2.4rem;
   }
 }
 
-h4 {
+h4,
+.h4 {
   font-family: 'Open Sans Light', Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: var(--text);
-
+  margin-bottom: 1rem;
   @screen md {
-    font-size: 2rem;
+    // font-size: 2rem;
   }
 }
 
-h5 {
+h5,
+.h5 {
   font-family: 'Libre Caslon Display', 'Times New Roman', serif;
   font-size: 1.5rem;
   color: var(--text);
-  // font-weight: 500;
+  margin-bottom: 1rem;
   @screen sm {
     // font-size: 1rem;
   }
 }
+h6,
+.h6 {
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: var(--text);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
 
-p {
+p,
+.p {
   font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -81,7 +98,9 @@ blockquote p {
 }
 
 // --------------------------
-
+.text-contrast {
+  color: var(--textContrast);
+}
 .sub-heading {
   position: relative;
   font-family: 'Open Sans Light', Helvetica, sans-serif;
@@ -190,5 +209,11 @@ blockquote p {
     left: auto;
     // bottom: 50%;
     transform: translate(-10%, -30%);
+  }
+}
+
+.newsletter-signup-form {
+  a {
+    font-weight: bold;
   }
 }

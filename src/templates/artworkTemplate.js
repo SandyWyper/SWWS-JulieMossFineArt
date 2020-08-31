@@ -10,7 +10,7 @@ const ArtworkTemplate = (props) => {
   const { next, prev } = props.pageContext;
 
   const ArtWorkInfo = () => (
-    <div>
+    <div className="max-w-xl mx-auto">
       <h3 className="mb-1">{frontmatter.title}</h3>
       {frontmatter.details && <p className="font-bold">{frontmatter.details}</p>}
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
@@ -21,20 +21,22 @@ const ArtworkTemplate = (props) => {
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left">
-        <div className="lg:pl-64 ">
+        <div className="lg:ml-64">
           {frontmatter.images.map((art, i) => {
             if (i === 0) {
               return (
                 <React.Fragment key={art.alt + i}>
-                  <Img className="max-w-xl mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
+                  <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
                   <ArtWorkInfo />
                 </React.Fragment>
               );
             }
-            return <Img key={art.alt + i} className="max-w-xl mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />;
+            return (
+              <Img key={art.alt + i} className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
+            );
           })}
 
-          <div className="flex justify-between max-w-xl">
+          <div className="flex justify-between max-w-xl mx-auto">
             {prev && (
               <Link to={prev} rel="prev">
                 ← Previous

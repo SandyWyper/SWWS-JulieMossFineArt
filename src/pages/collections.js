@@ -12,8 +12,8 @@ const Collections = (props) => {
     <>
       <SEO title={title} description="XXXXXXX" />
       <section className="max-w-5xl px-4 pt-24 mx-auto ">
-        <div className="mb-12 text-center">
-          <h1 className="leading-tight">{heading}</h1>
+        <div className="mb-20 text-center">
+          <h1 className="mb-4 leading-tight">{heading}</h1>
           {subheading && <h4 className="sub-heading">{subheading}</h4>}
         </div>
         <div className="">

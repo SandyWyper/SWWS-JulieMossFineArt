@@ -41,13 +41,11 @@ class Contact extends Component {
       <>
         <SEO title="Contact" description="I would love to hear from you, so please do get in touch." />
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
-          <div className="mb-12 lg:pl-16">
-            <h4>Get in touch!</h4>
-            <h6>I'll get back to you as soon as I can.</h6>
-          </div>
-          <div className="divide-x-2 md:flex">
+          <h1 className="text-center">Contact</h1>
+          <div className="mt-24 md:divide-x-2 md:flex">
             <div className="md:w-1/2 lg:pl-16 md:pr-6">
               <div className="">
+                <p>Please don't hesitate to get in touch and I will get back to you as soon as I can.</p>
                 <form
                   className="w-full max-w-xl"
                   method="post"
@@ -68,7 +66,7 @@ class Contact extends Component {
                         type="text"
                         name="name"
                         id="name"
-                        className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none focus:outline-none"
+                        className="w-full px-4 py-2 leading-tight border-2 appearance-none focus:outline-none focus:border-gray-600"
                         onChange={this.handleChange}
                         required
                       />
@@ -82,7 +80,7 @@ class Contact extends Component {
                       type="text"
                       name="email"
                       id="email"
-                      className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none focus:border-custom-blue"
+                      className="w-full px-4 py-2 leading-tight border-2 appearance-none focus:outline-none focus:border-gray-600 focus:border-custom-blue"
                       onChange={this.handleChange}
                       required
                     />
@@ -95,34 +93,33 @@ class Contact extends Component {
                       name="message"
                       id="message"
                       rows="4"
-                      className="w-full px-4 py-2 leading-tight border-2 rounded appearance-none border-custom-turq focus:outline-none contact-field focus:border-custom-blue"
+                      className="w-full px-4 py-2 leading-tight border-2 appearance-none focus:outline-none focus:border-gray-600"
                       onChange={this.handleChange}
                       required
                     ></textarea>
                   </div>
-                  <div className="mb-6 md:flex md:items-center">
-                    <div className="md:w-1/4" />
-                    <div className="mb-4 md:mb-0 md:mr-2 md:w-2/4">
+                  <div className="mb-6 sm:flex md:items-center">
+                    <div className="mb-4 sm:mb-0 sm:mr-2 sm:w-1/2">
                       <input
                         type="submit"
                         value="Send Message"
-                        className="w-full px-4 py-2 font-bold shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
+                        className="w-full px-4 py-2 font-bold bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
                       />
                     </div>
-                    <div className="md:ml-2 md:w-1/4">
+                    <div className="sm:ml-2 sm:w-1/2">
                       <input
                         type="reset"
                         value="Reset"
-                        className="w-full px-4 py-2 font-bold shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
+                        className="w-full px-4 py-2 font-bold bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
                       />
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div className="md:w-1/2 md:pl-6">
+            <div className="md:w-1/2 md:pl-6 md:pr-16">
               <hr className="md:hidden" />
-              <NewsletterSignup />
+              <NewsletterSignup path={this.props.path} />
             </div>
           </div>
         </section>
