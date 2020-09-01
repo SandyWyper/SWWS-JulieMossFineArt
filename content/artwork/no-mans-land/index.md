@@ -1,7 +1,8 @@
 ---
 title: No Mans Land
 category: Ink Sketches
-date: 2020-08-25T14:37:51.177Z
+details: inks on paper
+date: 2020-08-08T14:37:00.000Z
 isFeatured: false
 images:
   - image: no-mans-land-sketch-.jpg
