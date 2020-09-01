@@ -55,6 +55,7 @@ const Nav = ({ path }) => {
   const [isShown, setIsShown] = useState(true);
 
   const handleKeyDown = ({ key }) => {
+    console.log(key);
     switch (key) {
       case 'Escape':
         menuToggle();
@@ -137,7 +138,7 @@ const Nav = ({ path }) => {
                         <li key={`${i}-${collection.title}`}>
                           <Link
                             className="sub-link"
-                            to={`/${collection.title.replace(' ', '-').toLowerCase()}`}
+                            to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}
                             onClick={linkToggle}
                             onKeyDown={handleKeyDown}
                           >

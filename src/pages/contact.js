@@ -41,8 +41,8 @@ class Contact extends Component {
       <>
         <SEO title="Contact" description="I would love to hear from you, so please do get in touch." />
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
-          <h1 className="text-center">Contact</h1>
-          <div className="mt-24 md:divide-x-2 md:flex">
+          <h1 className="text-center md:mb-12">Contact</h1>
+          <div className="md:divide-x-2 md:flex">
             <div className="md:w-1/2 lg:pl-16 md:pr-6">
               <div className="">
                 <p>Please don't hesitate to get in touch and I will get back to you as soon as I can.</p>

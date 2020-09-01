@@ -58,7 +58,7 @@ const NewsletterSignup = ({ path }) => {
   );
   return (
     <form onSubmit={handleSubmit} className="newsletter-signup-form">
-      <h5 className="mb-2">Subscribe to my newsletter</h5>
+      <h5 className="mb-0 md:mb-2">Subscribe to my newsletter</h5>
       <p>From time to time I send out words on my latest news and musings.</p>
       <div className="mb-6">
         <input

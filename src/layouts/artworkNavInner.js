@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import groupBy from 'lodash.groupby';
@@ -22,7 +22,7 @@ const ArtworkNavInner = ({ path }) => {
                 image {
                   id
                   childImageSharp {
-                    fixed(width: 75) {
+                    fixed(width: 100) {
                       ...GatsbyImageSharpFixed_withWebp
                     }
                   }
@@ -34,6 +34,7 @@ const ArtworkNavInner = ({ path }) => {
       }
     }
   `);
+
   const [activeTab, setActiveTab] = useState(null);
 
   const activateTab = (evt) => {
@@ -60,6 +61,15 @@ const ArtworkNavInner = ({ path }) => {
 
   // Array of categories
   const collectionCategories = Object.keys(groupedCollections);
+  useLayoutEffect(() => {
+    const pathifiedArray = collectionCategories.map((category) => {
+      return `/${category.replace(/\s/g, '-').toLowerCase()}`;
+    });
+    if (pathifiedArray.indexOf(path) > -1) {
+      setActiveTab(pathifiedArray.indexOf(path));
+    }
+    return;
+  }, [path, collectionCategories]);
 
   return collectionCategories.map((category, i) => {
     const collectionImages = groupedCollections[category].map((eachArt) => {
@@ -77,16 +87,16 @@ const ArtworkNavInner = ({ path }) => {
 
     // return for collectionCategories map
     return (
-      <React.Fragment key={`${category.replace(' ', '-')}-container-${i}`}>
+      <React.Fragment key={`${category.replace(/\s/g, '-')}-container-${i}`}>
         <Link
           className={`art-category-nav ${activeTab === i ? 'isActive' : ''}`}
-          to={`/${category.replace(' ', '-').toLowerCase()}`}
+          to={`/${category.replace(/\s/g, '-').toLowerCase()}`}
           index={i}
           onClick={activateTab}
         >
           {category}
         </Link>
-        <div className="">
+        <div>
           <ul className={`flex flex-wrap items-center category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
             {collectionImages.map((image) => image)}
           </ul>

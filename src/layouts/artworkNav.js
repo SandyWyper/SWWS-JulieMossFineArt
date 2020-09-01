@@ -14,7 +14,7 @@ const ArtworkNav = ({ show, path }) => {
   return (
     <div className="relative z-30 max-w-5xl mx-auto">
       <animated.div style={navSpring} className="bg-white art-nav">
-        <div className="p-4">
+        <div className="px-4">
           <Link to="/collections" className="heading">
             Collections
           </Link>

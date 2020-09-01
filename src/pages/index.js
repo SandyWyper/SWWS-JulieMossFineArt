@@ -30,14 +30,14 @@ const IndexPage = ({
           </div>
 
           <div className="lg:w-3/5 lg:pl-4">
-            <Img className="mb-4" fluid={{ ...intro.introImage.image.childImageSharp.fluid }} alt={intro.introImage.imageAlt} />
+            <Img className="mb-4 shadow-lg" fluid={{ ...intro.introImage.image.childImageSharp.fluid }} alt={intro.introImage.imageAlt} />
           </div>
         </div>
       </section>
       {/* my art */}
       <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
         <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:flex-row-reverse lg:items-center">
-          <div className="m-8 text-center lg:w-2/5">
+          <div className="my-8 text-center lg:w-2/5 lg:pl-4">
             <Link to="/collections">
               <h3>{myArt.title}</h3>
               <p className="">{myArt.description}</p>
@@ -45,9 +45,7 @@ const IndexPage = ({
             </Link>
           </div>
           <div className="lg:w-3/5">
-            <Link to="/collections">
-              <Img className="shadow-xl" fluid={{ ...myArt.myArtImage.image.childImageSharp.fluid }} alt={myArt.myArtImage.imageAlt} />
-            </Link>
+            <Img className="shadow-lg" fluid={{ ...myArt.myArtImage.image.childImageSharp.fluid }} alt={myArt.myArtImage.imageAlt} />
           </div>
         </div>
       </section>
@@ -61,7 +59,7 @@ const IndexPage = ({
               </Link>
               <p className="max-w-md mx-auto">{myBlog.description}</p>
               <Link to="/blog">
-                <p className="mx-auto btn">view blog ...</p>
+                <p className="mx-auto mb-12 btn">view blog ...</p>
               </Link>
             </div>
             <div className="pb-24 md:p-12 lg:w-1/2">

@@ -20,13 +20,13 @@ const ArtworkTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
-      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left">
-        <div className="lg:ml-64">
+      <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
+        <div className="pb-24 artwork-space md:pl-4">
           {frontmatter.images.map((art, i) => {
             if (i === 0) {
               return (
                 <React.Fragment key={art.alt + i}>
-                  <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
+                  <Img className="max-w-xl mx-auto mb-6 " fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
                   <ArtWorkInfo />
                 </React.Fragment>
               );

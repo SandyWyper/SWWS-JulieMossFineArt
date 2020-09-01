@@ -111,17 +111,20 @@ button:focus {
     }
   }
 }
+
 // -------------------------- artNav
 .art-nav {
   position: fixed;
-  // transform: translateY(50%);
   z-index: -1;
 
   height: auto;
   background-color: white;
   width: 15rem;
   display: none;
-  margin-top: 10rem;
+  margin-top: 6.2rem;
+
+  // border-right: 1px solid rgba(0, 0, 0, 0.1);
+  // border-right: 1px solid rgba(255, 255, 255, 0.3);
   @screen lg {
     display: block;
   }
@@ -141,7 +144,7 @@ button:focus {
   &:before {
     content: '';
     position: absolute;
-    right: 25px;
+    right: 10px;
     top: 50%;
     width: 10px;
     height: 1px;
@@ -164,7 +167,7 @@ button:focus {
   overflow: hidden;
   transition: height 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   &.isActive {
-    height: 250px;
+    height: calc(100vh - 26rem);
     overflow-y: scroll;
   }
   // scroll shadows

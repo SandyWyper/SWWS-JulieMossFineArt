@@ -14,8 +14,8 @@ const CollectionTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss -`} description="XXXXXX" />
-      <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 text-left">
-        <div className="flex flex-col w-full lg:pl-64">
+      <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
+        <div className="flex flex-col w-full pb-24 md:pl-4 artwork-space">
           <div>
             <h1>{props.pageContext.collectionName}</h1>
           </div>

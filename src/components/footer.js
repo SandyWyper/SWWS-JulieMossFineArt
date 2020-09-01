@@ -56,7 +56,7 @@ const Footer = () => {
               <ul>
                 {collections.slice(0, 3).map((collection, i) => (
                   <li key={`${i}-${collection.title}`}>
-                    <Link className="sub-link" to={`/${collection.title.replace(' ', '-').toLowerCase()}`}>
+                    <Link className="sub-link" to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}>
                       {collection.title}
                     </Link>
                   </li>
