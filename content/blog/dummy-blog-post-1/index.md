@@ -1,5 +1,5 @@
 ---
-title: Dummy Blog Post 1
+title: Happenings
 date: 2020-08-25T14:19:43.018Z
 description: "This is a journal of my thoughts, discoveries and activities
   related to my Art practice "
