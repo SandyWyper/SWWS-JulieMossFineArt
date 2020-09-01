@@ -8,9 +8,9 @@ intro:
     preservation. "
   introImage:
     image: /uploads/restored-order-julie-moss-.jpg
-    imageAlt: Art Alt text
+    imageAlt: "'Restored order '  oils on canvas "
 myArt:
-  title: My Art
+  title: " Art"
   description: The immediacy and tactility, particularly of oil paints dictates
     her choice of materials, a factor that is clear throughout her subtle and
     poetic work.
@@ -19,8 +19,8 @@ myArt:
     imageAlt: Art cover image
 myBlog:
   myBlogImage:
-    image: /uploads/insta-blog-cover.png
-    imageAlt: Blog cover
+    image: /uploads/must-come-down.jpg
+    imageAlt: "'Must come down\" oils on paper"
   title: Happenings
   description: ‘What silences our intuition is our need for certainty, nature is a
     place of mystery where we find the courage to believe in what we cannot see
