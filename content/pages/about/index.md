@@ -1,8 +1,8 @@
 ---
 title: A little about me
 mainImage:
-  image: /img/julie.jpg
-  imageAlt: Julie at her studio
+  image: /uploads/fullsizeoutput_1817.jpeg
+  imageAlt: studio shot
 ---
 Julie Moss’s work hint to a wider narrative, the subjects reflective of much larger social and humanitarian issues. The resulting paintings are a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
 The immediacy and tactility, particularly of oil paints dictates her choice of materials, a factor that is clear throughout her subtle and poetic work. A long and deeply held interest in plants and flowers and love of colour informs her artistic practice, She strives for an ideal: to make her artwork a bridge to communicate deeply with her audience. 
