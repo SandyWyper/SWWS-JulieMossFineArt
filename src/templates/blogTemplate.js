@@ -3,17 +3,23 @@ import { graphql, Link } from 'gatsby';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import Footer from '../components/footer';
 import NewsletterSignup from '../components/newsletterSignup';
 
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
   const { frontmatter, html } = props.data.markdownRemark;
   const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image.publicURL;
+  const sharingImageAlt = props.data.markdownRemark.frontmatter.mainImage.imageAlt;
 
   return (
     <>
-      <SEO title={frontmatter.title} description={frontmatter.description} image={sharingImage} url={props.location.href} />
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description}
+        image={sharingImage}
+        url={props.location.href}
+        imageAlt={sharingImageAlt}
+      />
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
         <Img
           className="max-w-md mx-auto mb-4"
@@ -46,7 +52,6 @@ const BlogTemplate = (props) => {
       <section className="max-w-md px-4 mx-auto mb-16 text-center">
         <NewsletterSignup />
       </section>
-      <Footer />
     </>
   );
 };

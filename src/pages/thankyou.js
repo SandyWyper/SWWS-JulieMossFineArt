@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
 import { Link } from 'gatsby';
-import Footer from '../components/footer';
 import NewsletterSignup from '../components/newsletterSignup';
 
 const Thankyou = () => (
@@ -24,7 +23,6 @@ const Thankyou = () => (
     <section className="max-w-md px-4 mx-auto mb-20 text-center">
       <NewsletterSignup />
     </section>
-    <Footer />
   </>
 );
 

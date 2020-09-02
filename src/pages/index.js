@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 import FeaturedArt from '../components/featuredArt';
 import FeaturedArticle from '../components/featuredArticle';
 import NewsletterSignup from '../components/newsletterSignup';
-import Footer from '../components/footer';
 
 const IndexPage = ({
   data: {
@@ -14,11 +13,10 @@ const IndexPage = ({
       frontmatter: { intro, myArt, myBlog },
     },
   },
-  location,
 }) => {
   return (
     <>
-      <SEO url={location.href} />
+      <SEO />
       <section className="max-w-5xl px-4 pt-24 mx-auto text-center">
         <div className="max-w-lg mx-auto mb-12 lg:max-w-full lg:flex lg:items-center lg:mb-24">
           <div className="mb-8 lg:w-2/5 lg:pr-4">
@@ -77,7 +75,6 @@ const IndexPage = ({
       <section className="max-w-md px-4 mx-auto mb-16 text-center">
         <NewsletterSignup />
       </section>
-      <Footer />
     </>
   );
 };

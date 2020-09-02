@@ -35,7 +35,7 @@ const Footer = () => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <footer className="w-full bg-gray-900 border-t-2 border-gray-300">
+    <footer className="absolute inset-x-0 bottom-0 w-full bg-gray-900 border-t-2 border-gray-300">
       <div className="max-w-5xl p-6 mx-auto lg:flex">
         <div className="sm:flex sm:mb-4">
           <ul className="sm:w-1/3 lg:mr-20">

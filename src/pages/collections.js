@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import EachCollection from '../components/eachCollection';
-import Footer from '../components/footer';
 
 const Collections = (props) => {
   const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
@@ -28,7 +27,6 @@ const Collections = (props) => {
           })}
         </div>
       </section>
-      <Footer />
     </>
   );
 };

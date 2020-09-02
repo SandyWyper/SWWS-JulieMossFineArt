@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import find from 'lodash.find';
 import Img from 'gatsby-image';
-import Footer from '../components/footer';
 import SEO from '../components/seo';
 import pathify from '../lib/pathify';
 
@@ -59,7 +58,6 @@ const CollectionTemplate = (props) => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

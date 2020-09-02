@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
-import Footer from '../components/footer';
 import NewsletterSignup from '../components/newsletterSignup';
 
 const BlogList = (props) => {
@@ -88,8 +87,6 @@ const BlogList = (props) => {
       <section className="max-w-md px-4 mx-auto mb-20 text-center">
         <NewsletterSignup />
       </section>
-
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { navigate } from 'gatsby';
-import Footer from '../components/footer';
 import NewsletterSignup from '../components/newsletterSignup';
 import SEO from '../components/seo';
 
@@ -123,7 +122,6 @@ class Contact extends Component {
             </div>
           </div>
         </section>
-        <Footer />
       </>
     );
   }

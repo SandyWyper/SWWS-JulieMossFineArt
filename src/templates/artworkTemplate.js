@@ -3,12 +3,12 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
-import Footer from '../components/footer';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
   const { next, prev } = props.pageContext;
   const sharingImage = props.data.markdownRemark.frontmatter.images[0].image.publicURL;
+  const sharingImageAlt = props.data.markdownRemark.frontmatter.images[0].alt;
 
   const ArtWorkInfo = () => (
     <div className="max-w-xl mx-auto">
@@ -19,7 +19,7 @@ const ArtworkTemplate = (props) => {
   );
   return (
     <>
-      <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} />
+      <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
       <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
         <div className="pb-24 artwork-space md:pl-4">
           {frontmatter.images.map((art, i) => {
@@ -50,7 +50,6 @@ const ArtworkTemplate = (props) => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

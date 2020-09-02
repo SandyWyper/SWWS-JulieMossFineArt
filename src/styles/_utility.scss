@@ -44,3 +44,13 @@ hr {
     }
   }
 }
+
+.footer-padding {
+  padding-bottom: 26.8235294118rem;
+  @screen sm {
+    padding-bottom: 17.2058823529rem;
+  }
+  @screen lg {
+    padding-bottom: 12.4705882353rem;
+  }
+}

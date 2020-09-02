@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
-import Footer from '../components/footer';
 
 const About = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
@@ -17,7 +16,6 @@ const About = (props) => {
         <h1 className="text-center h2">{title}</h1>
         <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
       </section>
-      <Footer />
     </>
   );
 };
