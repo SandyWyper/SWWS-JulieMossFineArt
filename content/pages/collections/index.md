@@ -26,4 +26,15 @@ collections:
     image3:
       image: /uploads/watercolour-sketch-.jpg
       alt: "Pitons inks and watercolours on paper "
+  - title: Further afield
+    description: "Works inspired by travel and the islands of the West Indies "
+    image1:
+      image: /uploads/plantation-house-j-moss.jpg
+      alt: "plantation house oils on canvas 123cm x 123cm "
+    image2:
+      image: /uploads/burn-baby-burn-.jpg
+      alt: "Burn, Baby Burn oils on canvas 153cm x 153cm "
+    image3:
+      image: /uploads/neither-here-nor-there.jpg
+      alt: "neither here nor there oils on canvas 30cm x 30cm "
 ---
