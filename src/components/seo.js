@@ -26,7 +26,13 @@ function SEO({ description, lang, meta, title, image, imageAlt, url }) {
     `
   );
   const { defaultDescription, defaultTitle, defaultImage, defaultUrl } = site.siteMetadata;
-  console.log(image);
+
+  const metaDescription = description || defaultDescription;
+  const metaTitle = title || defaultTitle;
+  const metaImage = `${defaultUrl}${image}` || `${defaultUrl}${defaultImage}`;
+  const metaImageAlt = imageAlt || 'Julie Moss';
+  const metaUrl = url || defaultUrl;
+
   return (
     <Helmet
       htmlAttributes={{
@@ -36,19 +42,19 @@ function SEO({ description, lang, meta, title, image, imageAlt, url }) {
       meta={[
         {
           name: `description`,
-          content: description || defaultDescription,
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: title || defaultTitle,
+          content: metaTitle,
         },
         {
           property: `og:description`,
-          content: description || defaultDescription,
+          content: metaDescription,
         },
         {
           property: `og:image`,
-          content: `${defaultUrl}${image}` || defaultImage,
+          content: metaImage,
         },
         {
           property: `og:type`,
@@ -56,7 +62,7 @@ function SEO({ description, lang, meta, title, image, imageAlt, url }) {
         },
         {
           propery: 'og:url',
-          content: url || defaultUrl,
+          content: metaUrl,
         },
         {
           property: 'og:site_name',
@@ -72,15 +78,15 @@ function SEO({ description, lang, meta, title, image, imageAlt, url }) {
         },
         {
           name: 'twitter:image:alt',
-          content: imageAlt || 'Julie Moss',
+          content: metaImageAlt,
         },
         {
           name: `twitter:title`,
-          content: title || defaultTitle,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
-          content: description || defaultDescription,
+          content: metaDescription,
         },
       ].concat(meta)}
     />

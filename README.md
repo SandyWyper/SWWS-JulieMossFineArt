@@ -7,7 +7,7 @@
 - Adjust image references to size appropriately
 - max-height on blog post image tiles.
 - CMS templates
-- SEO component
+- check whither seo images have the correct paths and are able to be shared
 
 > To order categories in the nav, date just one piece of each category ... newest renders at the top.
 

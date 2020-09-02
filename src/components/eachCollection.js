@@ -8,11 +8,11 @@ const EachCollection = ({ collection }) => {
   return (
     <>
       <div className="lg:flex-row-reverse lg:flex lg:items-end">
-        <div className="max-w-xl mx-auto lg:w-1/2 lg:pl-8">
+        <div className="max-w-xl mx-auto mb-4 lg:mb-0 lg:w-1/2 lg:pl-8">
           <Link to={pathify(collection.title)}>
-            <h3>{collection.title}</h3>
+            <h3 className="mb-0">{collection.title}</h3>
+            <p className="mb-0">{collection.description}</p>
           </Link>
-          <p className="lg:mb-0">{collection.description}</p>
         </div>
         <div className="lg:w-1/2">
           <Link to={pathify(collection.title)}>
