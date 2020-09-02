@@ -5,5 +5,5 @@ date: 2020-08-25T14:42:43.549Z
 isFeatured: false
 images:
   - image: no-mans-land-sketch-.jpg
-    alt: No mans land
+    alt: No mans land inks on paper
 ---
