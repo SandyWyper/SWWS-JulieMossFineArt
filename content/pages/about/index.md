@@ -16,12 +16,10 @@ Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth Universi
 Previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family.
 Julie’s work has been exhibited in the 2019 Venice Biennale, and is held in private collections including the Gallery of Modern Art in Malaysia.
 
-
-
 #### Education
 
 2012-2015 /2018  Turps banana correspondence course 
-2006-2011  B.A.   Hons. Fine Art University College Falmouth
+2006-2011  B.A. Hons. Fine Art University College Falmouth
 1973-1976 Bolton School of Art
 
 #### Publications and prizes
@@ -33,29 +31,26 @@ Pre selected John Moores prize 2018
 Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
-#### Selected Exhibitions 
-2019  Daiichi Gallery of Modern Art Penang, Malaysia 1st Nov -1st Dec 
-2019 shortlisted John Ruskin prize ‘Agent of change’ Holden Gallery Manchester 11 July -24 August
+#### Selected Exhibitions
 
-2019 Woman’s  Essence  Palazzo Ca Zenobio Venice collateral event 58th Biennale Di Venezia May 10th -17th 
+2020 Hus hotel Gstaad Switzerland 
 
-2018 166 Annual exhibition Royal West of England Academy 7th October -25th November
+2019  Daiichi Gallery of Modern Art Penang, Malaysia 
+2019 shortlisted John Ruskin prize ‘Agent of change’ Holden Gallery 
 
-2018 On view Newlyn Society of Artists  Tremenheere Gallery September 
+2019 Woman’s  Essence Palazzo Ca Zenobio Venice collateral event 58th Biennale Di Venezia 
 
-2018 Drawing Explored  Tremenheere Gallery  April
+2018 166 Annual exhibition Royal West of England Academy 2009, 2011, 2016, 2018
+
+2018 On view Newlyn Society of Artists  Tremenheere Gallery 
 
 2018 Artsy Alessandro Berni gallery New York
 
 2018 John Moore's prize stage 2 Walker Art Gallery Liverpool
 
-2017  Sketch open Rabley Drawing Centre  sketch book on tour at various venues till dec 2017
+2017  Sketch open Rabley Drawing Centre  sketch book on tour at various venues
 
 2017 Arusha Gallery. AFF Hampstead 
-
-2017 Borders Newlyn society of Artists Tremenheere Sculpture Gardens March
-
-2016 Royal West of England Open Exhibition Bristol 2009, 2011, 2016, 2018 
 
 2016 Correspond Rye Creative centre Rye Sussex 
 
