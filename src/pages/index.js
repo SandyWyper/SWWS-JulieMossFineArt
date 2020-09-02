@@ -36,7 +36,7 @@ const IndexPage = ({
       {/* my art */}
       <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
         <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:flex-row-reverse lg:items-center">
-          <div className="my-8 text-center lg:w-2/5 lg:pl-4">
+          <div className="my-8 text-center lg:w-2/5 lg:px-6">
             <Link to="/collections">
               <h3>{myArt.title}</h3>
               <p className="">{myArt.description}</p>

@@ -5,7 +5,7 @@
 - Add site_url to admin/config.yml
 - Add my logo to the admin/config.yml
 - Adjust image references to size appropriately
-- max-height on blog post image tiles.
+
 - CMS templates
 - check whither seo images have the correct paths and are able to be shared
 

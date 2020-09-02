@@ -5,7 +5,12 @@ import SEO from '../components/seo';
 import EachCollection from '../components/eachCollection';
 
 const Collections = (props) => {
-  const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
+  const {
+    //  heading,
+    subheading,
+    title,
+    collections,
+  } = props.data.markdownRemark.frontmatter;
 
   return (
     <>

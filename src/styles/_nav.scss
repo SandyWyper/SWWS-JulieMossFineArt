@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.nav {
+.nav-styles {
   a {
     font-family: 'Libre Caslon Display', 'Times New Roman', serif;
     font-size: 1.7rem;
@@ -38,6 +38,13 @@
       height: 3px;
       width: 3px;
       background: var(--text);
+    }
+  }
+  .item {
+    padding-top: 0.5rem;
+    @screen lg {
+      padding-top: 1rem;
+      // padding-bottom: 1rem;
     }
   }
 }

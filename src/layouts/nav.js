@@ -112,60 +112,64 @@ const Nav = ({ path }) => {
           </button>
 
           <animated.div className="fixed top-0 right-0 z-50 bg-white" style={spring}>
-            <div className="relative flex flex-col justify-center w-screen h-screen p-10">
-              <nav className="max-w-lg md:mx-auto nav">
-                {/* {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>} */}
-                <ul>
-                  <li>
-                    <Link className="" to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      Get In Touch
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      My Art
-                    </Link>
-                    <ul>
-                      {collections.slice(0, 3).map((collection, i) => (
-                        <li key={`${i}-${collection.title}`}>
-                          <Link className="sub-link" to={pathify(collection.title)} onClick={linkToggle} onKeyDown={handleKeyDown}>
-                            {collection.title}
+            <div className="relative flex flex-col justify-center w-screen h-screen p-10 ">
+              <div className="w-full max-w-5xl mx-auto">
+                <nav className="max-w-lg nav-styles lg:pl-24">
+                  {/* {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>} */}
+                  <ul>
+                    <li className="item">
+                      <Link to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        Home
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link to="/about" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        About
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link to="/contact" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        Get In Touch
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="item">
+                      <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        My Art
+                      </Link>
+                      <ul>
+                        {collections.slice(0, 3).map((collection, i) => (
+                          <li key={`${i}-${collection.title}`}>
+                            <Link className="sub-link" to={pathify(collection.title)} onClick={linkToggle} onKeyDown={handleKeyDown}>
+                              {collection.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                    <li className="item">
+                      <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        Happenings
+                      </Link>
+                      <ul>
+                        {posts.map((post, i) => (
+                          <li key={post.node.id}>
+                            <Link className="sub-link" to={post.node.fields.slug} onClick={linkToggle} onKeyDown={handleKeyDown}>
+                              {post.node.frontmatter.title}
+                            </Link>
+                          </li>
+                        ))}
+                        <li>
+                          <Link className="sub-link" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                            more ...
                           </Link>
                         </li>
-                      ))}
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                      Happenings
-                    </Link>
-                    <ul>
-                      {posts.map((post, i) => (
-                        <li key={post.node.id}>
-                          <Link className="sub-link" to={post.node.fields.slug} onClick={linkToggle} onKeyDown={handleKeyDown}>
-                            {post.node.frontmatter.title}
-                          </Link>
-                        </li>
-                      ))}
-                      <li>
-                        <Link className="sub-link" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                          more ...
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </animated.div>
         </div>
