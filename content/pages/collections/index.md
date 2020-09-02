@@ -4,7 +4,7 @@ heading: Collections Heading
 subheading: Collections subheading
 collections:
   - title: "Closer to Home "
-    description: "Paintings inspired by Cornwall "
+    description: Paintings inspired by the gardens, plants and green spaces of Cornwall
     image1:
       image: /uploads/now-is-not-the-time.jpg
       alt: "'Now is not the time'  oils on canvas 153cm x 153cm 2020 "
