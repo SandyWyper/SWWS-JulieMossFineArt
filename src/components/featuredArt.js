@@ -41,11 +41,11 @@ const FeaturedArt = () => {
   const { title, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
   const { slug } = data.allMarkdownRemark.edges['0'].node.fields;
   return (
-    <div className="container mx-auto md:flex md:items-end">
-      <div className="md:w-2/4">
+    <div className="md:flex md:items-end">
+      <div className="md:w-1/2">
         <Img className="mb-4 md:mb-0" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
       </div>
-      <div className="h-full md:w-2/4 md:pl-12">
+      <div className="h-full md:w-1/2 md:pl-12">
         <h6 className="mb-0">Latest Piece</h6>
         <div className="">
           <Link to={slug}>

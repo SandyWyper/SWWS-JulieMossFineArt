@@ -3,7 +3,7 @@ import Nav from './nav';
 import ArtworkNav from './artworkNav';
 import PropTypes from 'prop-types';
 import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
-import Footer from '../components/footer';
+
 const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
   const [showArtworkNav, setShowingArtworkNav] = useState(false);
 
@@ -13,7 +13,7 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
   }, [artworkNav, path, showArtworkNav]);
 
   return (
-    <div className="relative min-h-screen mx-auto overflow-hidden footer-padding">
+    <div className="relative mx-auto overflow-hidden">
       <TransitionProvider
         location={location}
         enter={{
@@ -34,7 +34,6 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
           <TransitionViews>{children}</TransitionViews>
         </main>
       </TransitionProvider>
-      <Footer />
     </div>
   );
 };

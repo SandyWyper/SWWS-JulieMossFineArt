@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import EachCollection from '../components/eachCollection';
+import Footer from '../components/footer';
 
 const Collections = (props) => {
   const {
@@ -15,23 +16,26 @@ const Collections = (props) => {
   return (
     <>
       <SEO title={title} description={subheading} url={props.location.href} />
-      <section className="max-w-5xl px-4 pt-24 mx-auto ">
-        <div className="mb-20 text-center">
-          {/* <h1 className="mb-4 leading-tight">{heading}</h1>
+      <div className="relative min-h-screen footer-padding">
+        <section className="max-w-5xl px-4 pt-24 mx-auto ">
+          <div className="mb-20 text-center">
+            {/* <h1 className="mb-4 leading-tight">{heading}</h1>
           {subheading && <h4 className="sub-heading">{subheading}</h4>} */}
-        </div>
-        <div className="">
-          {collections.map((collection, i) => {
-            const isLast = i === collections.length - 1;
+          </div>
+          <div className="">
+            {collections.map((collection, i) => {
+              const isLast = i === collections.length - 1;
 
-            return (
-              <React.Fragment key={`${collection.title}-container`}>
-                <EachCollection collection={collection} /> {isLast ? <div className="w-full mb-16" /> : <hr />}
-              </React.Fragment>
-            );
-          })}
-        </div>
-      </section>
+              return (
+                <React.Fragment key={`${collection.title}-container`}>
+                  <EachCollection collection={collection} /> {isLast ? <div className="w-full mb-16" /> : <hr />}
+                </React.Fragment>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+      <Footer />
     </>
   );
 };

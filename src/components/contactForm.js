@@ -131,4 +131,5 @@ class ContactForm extends Component {
 ContactForm.propTypes = {
   menuToggle: PropTypes.func,
 };
+
 export default ContactForm;

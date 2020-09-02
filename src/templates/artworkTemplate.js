@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
+import Footer from '../components/footer';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
@@ -20,36 +21,44 @@ const ArtworkTemplate = (props) => {
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
-      <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
-        <div className="pb-24 artwork-space md:pl-4">
-          {frontmatter.images.map((art, i) => {
-            if (i === 0) {
+      <div className="relative min-h-screen footer-padding">
+        <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
+          <div className="pb-24 artwork-space md:pl-4">
+            {frontmatter.images.map((art, i) => {
+              if (i === 0) {
+                return (
+                  <React.Fragment key={art.alt + i}>
+                    <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
+                    <ArtWorkInfo />
+                  </React.Fragment>
+                );
+              }
               return (
-                <React.Fragment key={art.alt + i}>
-                  <Img className="max-w-xl mx-auto mb-6 " fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
-                  <ArtWorkInfo />
-                </React.Fragment>
+                <Img
+                  key={art.alt + i}
+                  className="max-w-xl mx-auto mb-6"
+                  fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }}
+                  alt={art.alt}
+                />
               );
-            }
-            return (
-              <Img key={art.alt + i} className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
-            );
-          })}
+            })}
 
-          <div className="w-full max-w-xl mx-auto font-bold">
-            {prev && (
-              <Link to={prev} rel="prev" className="float-left">
-                ← Previous
-              </Link>
-            )}
-            {next && (
-              <Link to={next} rel="next" className="float-right">
-                Next →
-              </Link>
-            )}
+            <div className="w-full max-w-xl mx-auto font-bold">
+              {prev && (
+                <Link to={prev} rel="prev" className="float-left">
+                  ← Previous
+                </Link>
+              )}
+              {next && (
+                <Link to={next} rel="next" className="float-right">
+                  Next →
+                </Link>
+              )}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <Footer />
     </>
   );
 };

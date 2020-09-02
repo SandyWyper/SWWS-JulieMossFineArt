@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import NewsletterSignup from '../components/newsletterSignup';
+import Footer from '../components/footer';
 
 const BlogList = (props) => {
   // render navigation between blog-listing pages if there are more then one.
@@ -39,54 +40,56 @@ const BlogList = (props) => {
   return (
     <>
       <SEO title={title} description={description} url={props.location.href} />
-
-      <section className="max-w-5xl px-4 pt-24 mx-auto mb-32 text-center">
-        <div className="max-w-lg mx-auto mb-20">
-          <h1 className="mb-4">{title}</h1>
-          <p className="text-lg">{description}</p>
-        </div>
-
-        <LatestArticle />
-      </section>
-
-      <section className="py-8 mb-12 bg-gray-300 lg:mb-24">
-        <div className="max-w-5xl px-4 mx-auto">
-          <div className="flex flex-wrap justify-center mb-16">
-            {posts.map(({ node }) => (
-              <div key={node.id} className="relative w-full max-w-sm sm:w-1/2 lg:w-1/3">
-                <Link to={node.fields.slug}>
-                  <Img
-                    className="min-h-400"
-                    fluid={{ ...node.frontmatter.mainImage.image.childImageSharp.fluid }}
-                    alt={node.frontmatter.mainImage.image.imageAlt}
-                  />
-                  <div className="absolute bottom-0 max-w-sm p-6 mx-4 -mb-16 text-center bg-white ">
-                    <h5 className="mb-2">{node.frontmatter.title}</h5>
-                    <p className="mb-1 text-sm">{node.frontmatter.description}</p>
-                    <p className="mx-auto mb-0 btn">read more ...</p>
-                  </div>
-                </Link>
-              </div>
-            ))}
+      <div className="relative min-h-screen footer-padding">
+        <section className="max-w-5xl px-4 pt-24 mx-auto mb-32 text-center">
+          <div className="max-w-lg mx-auto mb-20">
+            <h1 className="mb-4">{title}</h1>
+            <p className="text-lg">{description}</p>
           </div>
-        </div>
-        <div className="w-full max-w-2xl mx-auto font-bold">
-          {!isFirst && (
-            <Link to={`/blog/${prevPage}`} rel="prev" className="float-left">
-              ← Previous Page
-            </Link>
-          )}
-          {!isLast && (
-            <Link to={`/blog/${nextPage}`} rel="next" className="float-right">
-              Next Page →
-            </Link>
-          )}
-        </div>
-      </section>
 
-      <section className="max-w-md px-4 mx-auto mb-20 text-center">
-        <NewsletterSignup />
-      </section>
+          <LatestArticle />
+        </section>
+
+        <section className="py-8 mb-12 bg-gray-300 lg:mb-24">
+          <div className="max-w-5xl px-4 mx-auto">
+            <div className="flex flex-wrap justify-center mb-16">
+              {posts.map(({ node }) => (
+                <div key={node.id} className="relative w-full max-w-sm sm:w-1/2 lg:w-1/3">
+                  <Link to={node.fields.slug}>
+                    <Img
+                      className="min-h-400"
+                      fluid={{ ...node.frontmatter.mainImage.image.childImageSharp.fluid }}
+                      alt={node.frontmatter.mainImage.image.imageAlt}
+                    />
+                    <div className="absolute bottom-0 max-w-sm p-6 mx-4 -mb-16 text-center bg-white ">
+                      <h5 className="mb-2">{node.frontmatter.title}</h5>
+                      <p className="mb-1 text-sm">{node.frontmatter.description}</p>
+                      <p className="mx-auto mb-0 btn">read more ...</p>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-full max-w-2xl mx-auto font-bold">
+            {!isFirst && (
+              <Link to={`/blog/${prevPage}`} rel="prev" className="float-left">
+                ← Previous Page
+              </Link>
+            )}
+            {!isLast && (
+              <Link to={`/blog/${nextPage}`} rel="next" className="float-right">
+                Next Page →
+              </Link>
+            )}
+          </div>
+        </section>
+
+        <section className="max-w-md px-4 mx-auto mb-20 text-center">
+          <NewsletterSignup />
+        </section>
+      </div>
+      <Footer />
     </>
   );
 };

@@ -9,6 +9,8 @@
 - CMS templates
 - check whither seo images have the correct paths and are able to be shared
 
+- on contact form - await success of form sending before redirecting.
+
 > To order categories in the nav, date just one piece of each category ... newest renders at the top.
 
 ### Build status
