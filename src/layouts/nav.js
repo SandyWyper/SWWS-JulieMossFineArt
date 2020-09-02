@@ -6,6 +6,7 @@ import pathify from '../lib/pathify';
 
 import PropTypes from 'prop-types';
 import HomeTitleLink from './homeTitleLink';
+import ContactForm from '../components/contactForm';
 
 function timeout(delay) {
   return new Promise((res) => setTimeout(res, delay));
@@ -56,7 +57,6 @@ const Nav = ({ path }) => {
   const [isShown, setIsShown] = useState(true);
 
   const handleKeyDown = ({ key }) => {
-    console.log(key);
     switch (key) {
       case 'Escape':
         menuToggle();
@@ -113,10 +113,9 @@ const Nav = ({ path }) => {
 
           <animated.div className="fixed top-0 right-0 z-50 bg-white" style={spring}>
             <div className="relative flex flex-col justify-center w-screen h-screen p-10 ">
-              <div className="w-full max-w-5xl mx-auto">
-                <nav className="max-w-lg nav-styles lg:pl-24">
-                  {/* {isOpen && <div className="absolute top-0 left-0 mt-8 ml-8"></div>} */}
-                  <ul>
+              <div className="flex w-full max-w-5xl mx-auto">
+                <nav className="md:w-1/2 nav-styles lg:pl-24">
+                  <ul className="nav-lists">
                     <li className="item">
                       <Link to="/" onClick={linkToggle} onKeyDown={handleKeyDown}>
                         Home
@@ -132,8 +131,6 @@ const Nav = ({ path }) => {
                         Get In Touch
                       </Link>
                     </li>
-                  </ul>
-                  <ul>
                     <li className="item">
                       <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
                         My Art
@@ -169,6 +166,9 @@ const Nav = ({ path }) => {
                     </li>
                   </ul>
                 </nav>
+                <div className="hidden lg:px-16 md:block md:w-1/2">
+                  <ContactForm menuToggle={linkToggle} />
+                </div>
               </div>
             </div>
           </animated.div>

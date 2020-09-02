@@ -40,12 +40,12 @@
       background: var(--text);
     }
   }
-  .item {
-    padding-top: 0.5rem;
-    @screen lg {
-      padding-top: 1rem;
-      // padding-bottom: 1rem;
-    }
+}
+.nav-lists > li:not(:first-child) {
+  padding-top: 0.5rem;
+  @screen lg {
+    padding-top: 1rem;
+    // padding-bottom: 1rem;
   }
 }
 
