@@ -3,10 +3,12 @@ module.exports = {
     title: `Julie Moss`,
     description: `Julie Moss contemporary fine artist`,
     url: 'https://www.juliemossfineart.co.uk',
+    siteUrl: `https://tender-babbage-64e081.netlify.app`,
     author: `https://sandywyper.dev`,
     image: '/uploads/restored-order-julie-moss-.jpg',
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
