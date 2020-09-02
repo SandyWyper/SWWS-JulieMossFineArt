@@ -11,7 +11,7 @@ const About = (props) => {
 
   return (
     <>
-      <SEO title={title} />
+      <SEO title="About" decription="A little about me" url={props.location.href} />
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
         <Img className="max-w-xl mx-auto mb-6" fluid={{ ...mainImage.image.childImageSharp.fluid }} alt={mainImage.imageAlt} />
         <h1 className="text-center h2">{title}</h1>

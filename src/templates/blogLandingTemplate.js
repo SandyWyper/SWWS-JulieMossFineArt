@@ -39,7 +39,7 @@ const BlogList = (props) => {
 
   return (
     <>
-      <SEO title="Blog" description="XXXXXXX" />
+      <SEO title={title} description={description} url={props.location.href} />
 
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-32 text-center">
         <div className="max-w-lg mx-auto mb-20">
@@ -71,16 +71,18 @@ const BlogList = (props) => {
             ))}
           </div>
         </div>
-        {!isFirst && (
-          <Link to={`/projects/${prevPage}`} rel="prev" className="font-bold">
-            ← Previous Page
-          </Link>
-        )}
-        {!isLast && (
-          <Link to={`/projects/${nextPage}`} rel="next" className="font-bold">
-            Next Page →
-          </Link>
-        )}
+        <div className="w-full max-w-2xl mx-auto font-bold">
+          {!isFirst && (
+            <Link to={`/blog/${prevPage}`} rel="prev" className="float-left">
+              ← Previous Page
+            </Link>
+          )}
+          {!isLast && (
+            <Link to={`/blog/${nextPage}`} rel="next" className="float-right">
+              Next Page →
+            </Link>
+          )}
+        </div>
       </section>
 
       <section className="max-w-md px-4 mx-auto mb-20 text-center">

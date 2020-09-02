@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { useSpring, animated } from 'react-spring';
 import useScrollPosition from '../lib/useScrollPosition';
+import pathify from '../lib/pathify';
 
 import PropTypes from 'prop-types';
 import HomeTitleLink from './homeTitleLink';
@@ -94,8 +95,9 @@ const Nav = ({ path }) => {
   );
 
   const showNavSpring = useSpring({
-    marginTop: isShown ? '0rem' : '-5rem',
-    config: { mass: 1, tension: 200, friction: 30 },
+    marginTop: isShown ? '0rem' : '-5.2rem',
+    // opacity: isShown ? '1' : '0',
+    config: { mass: 1, tension: 120, friction: 24, clamp: true },
   });
 
   return (
@@ -136,12 +138,7 @@ const Nav = ({ path }) => {
                     <ul>
                       {collections.slice(0, 3).map((collection, i) => (
                         <li key={`${i}-${collection.title}`}>
-                          <Link
-                            className="sub-link"
-                            to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}
-                            onClick={linkToggle}
-                            onKeyDown={handleKeyDown}
-                          >
+                          <Link className="sub-link" to={pathify(collection.title)} onClick={linkToggle} onKeyDown={handleKeyDown}>
                             {collection.title}
                           </Link>
                         </li>

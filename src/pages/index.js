@@ -14,10 +14,11 @@ const IndexPage = ({
       frontmatter: { intro, myArt, myBlog },
     },
   },
+  location,
 }) => {
   return (
     <>
-      <SEO title="homeXXXX" description="page description XXX" />
+      <SEO url={location.href} />
       <section className="max-w-5xl px-4 pt-24 mx-auto text-center">
         <div className="max-w-lg mx-auto mb-12 lg:max-w-full lg:flex lg:items-center lg:mb-24">
           <div className="mb-8 lg:w-2/5 lg:pr-4">

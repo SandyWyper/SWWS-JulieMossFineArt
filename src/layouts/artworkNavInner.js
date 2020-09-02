@@ -2,6 +2,7 @@ import React, { useState, useLayoutEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import groupBy from 'lodash.groupby';
+import pathify from '../lib/pathify';
 
 const ArtworkNavInner = ({ path }) => {
   const data = useStaticQuery(graphql`
@@ -63,7 +64,7 @@ const ArtworkNavInner = ({ path }) => {
   const collectionCategories = Object.keys(groupedCollections);
   useLayoutEffect(() => {
     const pathifiedArray = collectionCategories.map((category) => {
-      return `/${category.replace(/\s/g, '-').toLowerCase()}`;
+      return pathify(category);
     });
     if (pathifiedArray.indexOf(path) > -1) {
       setActiveTab(pathifiedArray.indexOf(path));
@@ -87,13 +88,8 @@ const ArtworkNavInner = ({ path }) => {
 
     // return for collectionCategories map
     return (
-      <React.Fragment key={`${category.replace(/\s/g, '-')}-container-${i}`}>
-        <Link
-          className={`art-category-nav ${activeTab === i ? 'isActive' : ''}`}
-          to={`/${category.replace(/\s/g, '-').toLowerCase()}`}
-          index={i}
-          onClick={activateTab}
-        >
+      <React.Fragment key={`${pathify(category)}-container-${i}`}>
+        <Link className={`art-category-nav ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
           {category}
         </Link>
         <div>

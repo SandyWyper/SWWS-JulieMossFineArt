@@ -8,6 +8,7 @@ import Footer from '../components/footer';
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
   const { next, prev } = props.pageContext;
+  const sharingImage = props.data.markdownRemark.frontmatter.images[0].image.publicURL;
 
   const ArtWorkInfo = () => (
     <div className="max-w-xl mx-auto">
@@ -16,10 +17,9 @@ const ArtworkTemplate = (props) => {
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
     </div>
   );
-
   return (
     <>
-      <SEO title={`Julie Moss - ${frontmatter.title}`} description="XXXXXX" />
+      <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} />
       <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
         <div className="pb-24 artwork-space md:pl-4">
           {frontmatter.images.map((art, i) => {
@@ -36,14 +36,14 @@ const ArtworkTemplate = (props) => {
             );
           })}
 
-          <div className="flex justify-between max-w-xl mx-auto">
+          <div className="w-full max-w-xl mx-auto font-bold">
             {prev && (
-              <Link to={prev} rel="prev">
+              <Link to={prev} rel="prev" className="float-left">
                 ← Previous
               </Link>
             )}
             {next && (
-              <Link to={next} rel="next">
+              <Link to={next} rel="next" className="float-right">
                 Next →
               </Link>
             )}
@@ -65,6 +65,7 @@ export const data = graphql`
         images {
           alt
           image {
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1500) {
                 ...GatsbyImageSharpFluid_withWebp

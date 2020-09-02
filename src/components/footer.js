@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import InstaIcon from '../icons/instagram';
+import pathify from '../lib/pathify';
 
 const Footer = () => {
   const data = useStaticQuery(
@@ -56,7 +57,7 @@ const Footer = () => {
               <ul>
                 {collections.slice(0, 3).map((collection, i) => (
                   <li key={`${i}-${collection.title}`}>
-                    <Link className="sub-link" to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}>
+                    <Link className="sub-link" to={pathify(collection.title)}>
                       {collection.title}
                     </Link>
                   </li>

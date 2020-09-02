@@ -39,7 +39,7 @@ class Contact extends Component {
   render() {
     return (
       <>
-        <SEO title="Contact" description="I would love to hear from you, so please do get in touch." />
+        <SEO title="Contact" description="I would love to hear from you, so please do get in touch." url={this.props.location.href} />
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
           <h1 className="text-center md:mb-12">Contact</h1>
           <div className="md:divide-x-2 md:flex">

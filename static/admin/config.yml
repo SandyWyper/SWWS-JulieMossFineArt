@@ -6,7 +6,7 @@ backend:
 media_folder: static/uploads
 public_folder: /uploads
 
-logo_url: assets/SWWS-icon-96x96.png
+logo_url: uploads/SWWS-icon-96x96.png
 
 collections:
   - name: "artwork"

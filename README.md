@@ -5,7 +5,9 @@
 - Add site_url to admin/config.yml
 - Add my logo to the admin/config.yml
 - Adjust image references to size appropriately
-- Change gatsby-node.js to allow blog articles and artworks to navigate to neighbours
+- max-height on blog post image tiles.
+- CMS templates
+- SEO component
 
 > To order categories in the nav, date just one piece of each category ... newest renders at the top.
 

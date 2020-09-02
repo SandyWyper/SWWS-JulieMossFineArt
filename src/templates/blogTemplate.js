@@ -9,10 +9,11 @@ import NewsletterSignup from '../components/newsletterSignup';
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
   const { frontmatter, html } = props.data.markdownRemark;
+  const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image.publicURL;
 
   return (
     <>
-      <SEO title="Blog" description={`${frontmatter.title} / ${frontmatter.description}`} />
+      <SEO title={frontmatter.title} description={frontmatter.description} image={sharingImage} url={props.location.href} />
       <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
         <Img
           className="max-w-md mx-auto mb-4"
@@ -28,14 +29,14 @@ const BlogTemplate = (props) => {
           <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
         </article>
 
-        <div className="max-w-2xl mx-auto font-bold">
+        <div className="w-full max-w-2xl mx-auto font-bold">
           {prev && (
-            <Link to={prev} rel="prev">
+            <Link to={prev} rel="prev" className="float-left">
               ← Previous Post
             </Link>
           )}
           {next && (
-            <Link to={next} rel="next">
+            <Link to={next} rel="next" className="float-right">
               Next Post →
             </Link>
           )}
@@ -58,6 +59,7 @@ export const pageQuery = graphql`
         mainImage {
           imageAlt
           image {
+            publicURL
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid_withWebp

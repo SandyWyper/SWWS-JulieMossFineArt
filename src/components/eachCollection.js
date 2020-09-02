@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
+import pathify from '../lib/pathify';
 
 const EachCollection = ({ collection }) => {
   return (
     <>
       <div className="lg:flex-row-reverse lg:flex lg:items-end">
         <div className="max-w-xl mx-auto lg:w-1/2 lg:pl-8">
-          <Link to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}>
+          <Link to={pathify(collection.title)}>
             <h3>{collection.title}</h3>
           </Link>
           <p className="lg:mb-0">{collection.description}</p>
         </div>
         <div className="lg:w-1/2">
-          <Link to={`/${collection.title.replace(/\s/g, '-').toLowerCase()}`}>
+          <Link to={pathify(collection.title)}>
             <div className="flex max-w-xl mx-auto">
               <Img className="w-2/3 mr-2" fluid={{ ...collection.image1.image.childImageSharp.fluid }} alt={collection.image1.alt} />
               <div className="w-1/3">

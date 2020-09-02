@@ -5,6 +5,10 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 // lodash function for organising collections
 var groupBy = require('lodash.groupby');
 
+const pathify = (str) => {
+  return `/${str.trim().replace(/\s/g, '-').toLowerCase()}`;
+};
+
 // -------------------------------------------------------------------   This is a utility for logging out objetcs
 // const util = require('util');
 // console.log(util.inspect(blogPosts, { showHidden: false, depth: null }));
@@ -91,7 +95,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Create blog-list pages
   const blogPosts = articles.data.allMarkdownRemark.edges;
-  const blogPostsPerPage = 6;
+  const blogPostsPerPage = 7;
   const numBlogPages = Math.ceil(blogPosts.length / blogPostsPerPage);
   Array.from({ length: numBlogPages }).forEach((_, i) => {
     createPage({
@@ -155,14 +159,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // const collectionCategories = Object.keys(grouped);
 
   // Number of artworks to display per page
-  const artworkPerPagePerCollection = 30;
+  const artworkPerPagePerCollection = 20;
   // Create art collections pages
   for (const category in grouped) {
     const numCollectionPages = Math.ceil(grouped[category].length / artworkPerPagePerCollection);
 
     Array.from({ length: numCollectionPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/${category.replace(/\s/g, '-').toLowerCase()}` : `/${category.replace(/\s/g, '-').toLowerCase()}${i + 1}`,
+        path: i === 0 ? pathify(category) : `${pathify(category)}/${i + 1}`,
         component: collectionTemplate,
         context: {
           limit: artworkPerPagePerCollection,

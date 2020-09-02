@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Julie Moss - Fine Art`,
-    description: `Julie Moss site description XXXXXXX`,
-    author: `Sandy Wyper`,
+    title: `Julie Moss`,
+    description: `Julie Moss contemporary fine artist`,
+    url: 'https://www.juliemossfineart.co.uk',
+    author: `https://sandywyper.dev`,
+    image: '/uploads/restored-order-julie-moss-.jpg',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
