@@ -24,7 +24,7 @@ const BlogList = (props) => {
         <Link to={featuredPost.fields.slug} className="">
           <Img
             className="max-w-sm shadow-lg min-h-400"
-            fluid={{ ...featuredPost.frontmatter.mainImage.image.childImageSharp.fluid }}
+            fluid={{ ...featuredPost.frontmatter.mainImage.image.childImageSharp.fluid, sizes: '(max-width: 501px) calc(100vw - 2rem), 450px' }}
             alt={featuredPost.frontmatter.mainImage.imageAlt}
           />
           <div className="absolute max-w-sm p-6 text-center bg-white featured-blog-text ">
@@ -58,7 +58,7 @@ const BlogList = (props) => {
                   <Link to={node.fields.slug}>
                     <Img
                       className="min-h-400"
-                      fluid={{ ...node.frontmatter.mainImage.image.childImageSharp.fluid }}
+                      fluid={{ ...node.frontmatter.mainImage.image.childImageSharp.fluid, sizes: '(max-width: 501px) calc(100vw - 2rem), 450px' }}
                       alt={node.frontmatter.mainImage.image.imageAlt}
                     />
                     <div className="absolute bottom-0 max-w-sm p-6 mx-4 -mb-16 text-center bg-white ">
@@ -113,7 +113,7 @@ export const blogListQuery = graphql`
               imageAlt
               image {
                 childImageSharp {
-                  fluid(maxWidth: 1500) {
+                  fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200]) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

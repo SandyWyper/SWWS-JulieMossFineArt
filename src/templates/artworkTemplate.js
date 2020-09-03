@@ -29,7 +29,10 @@ const ArtworkTemplate = (props) => {
                 <Img
                   key={art.alt + i}
                   className="max-w-xl mx-auto mb-4"
-                  fluid={{ ...art.image.childImageSharp.fluid, sizes: '800px' }}
+                  fluid={{
+                    ...art.image.childImageSharp.fluid,
+                    sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
+                  }}
                   alt={art.alt}
                 />
               );
@@ -67,7 +70,7 @@ export const data = graphql`
           image {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 1500) {
+              fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

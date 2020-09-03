@@ -19,7 +19,7 @@ const FeaturedArticle = () => {
                   imageAlt
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 1500) {
+                      fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500]) {
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }
@@ -39,7 +39,14 @@ const FeaturedArticle = () => {
     <div className="relative">
       <h6 className="absolute top-0 right-0 z-50 pt-1 pr-2 text-white">latest article</h6>
       <Link to={slug}>
-        <Img className="mb-8 featured-article-tile" fluid={{ ...mainImage.image.childImageSharp.fluid }} alt={mainImage.imageAlt} />
+        <Img
+          className="mb-8 featured-article-tile"
+          fluid={{
+            ...mainImage.image.childImageSharp.fluid,
+            sizes: '(max-width: 640px) calc(100vw - 2rem), (max-width: 1023px) 450px,  450px',
+          }}
+          alt={mainImage.imageAlt}
+        />
         <div className="absolute bottom-0 p-6 mx-2 -mb-16 text-center bg-white sm:mx-8">
           <h5>{title}</h5>
           <p className="mb-1 text-sm">{description}</p>

@@ -17,11 +17,29 @@ const EachCollection = ({ collection }) => {
         <div className="lg:w-1/2">
           <Link to={pathify(collection.title)}>
             <div className="flex max-w-xl mx-auto">
-              <Img className="w-2/3 mr-2" fluid={{ ...collection.image1.image.childImageSharp.fluid }} alt={collection.image1.alt} />
+              <Img
+                className="w-2/3 mr-2"
+                fluid={{
+                  ...collection.image1.image.childImageSharp.fluid,
+                  sizes: '(max-width: 640px) calc(66vw - 2rem), (max-width: 1023px) 420px,  (min-width: 1024px) 400px',
+                }}
+                alt={collection.image1.alt}
+              />
               <div className="w-1/3">
                 <div className="flex flex-col h-full">
-                  <Img className="mb-2 h-half" fluid={{ ...collection.image2.image.childImageSharp.fluid }} alt={collection.image2.alt} />
-                  <Img className="h-half" fluid={{ ...collection.image3.image.childImageSharp.fluid }} alt={collection.image3.alt} />
+                  <Img
+                    className="mb-2 h-half"
+                    fluid={{
+                      ...collection.image2.image.childImageSharp.fluid,
+                      sizes: '(max-width: 640px) calc(33vw - 2rem), 199px',
+                    }}
+                    alt={collection.image2.alt}
+                  />
+                  <Img
+                    className="h-half"
+                    fluid={{ ...collection.image3.image.childImageSharp.fluid, sizes: '(max-width: 640px) calc(33vw - 2rem), 199px' }}
+                    alt={collection.image3.alt}
+                  />
                 </div>
               </div>
             </div>

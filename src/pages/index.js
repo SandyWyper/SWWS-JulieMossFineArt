@@ -34,7 +34,10 @@ const IndexPage = ({
               <Img
                 className="mb-4 shadow-lg"
                 loading="eager"
-                fluid={{ ...intro.introImage.image.childImageSharp.fluid }}
+                fluid={{
+                  ...intro.introImage.image.childImageSharp.fluid,
+                  sizes: '(max-width: 640px) calc(100vw - 2rem), (max-width: 1023px) 550px,  (min-width: 1024px) 650px',
+                }}
                 alt={intro.introImage.imageAlt}
               />
             </div>
@@ -51,7 +54,14 @@ const IndexPage = ({
               </Link>
             </div>
             <div className="lg:w-3/5">
-              <Img className="shadow-lg" fluid={{ ...myArt.myArtImage.image.childImageSharp.fluid }} alt={myArt.myArtImage.imageAlt} />
+              <Img
+                className="shadow-lg"
+                fluid={{
+                  ...myArt.myArtImage.image.childImageSharp.fluid,
+                  sizes: '(max-width: 640px) calc(100vw - 2rem), (max-width: 1023px) 550px,  (min-width: 1024px) 650px',
+                }}
+                alt={myArt.myArtImage.imageAlt}
+              />
             </div>
           </div>
         </section>
@@ -99,7 +109,7 @@ export const data = graphql`
             imageAlt
             image {
               childImageSharp {
-                fluid {
+                fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -112,7 +122,7 @@ export const data = graphql`
             imageAlt
             image {
               childImageSharp {
-                fluid {
+                fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -124,16 +134,6 @@ export const data = graphql`
         myBlog {
           description
           title
-          myBlogImage {
-            imageAlt
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
         }
       }
     }

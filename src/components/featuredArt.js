@@ -24,7 +24,7 @@ const FeaturedArt = () => {
                   alt
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 1500) {
+                      fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }
@@ -43,7 +43,14 @@ const FeaturedArt = () => {
   return (
     <div className="md:flex md:items-end">
       <div className="md:w-1/2">
-        <Img className="mb-4 md:mb-0" fluid={{ ...images['0'].image.childImageSharp.fluid }} alt={images['0'].alt} />
+        <Img
+          className="mb-4 md:mb-0"
+          fluid={{
+            ...images['0'].image.childImageSharp.fluid,
+            sizes: '(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 550px',
+          }}
+          alt={images['0'].alt}
+        />
       </div>
       <div className="h-full md:w-1/2 md:pl-12">
         <h6 className="mb-0">Latest Piece</h6>

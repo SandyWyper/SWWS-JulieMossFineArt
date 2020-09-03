@@ -54,7 +54,7 @@ export const pageData = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1500) {
+                fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500]) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -64,7 +64,7 @@ export const pageData = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1500) {
+                fluid(srcSetBreakpoints: [400, 500, 600, 700, 800]) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -74,7 +74,7 @@ export const pageData = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1500) {
+                fluid(srcSetBreakpoints: [400, 500, 600, 700, 800]) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

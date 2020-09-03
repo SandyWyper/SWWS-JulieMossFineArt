@@ -50,7 +50,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
           - { label: "Intro", name: "intro", widget: "object", fields: [{ label: "Intro text", name: "introText", widget: "text"}, { label: "Intro image", name: "introImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}
           - { label: "My art", name: "myArt", widget: "object", fields: [{ label: "Title", name: "title", widget: "text"}, { label: "Description", name: "description", widget: "text"}, { label: "My art image", name: "myArtImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}
-          - { label: "My blog", name: "myBlog", widget: "object", fields: [{ label: "Title", name: "title", widget: "text"}, { label: "Description", name: "description", widget: "text"}, { label: "My blog image", name: "myBlogImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}
+          - { label: "My blog", name: "myBlog", widget: "object", fields: [{ label: "Title", name: "title", widget: "text"}, { label: "Description", name: "description", widget: "text"}]}
       - file: "content/pages/collections/index.md"
         label: "Art Collections"
         name: "collections"

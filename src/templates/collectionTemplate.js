@@ -44,7 +44,13 @@ const CollectionTemplate = (props) => {
                     return (
                       <div key={`${each.alt}-${i}`}>
                         <Link to={art.node.fields.slug}>
-                          <Img fluid={{ ...each.image.childImageSharp.fluid }} alt={each.alt} />
+                          <Img
+                            fluid={{
+                              ...each.image.childImageSharp.fluid,
+                              sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
+                            }}
+                            alt={each.alt}
+                          />
                         </Link>
                       </div>
                     );
@@ -98,7 +104,7 @@ export const artQuery = graphql`
               image {
                 publicURL
                 childImageSharp {
-                  fluid(maxWidth: 1500) {
+                  fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500]) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

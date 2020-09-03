@@ -25,7 +25,10 @@ const BlogTemplate = (props) => {
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
           <Img
             className="max-w-md mx-auto mb-4"
-            fluid={frontmatter.mainImage.image.childImageSharp.fluid}
+            fluid={{
+              ...frontmatter.mainImage.image.childImageSharp.fluid,
+              sizes: '(max-width: 501px) calc(100vw - 2rem), 550px',
+            }}
             alt={frontmatter.mainImage.imageAlt}
             loading="eager"
           />
@@ -70,7 +73,7 @@ export const pageQuery = graphql`
           image {
             publicURL
             childImageSharp {
-              fluid {
+              fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
