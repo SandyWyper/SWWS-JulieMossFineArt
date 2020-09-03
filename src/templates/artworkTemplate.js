@@ -13,7 +13,7 @@ const ArtworkTemplate = (props) => {
 
   const ArtWorkInfo = () => (
     <div className="max-w-xl mx-auto">
-      <h3 className="mb-1">{frontmatter.title}</h3>
+      <h3 className="mb-0 leading-tight">{frontmatter.title}</h3>
       {frontmatter.details && <p className="font-bold">{frontmatter.details}</p>}
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
     </div>
@@ -23,26 +23,25 @@ const ArtworkTemplate = (props) => {
       <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
-          <div className="pb-24 artwork-space md:pl-4">
+          <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
-              if (i === 0) {
-                return (
-                  <React.Fragment key={art.alt + i}>
-                    <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
-                    <ArtWorkInfo />
-                  </React.Fragment>
-                );
-              }
+              // if (i === 0) {
+              //   return (
+              //     <React.Fragment key={art.alt + i}>
+              //       <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
+              //     </React.Fragment>
+              //   );
+              // }
               return (
                 <Img
                   key={art.alt + i}
-                  className="max-w-xl mx-auto mb-6"
-                  fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }}
+                  className="max-w-xl mx-auto mb-4"
+                  fluid={{ ...art.image.childImageSharp.fluid, sizes: '800px' }}
                   alt={art.alt}
                 />
               );
             })}
-
+            <ArtWorkInfo />
             <div className="w-full max-w-xl mx-auto font-bold">
               {prev && (
                 <Link to={prev} rel="prev" className="float-left">

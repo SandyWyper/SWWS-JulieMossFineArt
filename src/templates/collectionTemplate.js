@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import pathify from '../lib/pathify';
 import Footer from '../components/footer';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 const CollectionTemplate = (props) => {
   const collectionArtwork = props.data.allMarkdownRemark.edges;
@@ -30,21 +31,25 @@ const CollectionTemplate = (props) => {
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
           <div className="flex flex-col w-full pb-24 md:pl-4 artwork-space">
             <div>
-              <h1>{props.pageContext.collectionName}</h1>
+              <h1 className="mb-8 leading-none">{props.pageContext.collectionName}</h1>
             </div>
             {description !== undefined && <p>{description}</p>}
-            <div className="grid items-start grid-cols-2 gap-4 mb-6 md:gap-10">
-              {collectionArtwork.map((art, i) => {
-                const firstImage = art.node.frontmatter.images['0'];
-
-                return (
-                  <div className="w-full" key={`${firstImage.alt}-${i}`}>
-                    <Link to={art.node.fields.slug}>
-                      <Img className="" fluid={{ ...firstImage.image.childImageSharp.fluid }} alt={firstImage.alt} />
-                    </Link>
-                  </div>
-                );
-              })}
+            {/* <div className="grid items-start grid-cols-2 gap-4 mb-6 md:gap-10"> */}
+            <div>
+              <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 450: 2 }}>
+                <Masonry gutter={10}>
+                  {collectionArtwork.map((art, i) => {
+                    const each = art.node.frontmatter.images['0'];
+                    return (
+                      <div key={`${each.alt}-${i}`}>
+                        <Link to={art.node.fields.slug}>
+                          <Img fluid={{ ...each.image.childImageSharp.fluid }} alt={each.alt} />
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </Masonry>
+              </ResponsiveMasonry>
             </div>
             <div className="w-full max-w-2xl mx-auto font-bold">
               {!isFirst && (

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import groupBy from 'lodash.groupby';
 import pathify from '../lib/pathify';
+import Masonry from 'react-responsive-masonry';
 
 const ArtworkNavInner = ({ path }) => {
   const data = useStaticQuery(graphql`
@@ -78,24 +79,24 @@ const ArtworkNavInner = ({ path }) => {
       const isCurrent = path === eachArt.node.fields.slug;
       // return for groupCollections map
       return (
-        <li key={eachArtImage.image.id} className={`p-1 artThumb ${isCurrent && 'isActive'}`}>
-          <Link to={eachArt.node.fields.slug.slice(0, -1)}>
-            <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
-          </Link>
-        </li>
+        <Link key={eachArtImage.image.id} className={`artThumb ${isCurrent && 'isActive'}`} to={eachArt.node.fields.slug.slice(0, -1)}>
+          <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
+        </Link>
       );
     });
 
     // return for collectionCategories map
     return (
       <React.Fragment key={`${pathify(category)}-container-${i}`}>
-        <Link className={`art-category-nav ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
+        <Link className={`art-category-nav font-bold ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
           {category}
         </Link>
         <div>
-          <ul className={`flex flex-wrap items-center category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
-            {collectionImages.map((image) => image)}
-          </ul>
+          <div className={`category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
+            <Masonry gutter={1} columnsCount={2}>
+              {collectionImages.map((image) => image)}
+            </Masonry>
+          </div>
         </div>
       </React.Fragment>
     );
