@@ -98,6 +98,9 @@ blockquote p {
 }
 
 // --------------------------
+.text {
+  color: var(--text);
+}
 .text-contrast {
   color: var(--textContrast);
 }

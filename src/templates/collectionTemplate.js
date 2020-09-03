@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import pathify from '../lib/pathify';
 import Footer from '../components/footer';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import CategorySelect from '../components/categorySelect';
 
 const CollectionTemplate = (props) => {
   const collectionArtwork = props.data.allMarkdownRemark.edges;
@@ -29,7 +30,7 @@ const CollectionTemplate = (props) => {
       />
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
-          <div className="flex flex-col w-full pb-24 md:pl-4 artwork-space">
+          <div className="flex flex-col w-full pb-12 lg:pl-4 artwork-space">
             <div>
               <h1 className="mb-8 leading-none">{props.pageContext.collectionName}</h1>
             </div>
@@ -37,7 +38,7 @@ const CollectionTemplate = (props) => {
             {/* <div className="grid items-start grid-cols-2 gap-4 mb-6 md:gap-10"> */}
             <div>
               <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 450: 2 }}>
-                <Masonry gutter={10}>
+                <Masonry gutter={'10px'}>
                   {collectionArtwork.map((art, i) => {
                     const each = art.node.frontmatter.images['0'];
                     return (
@@ -63,6 +64,9 @@ const CollectionTemplate = (props) => {
                 </Link>
               )}
             </div>
+          </div>
+          <div className="mb-8 lg:hidden lg:mb-0">
+            <CategorySelect path={props.path} />
           </div>
         </section>
       </div>

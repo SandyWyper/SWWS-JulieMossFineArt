@@ -25,13 +25,6 @@ const ArtworkTemplate = (props) => {
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
           <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
-              // if (i === 0) {
-              //   return (
-              //     <React.Fragment key={art.alt + i}>
-              //       <Img className="max-w-xl mx-auto mb-6" fluid={{ ...art.image.childImageSharp.fluid, sizes: '400px' }} alt={art.alt} />
-              //     </React.Fragment>
-              //   );
-              // }
               return (
                 <Img
                   key={art.alt + i}

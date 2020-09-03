@@ -85,7 +85,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center p-4">
+        <div className="flex justify-center md:p-4 ">
           <a target="_blank" rel="noreferrer" href="https://www.instagram.com/juliemoss_/">
             <InstaIcon classes="w-8 text-white fill-current text-offwhite" />
           </a>

@@ -93,7 +93,7 @@ const ArtworkNavInner = ({ path }) => {
         </Link>
         <div>
           <div className={`category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
-            <Masonry gutter={1} columnsCount={2}>
+            <Masonry gutter={'1'} columnsCount={2}>
               {collectionImages.map((image) => image)}
             </Masonry>
           </div>
