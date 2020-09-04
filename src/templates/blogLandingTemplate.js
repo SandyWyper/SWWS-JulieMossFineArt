@@ -63,7 +63,7 @@ const BlogList = (props) => {
                     />
                     <div className="absolute bottom-0 max-w-sm p-6 mx-4 -mb-16 text-center bg-white ">
                       <h5 className="mb-2">{node.frontmatter.title}</h5>
-                      <p className="mb-1 text-sm">{node.frontmatter.description}</p>
+                      <p className="mb-3 text-sm">{node.frontmatter.description}</p>
                       <p className="mx-auto mb-0 btn">read more ...</p>
                     </div>
                   </Link>
