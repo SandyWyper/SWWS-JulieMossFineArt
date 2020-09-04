@@ -102,7 +102,8 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Open Sans Light', 'Libre Caslon Display'],
+          families: ['Open Sans:300', 'Open Sans:300i', 'Open Sans', 'Libre Caslon Display'],
+          // urls: ['./src/styles/fonts.css'],
         },
       },
     },

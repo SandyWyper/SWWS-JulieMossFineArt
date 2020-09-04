@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-w-5xl mx-auto text-contrast">
-        <div className="flex flex-col items-center justify-center md:flex-row">
+        <div className="flex flex-col items-center justify-center font-light md:flex-row">
           © {new Date().getFullYear()}, Website by&nbsp;
           <a href="https://sandywyper.dev" className="text-lg">
             SW Web Solutions

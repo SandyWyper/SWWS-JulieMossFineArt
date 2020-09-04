@@ -25,7 +25,7 @@ const IndexPage = ({
               <h1 className="mb-4 leading-tight">Julie Moss</h1>
               <h2 className="sub-heading">Fine Art</h2>
               <p className="">{intro.introText}</p>
-              <Link to="/about" className=" btn">
+              <Link to="/about" className="btn">
                 about Julie ...
               </Link>
             </div>
@@ -49,9 +49,9 @@ const IndexPage = ({
             <div className="my-8 text-center lg:w-2/5 lg:px-6">
               <Link to="/collections">
                 <h3>{myArt.title}</h3>
-                <p className="">{myArt.description}</p>
-                <p className="mx-auto btn">view collections ...</p>
               </Link>
+              <p className="">{myArt.description}</p>
+              <Link className="btn">view collections ...</Link>
             </div>
             <div className="lg:w-3/5">
               <Img
@@ -69,13 +69,13 @@ const IndexPage = ({
         <section className="mb-12 bg-gray-300 lg:mb-24">
           <div className="max-w-5xl px-4 mx-auto">
             <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:items-center">
-              <div className="pt-10 text-center lg:pt-0 lg:w-1/2">
+              <div className="pt-10 mb-12 text-center lg:pt-0 lg:w-1/2">
                 <Link to="/blog">
                   <h3>{myBlog.title}</h3>
                 </Link>
                 <p className="max-w-md mx-auto">{myBlog.description}</p>
-                <Link to="/blog">
-                  <p className="mx-auto mb-12 btn">view blog ...</p>
+                <Link to="/blog" className="btn">
+                  view blog ...
                 </Link>
               </div>
               <div className="pb-24 md:p-12 lg:w-1/2">

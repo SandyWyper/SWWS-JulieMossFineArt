@@ -1,7 +1,8 @@
 html {
   font-size: 17px;
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   color: var(--text);
+  // font-weight: 300;
 }
 
 h1,
@@ -22,6 +23,7 @@ h2,
   // font-weight: normal;
   color: var(--text);
   margin-bottom: 1.5rem;
+
   @screen md {
     // font-size: 3rem;
   }
@@ -41,9 +43,9 @@ h3,
 
 h4,
 .h4 {
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+
   // text-transform: uppercase;
   color: var(--text);
   margin-bottom: 1rem;
@@ -64,21 +66,23 @@ h5,
 }
 h6,
 .h6 {
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 0.85rem;
   color: var(--text);
   text-transform: uppercase;
-  font-weight: bold;
+
   letter-spacing: 0.2em;
   margin-bottom: 1rem;
 }
 
 p,
 .p {
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   color: var(--text);
+  font-weight: 300;
+
   @screen md {
     font-size: 1rem;
   }
@@ -86,12 +90,13 @@ p,
 
 blockquote,
 blockquote p {
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-style: italic;
   font-size: 1.3rem;
   margin: 2rem 1rem;
   color: var(--text);
+  font-weight: 300;
+
   @screen md {
     margin: 2rem;
   }
@@ -106,12 +111,12 @@ blockquote p {
 }
 .sub-heading {
   position: relative;
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 1.25rem;
-
+  // font-weight: 400;
   color: var(--text);
   text-transform: uppercase;
-  font-weight: bold;
+
   letter-spacing: 0.2em;
   width: fit-content;
   margin: 0 auto 2rem;
@@ -141,7 +146,7 @@ blockquote p {
 //-------------------------------------
 
 // .btn {
-//   font-family: 'Open Sans Light', Helvetica, sans-serif;
+//   font-family: 'Open Sans', Helvetica, sans-serif;
 //   background: var(--text);
 //   padding: 0.5rem 1.4rem;
 //   // text-transform: uppercase;
@@ -150,8 +155,8 @@ blockquote p {
 // }
 
 .btn {
-  font-weight: bold;
-  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  // font-weight: bold;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.1em;

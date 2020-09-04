@@ -40,7 +40,7 @@ const BlogTemplate = (props) => {
             <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
           </article>
 
-          <div className="w-full max-w-2xl mx-auto font-bold">
+          <div className="w-full max-w-2xl mx-auto font-normal">
             {prev && (
               <Link to={prev} rel="prev" className="float-left">
                 ← Previous Post

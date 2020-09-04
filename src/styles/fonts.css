@@ -1,6 +1,6 @@
-// TODO: remove unused fonts
+/* // TODO: remove unused fonts
 
-///// ---- Body Font ----------------------------
+///// ---- Body Font ---------------------------- */
 @font-face {
   font-family: 'Open Sans Light';
   src: url('./fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
@@ -28,7 +28,7 @@
   font-weight: normal;
   font-style: normal;
 }
-// ---------------- Heading font --------------------------
+/* // ---------------- Heading font -------------------------- */
 @font-face {
   font-family: 'Libre Caslon Display';
   src: url('./fonts/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf') format('truetype');

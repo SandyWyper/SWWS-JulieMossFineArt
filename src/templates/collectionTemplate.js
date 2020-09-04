@@ -58,14 +58,14 @@ const CollectionTemplate = (props) => {
                 </Masonry>
               </ResponsiveMasonry>
             </div>
-            <div className="w-full max-w-2xl mx-auto font-bold">
+            <div className="w-full max-w-2xl mx-auto font-normal">
               {!isFirst && (
-                <Link to={`${pathify(collectionName)}/${prevPage}`} rel="prev" className="float-left font-bold">
+                <Link to={`${pathify(collectionName)}/${prevPage}`} rel="prev" className="float-left font-normal">
                   ← Previous Page
                 </Link>
               )}
               {!isLast && (
-                <Link to={`${pathify(collectionName)}/${nextPage}`} rel="next" className="float-right font-bold">
+                <Link to={`${pathify(collectionName)}/${nextPage}`} rel="next" className="float-right font-normal">
                   Next Page →
                 </Link>
               )}
