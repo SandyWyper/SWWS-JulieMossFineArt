@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from './nav';
 import ArtworkNav from './artworkNav';
 import PropTypes from 'prop-types';
-// import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
+import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 
 const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
   const [showArtworkNav, setShowingArtworkNav] = useState(false);
@@ -14,7 +14,7 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
 
   return (
     <div className="relative mx-auto overflow-hidden">
-      {/* <TransitionProvider
+      <TransitionProvider
         location={location}
         enter={{
           opacity: 0,
@@ -27,15 +27,13 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
         usual={{
           opacity: 1,
         }}
-      > */}
-      <Nav path={path} />
-      <ArtworkNav show={showArtworkNav} path={path} />
-      <main>
-        {/* <TransitionViews> */}
-        {children}
-        {/* </TransitionViews> */}
-      </main>
-      {/* </TransitionProvider> */}
+      >
+        <Nav path={path} />
+        <ArtworkNav show={showArtworkNav} path={path} />
+        <main>
+          <TransitionViews>{children}</TransitionViews>
+        </main>
+      </TransitionProvider>
     </div>
   );
 };
