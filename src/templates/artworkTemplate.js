@@ -34,6 +34,7 @@ const ArtworkTemplate = (props) => {
                     sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
                   }}
                   alt={art.alt}
+                  loading={i === 0 ? 'eager' : 'lazy'}
                 />
               );
             })}

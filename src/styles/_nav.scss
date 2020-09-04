@@ -26,7 +26,6 @@
     font-size: 0.85rem;
     color: var(--text);
     text-transform: uppercase;
-    // font-weight: bold;
     letter-spacing: 0.2em;
     margin: 0 0 0.3rem 1.5rem;
     position: relative;
@@ -45,7 +44,6 @@
   padding-top: 0.5rem;
   @screen lg {
     padding-top: 1rem;
-    // padding-bottom: 1rem;
   }
 }
 
@@ -67,7 +65,6 @@ footer {
     font-size: 0.75rem;
     color: var(--textContrast);
     text-transform: uppercase;
-    // font-weight: bold;
     letter-spacing: 0.2em;
     margin: 0 0 0 1.5rem;
     position: relative;
@@ -130,8 +127,6 @@ button:focus {
   display: none;
   margin-top: 6.2rem;
 
-  // border-right: 1px solid rgba(0, 0, 0, 0.1);
-  // border-right: 1px solid rgba(255, 255, 255, 0.3);
   @screen lg {
     display: block;
   }

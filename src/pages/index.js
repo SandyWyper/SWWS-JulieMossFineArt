@@ -51,7 +51,9 @@ const IndexPage = ({
                 <h3>{myArt.title}</h3>
               </Link>
               <p className="">{myArt.description}</p>
-              <Link className="btn">view collections ...</Link>
+              <Link to="/collections" className="btn">
+                view collections ...
+              </Link>
             </div>
             <div className="lg:w-3/5">
               <Img

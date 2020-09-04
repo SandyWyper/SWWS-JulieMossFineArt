@@ -50,6 +50,7 @@ const CollectionTemplate = (props) => {
                               sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
                             }}
                             alt={each.alt}
+                            loading={i === 0 ? 'eager' : 'lazy'}
                           />
                         </Link>
                       </div>
