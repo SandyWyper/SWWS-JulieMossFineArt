@@ -26,8 +26,15 @@ collections:
     image3:
       image: /uploads/watercolour-sketch-.jpg
       alt: "Pitons inks and watercolours on paper "
-  - title: Further afield
-    description: "Works inspired by travel and the islands of the West Indies "
+  - title: "wanderlust "
+    description: >-
+      'I craved to go beyond the garden gate, to follow the road that passed by
+      it, and set out for the unknown"
+
+      Alexandra David-Neel  
+
+
+      Works inspired by travel and the islands of the West Indies 
     image1:
       image: /uploads/plantation-house-j-moss.jpg
       alt: "plantation house oils on canvas 123cm x 123cm "
