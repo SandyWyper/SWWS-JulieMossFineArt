@@ -7,15 +7,15 @@ intro:
     and imagined that the works take shape, a dichotomy of fragility and
     preservation. "
   introImage:
-    image: /uploads/restored-order-julie-moss-.jpg
-    imageAlt: "'Restored order '  oils on canvas "
+    image: /uploads/now-is-not-the-time.jpg
+    imageAlt: "\"now is not the time'  oils on canvas 2020"
 myArt:
   title: " Art"
   description: The immediacy and tactility, particularly of oil paints dictates
     her choice of materials, a factor that is clear throughout her subtle and
     poetic work.
   myArtImage:
-    image: /uploads/image00001.jpg
+    image: /uploads/mountain-painting-.jpg
     imageAlt: Art cover image
 myBlog:
   myBlogImage:
