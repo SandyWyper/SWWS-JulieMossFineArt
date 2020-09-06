@@ -9,11 +9,11 @@ collections:
       image: /uploads/now-is-not-the-time.jpg
       alt: "'Now is not the time'  oils on canvas 153cm x 153cm 2020 "
     image2:
-      image: /uploads/first-light.jpg
-      alt: "'First light' oils on paper framed  2019"
+      image: /uploads/relax-and-unwind-oil-on-canvas-60x-60-2017-.jpg
+      alt: "relax and unwind oils on canvas 60cm 60cm "
     image3:
-      image: /uploads/golden-hour-oils-on-paper-julie-moss.jpg
-      alt: '"Golden Hour"  oils on paper framed 2019'
+      image: /uploads/bluebells.jpg
+      alt: "Bluebells 30cm x 30cm "
   - title: "Works on paper "
     description: A selection of sketches from the sketchbook inspired by travel and
       gardens using mainly inks, botanical dyes and watercolours.
