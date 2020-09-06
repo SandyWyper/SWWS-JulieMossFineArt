@@ -42,6 +42,6 @@ collections:
       image: /uploads/burn-baby-burn-.jpg
       alt: "Burn, Baby Burn oils on canvas 153cm x 153cm "
     image3:
-      image: /uploads/neither-here-nor-there.jpg
-      alt: "neither here nor there oils on canvas 30cm x 30cm "
+      image: /uploads/boogie-wonderland-julie-moss-2020.jpg
+      alt: "Boogie wonderland oils on canvas 61cm x 61cm "
 ---
