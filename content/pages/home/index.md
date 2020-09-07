@@ -21,7 +21,7 @@ myBlog:
   myBlogImage:
     image: /uploads/must-come-down.jpg
     imageAlt: "'Must come down\" oils on paper"
-  title: Happenings
+  title: Works in progress
   description: ‘What silences our intuition is our need for certainty, nature is a
     place of mystery where we find the courage to believe in what we cannot see
     and the strength to let go of our certainty.'
