@@ -1,6 +1,7 @@
 ---
 title: No Mans Land
-category: Works On Paper
+category: Works on paper
+details: "Inks and watercolours on paper "
 date: 2020-08-25T14:42:43.549Z
 isFeatured: false
 images:
