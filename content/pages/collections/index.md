@@ -1,7 +1,7 @@
 ---
 title: Collections
-heading: Collections Heading
-subheading: Collections subheading
+heading: ""
+subheading: ""
 collections:
   - title: "Closer to Home "
     description: Paintings inspired by the gardens, plants and green spaces of Cornwall
