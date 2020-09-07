@@ -52,8 +52,8 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div className="">
-        <p>Please don't hesitate to get in touch and I will get back to you as soon as I can.</p>
+      <div>
+        <p>{this.props.prompt}</p>
         <form
           className="w-full max-w-xl"
           method="post"
@@ -65,7 +65,7 @@ class ContactForm extends Component {
         >
           <input type="hidden" name="bot-field" value="Julie-Moss-Contact" />
 
-          <div className="">
+          <div>
             <div className="w-full mb-6">
               <label className="mb-2" htmlFor="name">
                 Name
@@ -130,6 +130,7 @@ class ContactForm extends Component {
 
 ContactForm.propTypes = {
   menuToggle: PropTypes.func,
+  prompt: PropTypes.string,
 };
 
 export default ContactForm;

@@ -22,7 +22,7 @@ const About = (props) => {
             }}
             alt={mainImage.imageAlt}
           />
-          <h1 className="text-center h2">{title}</h1>
+          {title && <h1 className="text-center h2">{title}</h1>}
           <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
         </section>
       </div>
