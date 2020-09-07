@@ -1,8 +1,8 @@
 ---
-title: Happenings
+title: Works in progress
 date: 2020-08-25T14:19:43.018Z
-description: "This is a journal of my thoughts, discoveries and activities
-  related to my Art practice "
+description: This is a journal of my thoughts, discoveries and activities
+  related to my Art practice and life in general.
 mainImage:
   image: must-come-down.jpg
   imageAlt: '"must come down"      oils on paper'

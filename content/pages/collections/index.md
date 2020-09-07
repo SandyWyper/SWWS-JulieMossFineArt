@@ -9,11 +9,11 @@ collections:
       image: /uploads/now-is-not-the-time.jpg
       alt: "'Now is not the time'  oils on canvas 153cm x 153cm 2020 "
     image2:
-      image: /uploads/first-light.jpg
-      alt: "'First light' oils on paper framed  2019"
+      image: /uploads/relax-and-unwind-oil-on-canvas-60x-60-2017-.jpg
+      alt: "relax and unwind oils on canvas 60cm 60cm "
     image3:
-      image: /uploads/golden-hour-oils-on-paper-julie-moss.jpg
-      alt: '"Golden Hour"  oils on paper framed 2019'
+      image: /uploads/bluebells.jpg
+      alt: "Bluebells 30cm x 30cm "
   - title: "Works on paper "
     description: A selection of sketches from the sketchbook inspired by travel and
       gardens using mainly inks, botanical dyes and watercolours.
@@ -26,8 +26,15 @@ collections:
     image3:
       image: /uploads/watercolour-sketch-.jpg
       alt: "Pitons inks and watercolours on paper "
-  - title: Further afield
-    description: "Works inspired by travel and the islands of the West Indies "
+  - title: "wanderlust "
+    description: >-
+      'I craved to go beyond the garden gate, to follow the road that passed by
+      it, and set out for the unknown"
+
+      Alexandra David-Neel  
+
+
+      Works inspired by travel and the islands of the West Indies 
     image1:
       image: /uploads/plantation-house-j-moss.jpg
       alt: "plantation house oils on canvas 123cm x 123cm "
@@ -35,6 +42,6 @@ collections:
       image: /uploads/burn-baby-burn-.jpg
       alt: "Burn, Baby Burn oils on canvas 153cm x 153cm "
     image3:
-      image: /uploads/neither-here-nor-there.jpg
-      alt: "neither here nor there oils on canvas 30cm x 30cm "
+      image: /uploads/boogie-wonderland-julie-moss-2020.jpg
+      alt: "Boogie wonderland oils on canvas 61cm x 61cm "
 ---
