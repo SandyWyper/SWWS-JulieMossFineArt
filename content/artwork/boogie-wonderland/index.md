@@ -1,9 +1,9 @@
 ---
 title: Boogie Wonderland
-category: Paintings
+category: Wanderlust
 details: Oil on canvas 2020
-date: 2020-08-25T14:30:43.465Z
-excerpt: Test
+date: 2020-02-25T15:30:00.000Z
+excerpt: ""
 isFeatured: false
 images:
   - image: image00001.jpg
