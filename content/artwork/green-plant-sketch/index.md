@@ -1,7 +1,7 @@
 ---
-title: Green Plant Sketch
-category: "works on paper "
-date: 2020-08-25T14:26:23.938Z
+title: Green plant sketch
+category: Works on paper
+date: 2020-05-25T14:26:00.000Z
 isFeatured: false
 images:
   - image: green-plant-sketch.jpg
