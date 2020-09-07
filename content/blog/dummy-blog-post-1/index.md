@@ -11,7 +11,7 @@ It's funny how things come full circle and the things you dream about when you a
 
 I first met my husband when we were both 12 when he knocked me off my roller skates cutting my knee, we started dating when we were 15.
 
-He was an avid reader and loved stories of adventure, i was a art student immerssed in the world of colour and gesture.
+He was an avid reader and loved stories of adventure, i was a art student immersed in the world of colour and gesture.
 
 Living in an industrial town in Lancashire we both loved exploring the open moorland yet dreamt of living by the sea.
 
@@ -27,4 +27,4 @@ fast forward 40+ years and we are now living in the farmhouse, my husband has hi
 
 Despite the ups and downs and the scrapes and bruises of life its a home that over the years has always provided a soft landing, not just for us, but for others too.
 
-i am the perfect example of its never to late to be who you want to be and have the life you dreamt of.
+I am the perfect example of its never to late to be who you want to be and have the life you dreamt of.
