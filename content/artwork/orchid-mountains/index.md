@@ -1,6 +1,6 @@
 ---
 title: Orchid mountains
-category: works on paper
+category: Works on paper
 details: watercolours, inks and coloured pencils on paper
 date: 2020-05-06T14:01:01.881Z
 isFeatured: false
