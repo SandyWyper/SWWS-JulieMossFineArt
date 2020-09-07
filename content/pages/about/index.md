@@ -1,5 +1,5 @@
 ---
-title: A little about me
+title: ""
 mainImage:
   image: /uploads/fullsizeoutput_1817.jpeg
   imageAlt: studio shot
