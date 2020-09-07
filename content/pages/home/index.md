@@ -8,7 +8,7 @@ intro:
     preservation. "
   introImage:
     image: /uploads/now-is-not-the-time.jpg
-    imageAlt: "\"now is not the time'  oils on canvas 2020"
+    imageAlt: "\"Now is not the time'  oils on canvas 2020"
 myArt:
   title: " Art"
   description: The immediacy and tactility, particularly of oil paints dictates
