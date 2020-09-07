@@ -1,8 +1,8 @@
 ---
 title: Stack
-category: Paintings
+category: Closer to home
 details: Oil on canvas 30cm x 30cm 2017
-date: 2020-08-25T15:03:30.483Z
+date: 2018-08-25T15:03:00.000Z
 isFeatured: false
 images:
   - image: stacked-julie-moss.jpg
