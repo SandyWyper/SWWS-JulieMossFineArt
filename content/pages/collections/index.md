@@ -14,18 +14,6 @@ collections:
     image3:
       image: /uploads/bluebells.jpg
       alt: "Bluebells 30cm x 30cm "
-  - title: "Works on paper "
-    description: A selection of sketches from the sketchbook inspired by travel and
-      gardens using mainly inks, botanical dyes and watercolours.
-    image1:
-      image: /uploads/jungle-sketch.jpg
-      alt: Jungle inks on paper
-    image2:
-      image: /uploads/no-mans-land-sketch-.jpg
-      alt: "'No Mans Land' watercolours on paper"
-    image3:
-      image: /uploads/watercolour-sketch-.jpg
-      alt: "Pitons inks and watercolours on paper "
   - title: "Wanderlust "
     description: >-
       'I craved to go beyond the garden gate, to follow the road that passed by
@@ -44,4 +32,16 @@ collections:
     image3:
       image: /uploads/boogie-wonderland-julie-moss-2020.jpg
       alt: "Boogie wonderland oils on canvas 61cm x 61cm "
+  - title: "Works on paper "
+    description: A selection of sketches from the sketchbook inspired by travel and
+      gardens using mainly inks, botanical dyes and watercolours.
+    image1:
+      image: /uploads/jungle-sketch.jpg
+      alt: Jungle inks on paper
+    image2:
+      image: /uploads/no-mans-land-sketch-.jpg
+      alt: "'No Mans Land' watercolours on paper"
+    image3:
+      image: /uploads/watercolour-sketch-.jpg
+      alt: "Pitons inks and watercolours on paper "
 ---
