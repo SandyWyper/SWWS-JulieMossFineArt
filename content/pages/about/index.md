@@ -33,7 +33,7 @@ Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 #### Selected Exhibitions
 
-2020 Hus hotel Gstaad Switzerland 
+2020 Huss hotel Gstaad Switzerland 
 
 2019  Daiichi Gallery of Modern Art Penang, Malaysia 
 2019 shortlisted John Ruskin prize ‘Agent of change’ Holden Gallery 
