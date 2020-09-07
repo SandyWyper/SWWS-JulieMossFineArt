@@ -6,12 +6,7 @@ import EachCollection from '../components/eachCollection';
 import Footer from '../components/footer';
 
 const Collections = (props) => {
-  const {
-    //  heading,
-    subheading,
-    title,
-    collections,
-  } = props.data.markdownRemark.frontmatter;
+  const { heading, subheading, title, collections } = props.data.markdownRemark.frontmatter;
 
   return (
     <>
@@ -19,8 +14,8 @@ const Collections = (props) => {
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto ">
           <div className="mb-20 text-center">
-            {/* <h1 className="mb-4 leading-tight">{heading}</h1>
-          {subheading && <h4 className="sub-heading">{subheading}</h4>} */}
+            {heading && <h1 className="mb-4 leading-tight">{heading}</h1>}
+            {subheading && <h4 className="sub-heading">{subheading}</h4>}
           </div>
           <div className="">
             {collections.map((collection, i) => {

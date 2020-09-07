@@ -7,9 +7,11 @@ const NotFoundPage = () => (
   <>
     <SEO title="404: Not found" />
     <div className="relative min-h-screen footer-padding">
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      <Link to="/">Go home ...</Link>
+      <section className="max-w-5xl px-4 pt-24 mx-auto ">
+        <h1>NOT FOUND</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <Link to="/">Go home ...</Link>
+      </section>
     </div>
     <Footer />
   </>

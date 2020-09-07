@@ -42,6 +42,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - file: "content/pages/home/index.md"
         label: "Home Page"
@@ -57,7 +59,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "collections-page"}
           - { label: "Title", name: "title", widget: "string"}
-          - { label: "Heading", name: "heading", widget: "string"}
+          - { label: "Heading", name: "heading", widget: "string", required: false}
           - { label: "Subheading", name: "subheading", widget: "string", required: false}
           - { label: "Collections", name: "collections", widget: "list", fields: [{ label: "Title", name: "title", widget: "string"}, { label: "Description", name: "description", widget: "text"}, { label: "Image1", name: "image1", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}]}, { label: "Image2", name: "image2", widget: "object", fields: [{ label: "Image", name: "image", widget: "image"}, { label: "Alt", name: "alt", widget: "string"}]}, {label: "Image3", name: "image3", widget: "object", fields: [{ label: "Image", name: "image", widget: "image"}, { label: "Alt", name: "alt", widget: "string"}]}]}
       - file: "content/pages/about/index.md"
@@ -65,6 +67,6 @@ collections:
         name: "about"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
-          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Main Image", name: "mainImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}
           - { label: "Body", name: "body", widget: "markdown"}

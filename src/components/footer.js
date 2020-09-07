@@ -40,9 +40,7 @@ const Footer = () => {
         <div className="sm:flex sm:mb-4">
           <ul className="sm:w-1/3 lg:mr-20">
             <li>
-              <Link className="" to="/">
-                Home
-              </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -53,7 +51,7 @@ const Footer = () => {
           </ul>
           <ul className="mb-2 sm:w-1/3 lg:mr-20">
             <li>
-              <Link to="/collections">My Art</Link>
+              <Link to="/collections">Art</Link>
               <ul>
                 {collections.slice(0, 3).map((collection, i) => (
                   <li key={`${i}-${collection.title}`}>
