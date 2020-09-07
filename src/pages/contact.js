@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import NewsletterSignup from '../components/newsletterSignup';
 import SEO from '../components/seo';
 import ContactForm from '../components/contactForm';
