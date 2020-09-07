@@ -26,7 +26,7 @@ collections:
     image3:
       image: /uploads/watercolour-sketch-.jpg
       alt: "Pitons inks and watercolours on paper "
-  - title: "wanderlust "
+  - title: "Wanderlust "
     description: >-
       'I craved to go beyond the garden gate, to follow the road that passed by
       it, and set out for the unknown"
