@@ -65,7 +65,7 @@ const Footer = () => {
           </ul>
           <ul className="mb-2 sm:w-1/3 lg:mr-20">
             <li>
-              <Link to="/blog">Happenings</Link>
+              <Link to="/blog">Blog</Link>
               <ul>
                 {posts.map((post, i) => (
                   <li key={post.node.id}>

@@ -147,7 +147,7 @@ const Nav = ({ path }) => {
                     </li>
                     <li className="item">
                       <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                        Happenings
+                        Blog
                       </Link>
                       <ul>
                         {posts.map((post, i) => (
