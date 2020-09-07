@@ -1,6 +1,6 @@
 ---
 title: Watercolour Sketch
-category: Works On Paper
+category: Works on paper
 date: 2020-08-25T15:07:58.517Z
 isFeatured: false
 images:
