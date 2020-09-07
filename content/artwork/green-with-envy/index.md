@@ -1,6 +1,6 @@
 ---
 title: Green With Envy
-category: Paintings
+category: Closer to home
 details: Oils on canvas 30cm x 30cm 2019
 date: 2020-08-25T14:25:12.098Z
 isFeatured: false
