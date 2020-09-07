@@ -1,8 +1,8 @@
 ---
 title: Fig Tree
-category: Paintings
+category: Closer to home
 details: Oil on canvas 153cm x 153cm 2019
-date: 2020-08-27T14:13:26.012Z
+date: 2019-08-27T14:13:00.000Z
 isFeatured: false
 images:
   - image: fig-tree-.jpg
