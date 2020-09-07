@@ -1,8 +1,8 @@
 ---
 title: Waterfall
-category: Paintings
-details: Oil on canvas 30cm x 30cm 2016
-date: 2020-08-25T14:48:58.947Z
+category: Wanderlust
+details: Oisl on canvas 30cm x 30cm 2018
+date: 2019-08-25T14:48:00.000Z
 isFeatured: false
 images:
   - image: waterfall-1.jpg
