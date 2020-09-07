@@ -1,8 +1,8 @@
 ---
 title: I Was Here First
-category: Paintings
+category: Wanderlust
 details: Oil on canvas 153cm x 153cm 2015
-date: 2020-08-25T14:44:59.380Z
+date: 2018-08-25T14:44:00.000Z
 isFeatured: false
 images:
   - image: i-was-here-first.jpeg
