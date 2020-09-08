@@ -1,6 +1,6 @@
 ---
 title: Nature Reserve
-category: Closer to home
+category: Bringing nature home
 details: Oil on canvas 30cm x 30cm 2016
 date: 2018-08-25T14:34:00.000Z
 isFeatured: false
