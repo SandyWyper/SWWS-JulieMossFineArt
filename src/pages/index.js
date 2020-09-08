@@ -7,6 +7,7 @@ import FeaturedArt from '../components/featuredArt';
 import FeaturedArticle from '../components/featuredArticle';
 import NewsletterSignup from '../components/newsletterSignup';
 import Footer from '../components/footer';
+import Fade from 'react-reveal/Fade';
 
 const IndexPage = ({
   data: {
@@ -44,56 +45,62 @@ const IndexPage = ({
           </div>
         </section>
         {/* my art */}
-        <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
-          <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:flex-row-reverse lg:items-center">
-            <div className="my-8 text-center lg:w-2/5 lg:px-6">
-              <Link to="/collections">
-                <h3>{myArt.title}</h3>
-              </Link>
-              <p className="">{myArt.description}</p>
-              <Link to="/collections" className="btn">
-                view collections ...
-              </Link>
+        <Fade>
+          <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
+            <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:flex-row-reverse lg:items-center">
+              <div className="my-8 text-center lg:w-2/5 lg:px-6">
+                <Link to="/collections">
+                  <h3>{myArt.title}</h3>
+                </Link>
+                <p className="">{myArt.description}</p>
+                <Link to="/collections" className="btn">
+                  view collections ...
+                </Link>
+              </div>
+              <div className="lg:w-3/5">
+                <Img
+                  className="shadow-lg"
+                  fluid={{
+                    ...myArt.myArtImage.image.childImageSharp.fluid,
+                    sizes: '(max-width: 640px) calc(100vw - 2rem), (max-width: 1023px) 550px,  (min-width: 1024px) 650px',
+                  }}
+                  alt={myArt.myArtImage.imageAlt}
+                />
+              </div>
             </div>
-            <div className="lg:w-3/5">
-              <Img
-                className="shadow-lg"
-                fluid={{
-                  ...myArt.myArtImage.image.childImageSharp.fluid,
-                  sizes: '(max-width: 640px) calc(100vw - 2rem), (max-width: 1023px) 550px,  (min-width: 1024px) 650px',
-                }}
-                alt={myArt.myArtImage.imageAlt}
-              />
-            </div>
-          </div>
-        </section>
-
+          </section>
+        </Fade>
         <section className="mb-12 bg-gray-300 lg:mb-24">
-          <div className="max-w-5xl px-4 mx-auto">
-            <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:items-center">
-              <div className="pt-10 mb-12 text-center lg:pt-0 lg:w-1/2">
-                <Link to="/blog">
-                  <h3>{myBlog.title}</h3>
-                </Link>
-                <p className="max-w-md mx-auto">{myBlog.description}</p>
-                <Link to="/blog" className="btn">
-                  view blog ...
-                </Link>
-              </div>
-              <div className="pb-24 md:p-12 lg:w-1/2">
-                <FeaturedArticle />
+          <Fade>
+            <div className="max-w-5xl px-4 mx-auto">
+              <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:items-center">
+                <div className="pt-10 mb-12 text-center lg:pt-0 lg:w-1/2">
+                  <Link to="/blog">
+                    <h3>{myBlog.title}</h3>
+                  </Link>
+                  <p className="max-w-md mx-auto">{myBlog.description}</p>
+                  <Link to="/blog" className="btn">
+                    view blog ...
+                  </Link>
+                </div>
+                <div className="pb-24 md:p-12 lg:w-1/2">
+                  <FeaturedArticle />
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </section>
-
-        <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
-          <FeaturedArt />
-        </section>
+        <Fade>
+          <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
+            <FeaturedArt />
+          </section>
+        </Fade>
         <hr />
-        <section className="max-w-md px-4 mx-auto mb-16 text-center">
-          <NewsletterSignup />
-        </section>
+        <Fade>
+          <section className="max-w-md px-4 mx-auto mb-16 text-center">
+            <NewsletterSignup />
+          </section>
+        </Fade>
         <Footer />
       </div>
     </>

@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import PropTypes from 'prop-types';
 import Footer from '../components/footer';
+import Fade from 'react-reveal/Fade';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
@@ -26,16 +27,18 @@ const ArtworkTemplate = (props) => {
           <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
               return (
-                <Img
-                  key={art.alt + i}
-                  className="max-w-xl mx-auto mb-4"
-                  fluid={{
-                    ...art.image.childImageSharp.fluid,
-                    sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
-                  }}
-                  alt={art.alt}
-                  loading={i === 0 ? 'eager' : 'lazy'}
-                />
+                <Fade>
+                  <Img
+                    key={art.alt + i}
+                    className="max-w-xl mx-auto mb-4"
+                    fluid={{
+                      ...art.image.childImageSharp.fluid,
+                      sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
+                    }}
+                    alt={art.alt}
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                  />
+                </Fade>
               );
             })}
             <ArtWorkInfo />
