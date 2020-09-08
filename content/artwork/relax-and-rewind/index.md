@@ -1,6 +1,6 @@
 ---
 title: "Relax and rewind "
-category: Closer to home
+category: Bringing nature home
 details: "Oils on canvas 60cm x 60cm "
 date: 2018-09-06T11:01:00.000Z
 isFeatured: false
