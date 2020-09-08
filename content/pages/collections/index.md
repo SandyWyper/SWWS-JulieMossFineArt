@@ -3,7 +3,7 @@ title: Collections
 heading: ""
 subheading: ""
 collections:
-  - title: "Closer to Home "
+  - title: "Closer to home "
     description: Paintings inspired by the gardens, plants and green spaces of Cornwall
     image1:
       image: /uploads/now-is-not-the-time.jpg
