@@ -1,6 +1,6 @@
 ---
 title: Fig Tree
-category: Closer to home
+category: Bringing nature home
 details: Oil on canvas 153cm x 153cm 2019
 date: 2019-08-27T14:13:00.000Z
 isFeatured: false
