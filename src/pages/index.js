@@ -45,7 +45,7 @@ const IndexPage = ({
           </div>
         </section>
         {/* my art */}
-        <Fade>
+        <Fade duration={1500}>
           <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
             <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:flex-row-reverse lg:items-center">
               <div className="my-8 text-center lg:w-2/5 lg:px-6">
@@ -71,7 +71,7 @@ const IndexPage = ({
           </section>
         </Fade>
         <section className="mb-12 bg-gray-300 lg:mb-24">
-          <Fade>
+          <Fade duration={1500}>
             <div className="max-w-5xl px-4 mx-auto">
               <div className="max-w-lg mx-auto lg:max-w-full lg:flex lg:items-center">
                 <div className="pt-10 mb-12 text-center lg:pt-0 lg:w-1/2">
@@ -90,13 +90,13 @@ const IndexPage = ({
             </div>
           </Fade>
         </section>
-        <Fade>
+        <Fade duration={1500}>
           <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
             <FeaturedArt />
           </section>
         </Fade>
         <hr />
-        <Fade>
+        <Fade duration={1500}>
           <section className="max-w-md px-4 mx-auto mb-16 text-center">
             <NewsletterSignup />
           </section>

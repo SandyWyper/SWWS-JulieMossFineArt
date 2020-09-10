@@ -27,7 +27,7 @@ const ArtworkTemplate = (props) => {
           <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
               return (
-                <Fade>
+                <Fade duration={1500}>
                   <Img
                     key={art.alt + i}
                     className="max-w-xl mx-auto mb-4"
