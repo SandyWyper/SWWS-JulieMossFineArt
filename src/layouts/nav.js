@@ -133,7 +133,7 @@ const Nav = ({ path }) => {
                     </li>
                     <li className="item">
                       <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                        My Art
+                        Art
                       </Link>
                       <ul>
                         {collections.slice(0, 3).map((collection, i) => (
