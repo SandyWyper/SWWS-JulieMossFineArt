@@ -42,19 +42,17 @@ const CollectionTemplate = (props) => {
                   {collectionArtwork.map((art, i) => {
                     const each = art.node.frontmatter.images['0'];
                     return (
-                      <Fade>
-                        <div key={`${each.alt}-${i}`}>
-                          <Link to={art.node.fields.slug}>
-                            <Img
-                              fluid={{
-                                ...each.image.childImageSharp.fluid,
-                                sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
-                              }}
-                              alt={each.alt}
-                              loading={i === 0 ? 'eager' : 'lazy'}
-                            />
-                          </Link>
-                        </div>
+                      <Fade key={`${each.alt}-${i}`}>
+                        <Link to={art.node.fields.slug}>
+                          <Img
+                            fluid={{
+                              ...each.image.childImageSharp.fluid,
+                              sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
+                            }}
+                            alt={each.alt}
+                            loading={i === 0 ? 'eager' : 'lazy'}
+                          />
+                        </Link>
                       </Fade>
                     );
                   })}

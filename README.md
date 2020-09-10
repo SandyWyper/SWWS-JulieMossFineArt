@@ -2,14 +2,7 @@
 
 ### TODO:
 
-- Add site_url to admin/config.yml
-- Add my logo to the admin/config.yml
-- Adjust image references to size appropriately
-
-- CMS templates
 - check whither seo images have the correct paths and are able to be shared
-
-- on contact form - await success of form sending before redirecting.
 
 > To order categories in the nav, date just one piece of each category ... newest renders at the top.
 

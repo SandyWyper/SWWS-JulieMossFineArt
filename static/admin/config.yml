@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
   branch: master
-
+  repo: https://github.com/SandyWyper/SWWS-JulieMossFineArt
 
 media_folder: static/uploads
 public_folder: /uploads
 
-logo_url: uploads/SWWS-icon-96x96.png
+logo_url: https://juliemossfineart.co.uk/uploads/SWWS-icon-96x96.png
 
 collections:
   - name: "artwork"

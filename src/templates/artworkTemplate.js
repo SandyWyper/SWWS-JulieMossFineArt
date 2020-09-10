@@ -9,8 +9,10 @@ import Fade from 'react-reveal/Fade';
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
   const { next, prev } = props.pageContext;
-  const sharingImage = props.data.markdownRemark.frontmatter.images[0].image.publicURL;
   const sharingImageAlt = props.data.markdownRemark.frontmatter.images[0].alt;
+  const sharingImage = props.data.markdownRemark.frontmatter.images[0].image
+    ? props.data.markdownRemark.frontmatter.images[0].image.childImageSharp.resize.src
+    : null;
 
   const ArtWorkInfo = () => (
     <div className="max-w-xl mx-auto">
@@ -27,9 +29,8 @@ const ArtworkTemplate = (props) => {
           <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
               return (
-                <Fade duration={1500}>
+                <Fade key={art.alt + i} duration={1500}>
                   <Img
-                    key={art.alt + i}
                     className="max-w-xl mx-auto mb-4"
                     fluid={{
                       ...art.image.childImageSharp.fluid,
@@ -76,6 +77,9 @@ export const data = graphql`
             childImageSharp {
               fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500, 2000]) {
                 ...GatsbyImageSharpFluid_withWebp
+              }
+              resize(width: 800) {
+                src
               }
             }
           }
