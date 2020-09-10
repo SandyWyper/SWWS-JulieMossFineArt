@@ -1,10 +1,6 @@
 ### Julie Moss - Fine Art
 
-### TODO:
-
-- check whither seo images have the correct paths and are able to be shared
-
-> To order categories in the nav, date just one piece of each category ... newest renders at the top.
+> To order categories in the artwork nav, date just one piece of each category ... newest renders at the top.
 
 ### Build status
 

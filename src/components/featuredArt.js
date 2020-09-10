@@ -18,8 +18,8 @@ const FeaturedArt = () => {
               }
               frontmatter {
                 title
-                category
                 excerpt
+                details
                 images {
                   alt
                   image {
@@ -38,7 +38,7 @@ const FeaturedArt = () => {
     `
   );
   // const { title, category, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
-  const { title, images, excerpt } = data.allMarkdownRemark.edges['0'].node.frontmatter;
+  const { title, images, excerpt, details } = data.allMarkdownRemark.edges['0'].node.frontmatter;
   const { slug } = data.allMarkdownRemark.edges['0'].node.fields;
   return (
     <div className="md:flex md:items-end">
@@ -54,16 +54,16 @@ const FeaturedArt = () => {
       </div>
       <div className="h-full md:w-1/2 md:pl-12">
         <h6 className="mb-0">Latest Piece</h6>
-        <div className="">
+        <div>
           <Link to={slug}>
             <h5 className="mb-0">{title}</h5>
           </Link>
-          {/* <p>{category}</p> */}
-          <p className="mb-0">{excerpt}</p>
-          {/* <p className="mx-auto mb-0 btn">view ...</p> */}
+          <p className="mb-0">{details}</p>
+          {excerpt && <p className="mt-2 mb-0">{excerpt}</p>}
         </div>
       </div>
     </div>
   );
 };
+
 export default FeaturedArt;

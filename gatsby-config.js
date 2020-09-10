@@ -2,10 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Julie Moss`,
     description: `Julie Moss contemporary fine artist`,
-    url: 'https://www.juliemossfineart.co.uk',
-    siteUrl: `https://tender-babbage-64e081.netlify.app`,
+    url: 'https://juliemossfineart.co.uk',
+    siteUrl: `https://juliemossfineart.co.uk`,
     author: `https://sandywyper.dev`,
-    image: '/uploads/restored-order-julie-moss-.jpg',
   },
   plugins: [
     `gatsby-plugin-sitemap`,

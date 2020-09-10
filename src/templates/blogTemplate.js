@@ -9,7 +9,6 @@ import Footer from '../components/footer';
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
   const { frontmatter, html } = props.data.markdownRemark;
-  // const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image.publicURL;
   const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image
     ? props.data.markdownRemark.frontmatter.mainImage.image.childImageSharp.resize.src
     : null;
