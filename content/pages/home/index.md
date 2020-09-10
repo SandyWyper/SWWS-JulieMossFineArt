@@ -10,12 +10,12 @@ intro:
     image: /uploads/now-is-not-the-time.jpg
     imageAlt: "\"Now is not the time'  oils on canvas 2020"
 myArt:
-  title: " Art"
+  title: Art
   description: The immediacy and tactility, particularly of oil paints dictates
     her choice of materials, a factor that is clear throughout her subtle and
     poetic work.
   myArtImage:
-    image: /uploads/mountain-painting-.jpg
+    image: /uploads/restored-order-julie-moss-.jpg
     imageAlt: Art cover image
 myBlog:
   myBlogImage:
