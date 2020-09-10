@@ -1,6 +1,6 @@
 ---
 title: Blue Bells
-category: Closer to home
+category: Bringing nature home
 details: "oils on canvas 30cm x 30cm "
 date: 2020-08-25T14:19:43.018Z
 isFeatured: false
