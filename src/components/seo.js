@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title, image, imageAlt, url }) {
   const { defaultImage } = file.childImageSharp.resize;
   const metaDescription = description || defaultDescription;
   const metaTitle = title || defaultTitle;
-  const metaImage = `${defaultUrl}${image}` || `${defaultUrl}${defaultImage}`;
+  const metaImage = image ? `${defaultUrl}${image}` : `${defaultUrl}${defaultImage}`;
   const metaImageAlt = imageAlt || 'Julie Moss';
   const metaUrl = url || defaultUrl;
 
