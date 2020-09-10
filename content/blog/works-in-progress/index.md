@@ -1,6 +1,6 @@
 ---
 title: Works in progress
-date: 2020-08-25T14:19:43.018Z
+date: 2020-09-10T20:13:35.950Z
 description: This is a journal of my thoughts, discoveries and activities
   related to my Art practice and life in general.
 mainImage:
@@ -19,4 +19,4 @@ Fast forward 40+ years and we are now living in the farmhouse, my husband has hi
 
 Despite the ups and downs and the scrapes and bruises of life its a home that over the years has always provided a soft landing, not just for us, but for others too. I am the perfect example of its never to late to be who you want to be and have the life you dreamt of.
 
-![](img_2153.jpg "Home sweet home ")
+![Home sweet home](img_2153.jpg "Home sweet home")
