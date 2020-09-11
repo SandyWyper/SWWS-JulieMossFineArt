@@ -74,4 +74,4 @@ Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 2011 University College Falmouth Degree Show
 
-2011 Print! Newlyn Society of Artists, Exchange Gallery - Penza
+2011 Print! Newlyn Society of Artists, Exchange Gallery - Penzance
