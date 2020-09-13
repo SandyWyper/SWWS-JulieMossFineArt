@@ -7007,10 +7007,10 @@ gatsby-plugin-sitemap@^2.4.12:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-transitions@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-transitions/-/gatsby-plugin-transitions-2.1.6.tgz#1af79bd4dea1f0a1f4ce8cbea4e7b6f3c3bb4f33"
-  integrity sha512-00i35fsTMIXhSk9wGa6fdmOIujrv4gBhXqqw6jzJEtwdklacMtmtfQsgiwpF+4emST04c1JXX3+4dMCxFSocJA==
+gatsby-plugin-transitions@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-transitions/-/gatsby-plugin-transitions-2.1.7.tgz#721075dd2fad035b9fb6e5d312b46af2987f6373"
+  integrity sha512-KLDH4vLsXX1V/98aA02H/BlUYe9NVogiecnwh4j7rgVbWVXYCpO4n7yYsSVr8lcMYKHaC90CqVMjIClbJKvZgQ==
   dependencies:
     prop-types "^15.7.2"
 
