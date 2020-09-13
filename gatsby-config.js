@@ -102,7 +102,6 @@ module.exports = {
       options: {
         google: {
           families: ['Open Sans:300', 'Open Sans:300i', 'Open Sans', 'Libre Caslon Display'],
-          // urls: ['./src/styles/fonts.css'],
         },
       },
     },
