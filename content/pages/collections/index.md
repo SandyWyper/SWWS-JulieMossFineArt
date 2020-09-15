@@ -44,4 +44,17 @@ collections:
     image3:
       image: /uploads/watercolour-sketch-.jpg
       alt: "Pitons inks and watercolours on paper "
+  - title: Serendipity
+    description: |-
+      "The fact of something interesting or pleasant happening by chance" 
+      Oxford Dictionary 
+    image1:
+      image: /uploads/restored-order.jpg
+      alt: Restored Order
+    image2:
+      image: /uploads/300-on-second-thoughts-.jpg
+      alt: Static caravan
+    image3:
+      image: /uploads/static-caravan.jpg
+      alt: Static caravan
 ---
