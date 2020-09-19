@@ -75,14 +75,18 @@ const ArtworkNavInner = ({ path }) => {
 
   return collectionCategories.map((category, i) => {
     const collectionImages = groupedCollections[category].map((eachArt) => {
-      const eachArtImage = eachArt.node.frontmatter.images['0'];
+      const eachArtImage = eachArt.node.frontmatter.images['0'] !== undefined ? eachArt.node.frontmatter.images['0'] : null;
       const isCurrent = path === eachArt.node.fields.slug;
       // return for groupCollections map
-      return (
-        <Link key={eachArtImage.image.id} className={`artThumb ${isCurrent && 'isActive'}`} to={eachArt.node.fields.slug.slice(0, -1)}>
-          <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
-        </Link>
-      );
+      if (eachArtImage.image !== null) {
+        return (
+          <Link key={eachArtImage.image.id} className={`artThumb ${isCurrent && 'isActive'}`} to={eachArt.node.fields.slug.slice(0, -1)}>
+            <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
+          </Link>
+        );
+      } else {
+        return null;
+      }
     });
 
     // return for collectionCategories map
