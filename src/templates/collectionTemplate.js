@@ -35,26 +35,30 @@ const CollectionTemplate = (props) => {
             <div>
               <h1 className="mb-8 leading-none">{props.pageContext.collectionName}</h1>
             </div>
-            {description !== undefined && <p>{description}</p>}
+            {description !== undefined && <p className="text-lg">{description}</p>}
             <div>
               <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 450: 2 }}>
                 <Masonry gutter={'10px'}>
                   {collectionArtwork.map((art, i) => {
-                    const each = art.node.frontmatter.images['0'];
-                    return (
-                      <Fade key={`${each.alt}-${i}`}>
-                        <Link to={art.node.fields.slug}>
-                          <Img
-                            fluid={{
-                              ...each.image.childImageSharp.fluid,
-                              sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
-                            }}
-                            alt={each.alt}
-                            loading={i === 0 ? 'eager' : 'lazy'}
-                          />
-                        </Link>
-                      </Fade>
-                    );
+                    const each = art.node.frontmatter.images['0'] !== undefined ? art.node.frontmatter.images['0'] : null;
+                    if (each.image !== null) {
+                      return (
+                        <Fade key={`${each.alt}-${i}`}>
+                          <Link to={art.node.fields.slug}>
+                            <Img
+                              fluid={{
+                                ...each.image.childImageSharp.fluid,
+                                sizes: '(max-width: 501px) calc(100vw - 2rem), (max-width: 1023px)  calc(50vw - 2rem),  (min-width: 1024px) 450px',
+                              }}
+                              alt={each.alt}
+                              loading={i === 0 ? 'eager' : 'lazy'}
+                            />
+                          </Link>
+                        </Fade>
+                      );
+                    } else {
+                      return null;
+                    }
                   })}
                 </Masonry>
               </ResponsiveMasonry>
