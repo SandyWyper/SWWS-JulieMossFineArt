@@ -33,6 +33,8 @@ Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 #### Selected Exhibitions
 
+2020 RA Summer Exhibition London Oct 6th -jan 3rd 
+
 2020 Huss hotel Gstaad Switzerland 
 
 2019  Daiichi Gallery of Modern Art Penang, Malaysia 
