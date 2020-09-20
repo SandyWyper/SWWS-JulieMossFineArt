@@ -28,19 +28,23 @@ const ArtworkTemplate = (props) => {
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
           <div className="pb-12 artwork-space md:pl-4">
             {frontmatter.images.map((art, i) => {
-              return (
-                <Fade key={art.alt + i} duration={1500}>
-                  <Img
-                    className="max-w-xl mx-auto mb-4"
-                    fluid={{
-                      ...art.image.childImageSharp.fluid,
-                      sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
-                    }}
-                    alt={art.alt}
-                    loading={i === 0 ? 'eager' : 'lazy'}
-                  />
-                </Fade>
-              );
+              if (art.image !== null) {
+                return (
+                  <Fade key={art.alt + i} duration={1500}>
+                    <Img
+                      className="max-w-xl mx-auto mb-4"
+                      fluid={{
+                        ...art.image.childImageSharp.fluid,
+                        sizes: '(max-width: 640px) calc(100vw - 2rem), 750px',
+                      }}
+                      alt={art.alt}
+                      loading={i === 0 ? 'eager' : 'lazy'}
+                    />
+                  </Fade>
+                );
+              } else {
+                return null;
+              }
             })}
             <ArtWorkInfo />
             <div className="w-full max-w-xl mx-auto font-normal">

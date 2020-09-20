@@ -27,7 +27,7 @@ const CollectionTemplate = (props) => {
         title={`Julie Moss - ${props.pageContext.collectionName}`}
         description={description}
         url={props.location.href}
-        image={collectionArtwork[0].node.frontmatter.images[0].image.publicURL}
+        image={collectionArtwork[0].node.frontmatter.images[0].image ? collectionArtwork[0].node.frontmatter.images[0].image.publicURL : null}
       />
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">

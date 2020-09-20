@@ -24,19 +24,21 @@ const BlogTemplate = (props) => {
       />
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
-          <Img
-            className="max-w-md mx-auto mb-4"
-            fluid={{
-              ...frontmatter.mainImage.image.childImageSharp.fluid,
-              sizes: '(max-width: 501px) calc(100vw - 2rem), 550px',
-            }}
-            alt={frontmatter.mainImage.imageAlt}
-            loading="eager"
-          />
+          {frontmatter.mainImage.image && (
+            <Img
+              className="max-w-md mx-auto mb-4"
+              fluid={{
+                ...frontmatter.mainImage.image.childImageSharp.fluid,
+                sizes: '(max-width: 501px) calc(100vw - 2rem), 550px',
+              }}
+              alt={frontmatter.mainImage.imageAlt}
+              loading="eager"
+            />
+          )}
 
-          <article className="">
+          <article>
             <h3 className="text-center">{frontmatter.title}</h3>
-            <p className="">{frontmatter.date}</p>
+            <p>{frontmatter.date}</p>
 
             <div className="max-w-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }} />
           </article>
