@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        // xsm: "400px",
+        xsm: '350px',
       },
       shadows: {
         default: '0 2px 4px 0 rgba(0,0,0,0.10)',
