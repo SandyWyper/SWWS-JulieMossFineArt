@@ -4,17 +4,20 @@ mainImage:
   image: /uploads/fullsizeoutput_1817.jpeg
   imageAlt: studio shot
 ---
-Julie Moss’s work hint to a wider narrative, the subjects reflective of much larger social and humanitarian issues. The resulting paintings are a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
-The immediacy and tactility, particularly of oil paints dictates her choice of materials, a factor that is clear throughout her subtle and poetic work. A long and deeply held interest in plants and flowers and love of colour informs her artistic practice, She strives for an ideal: to make her artwork a bridge to communicate deeply with her audience. 
+As a shy child I could always be found digging in the dirt in my grandmothers garden, hidden amongst my beloved plants and flowers. I also loved the colouring books in which you added water to a seemingly blank page and colours and images would appear as if by magic. Its a technique I still use today, especially with my inks and watercolours, drawing first with clear water then dropping colour onto the page to see what appears.
 
-‘What silences our intuition is our need for certainty, nature is a place of mystery where we find the courage to believe in what we cannot see and the strength to let go of our certainty.
+I entered Bolton School of Art aged just 13, Art was a way to make my voice heard. After leaving school I studied floristry and had a brief career as a textile designer which gave me a love of pattern, colour and light found within plants and flowers.
 
-> “By placing emphasis on cultivated and natural landscapes, I wish to highlight what we stand to lose if we do not protect our natural environment and by including evidence of man’s presence it is my hope that mankind and nature can live in harmony.” 
+I look for the connections between my experiences whilst in nature and how they relate to me as a woman and my place in the world. The initial meaning of an experience may not reveal itself and remain hidden for some time, perhaps until an oil painting is complete and its true significance is unearthed. 
+
+The resulting paintings are therefore a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
+
+
 
 Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University. A finalist in the Windsor and Newton painting prize her recent work was selected for stage 2 of the John Moore’s prize, and she has been selected several times for the RWA exhibition in Bristol. Julie is an active member of the Newlyn Society of Artists. 
 
 Previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family.
-Julie’s work has been exhibited in the 2019 Venice Biennale, and is held in private collections including the Gallery of Modern Art in Malaysia.
+Julie’s work has been exhibited in the 2019 Venice Biennale and recently the Royal Academy summer exhibition, and is held in private collections including the Gallery of Modern Art in Malaysia.
 
 #### Education
 
