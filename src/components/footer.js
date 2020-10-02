@@ -70,7 +70,7 @@ const Footer = () => {
                 {posts.map((post, i) => (
                   <li key={post.node.id}>
                     <Link className="sub-link" to={post.node.fields.slug}>
-                      {post.node.frontmatter.title}
+                      {post.node.frontmatter.title.slice(0, 39)}
                     </Link>
                   </li>
                 ))}

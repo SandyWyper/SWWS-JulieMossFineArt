@@ -158,7 +158,7 @@ const Nav = ({ path }) => {
                           </li>
                         ))}
                         <li>
-                          <Link className="sub-link" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
+                          <Link className="hidden sub-link xsm:block" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
                             more ...
                           </Link>
                         </li>
