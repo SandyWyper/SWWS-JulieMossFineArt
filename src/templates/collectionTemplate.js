@@ -20,15 +20,14 @@ const CollectionTemplate = (props) => {
   const isLast = currentPage === totalPages;
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
   const nextPage = (currentPage + 1).toString();
+  const sharingImage =
+    collectionArtwork['0'].node.frontmatter.images !== null
+      ? collectionArtwork['0'].node.frontmatter.images['0'].image.childImageSharp.resize.src
+      : null;
 
   return (
     <>
-      <SEO
-        title={`Julie Moss - ${props.pageContext.collectionName}`}
-        description={description}
-        url={props.location.href}
-        image={collectionArtwork[0].node.frontmatter.images[0].image ? collectionArtwork[0].node.frontmatter.images[0].image.publicURL : null}
-      />
+      <SEO title={`Julie Moss - ${props.pageContext.collectionName}`} description={description} url={props.location.href} image={sharingImage} />
       <div className="relative min-h-screen footer-padding">
         <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
           <div className="flex flex-col w-full pb-12 lg:pl-4 artwork-space">
@@ -40,8 +39,11 @@ const CollectionTemplate = (props) => {
               <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 450: 2 }}>
                 <Masonry gutter={'10px'}>
                   {collectionArtwork.map((art, i) => {
-                    const each = art.node.frontmatter.images['0'] !== undefined ? art.node.frontmatter.images['0'] : null;
-                    if (each.image !== null) {
+                    const each =
+                      art.node.frontmatter.hasOwnProperty('images') & (art.node.frontmatter.images !== null)
+                        ? art.node.frontmatter.images['0']
+                        : null;
+                    if (each !== null) {
                       return (
                         <Fade key={`${each.alt}-${i}`}>
                           <Link to={art.node.fields.slug}>
@@ -107,10 +109,12 @@ export const artQuery = graphql`
             images {
               alt
               image {
-                publicURL
                 childImageSharp {
                   fluid(srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1500]) {
                     ...GatsbyImageSharpFluid_withWebp
+                  }
+                  resize(width: 800) {
+                    src
                   }
                 }
               }
