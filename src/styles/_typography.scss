@@ -1,6 +1,6 @@
 html {
   font-size: 17px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   color: var(--text);
 }
 
@@ -33,10 +33,11 @@ h3,
 
 h4,
 .h4 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-size: 1.5rem;
   color: var(--text);
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 h5,
@@ -48,10 +49,11 @@ h5,
 }
 h6,
 .h6 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-size: 0.85rem;
   color: var(--text);
   text-transform: uppercase;
+  font-weight: bold;
 
   letter-spacing: 0.2em;
   margin-bottom: 1rem;
@@ -59,11 +61,11 @@ h6,
 
 p,
 .p {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   color: var(--text);
-  font-weight: 300;
+  font-weight: normal;
 
   @screen md {
     font-size: 1rem;
@@ -72,12 +74,12 @@ p,
 
 blockquote,
 blockquote p {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
   font-style: italic;
   font-size: 1.3rem;
   margin: 2rem 1rem;
   color: var(--text);
-  font-weight: 300;
+  font-weight: normal;
 
   @screen md {
     margin: 2rem;
@@ -93,7 +95,8 @@ blockquote p {
 }
 .sub-heading {
   position: relative;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 1.25rem;
   color: var(--text);
   text-transform: uppercase;
@@ -123,8 +126,8 @@ blockquote p {
 //-------------------------------------
 
 .btn {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.1em;

@@ -97,14 +97,14 @@ module.exports = {
         ignore: ['/src/styles/unpurgedStyles.scss'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Open Sans:300', 'Open Sans:300i', 'Open Sans', 'Libre Caslon Display'],
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     google: {
+    //       families: ['Open Sans:300', 'Open Sans:300i', 'Open Sans', 'Libre Caslon Display'],
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
