@@ -75,7 +75,7 @@ const NewsletterSignup = ({ path }) => {
           type="submit"
           className={`${
             path === '/contact/' ? ' w-full sm:w-1/2' : 'w-full md:w-1/3 md:shadow-none'
-          } px-8 py-2 font-normal leading-tight border-2 bg-gray-300 shadow cursor-pointer  hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white`}
+          } px-8 py-2 font-bold leading-tight border-2 bg-gray-300 shadow cursor-pointer  hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white`}
         >
           Subscribe
         </button>

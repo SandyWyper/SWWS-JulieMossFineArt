@@ -37,8 +37,8 @@ const Footer = () => {
   return (
     <footer className="absolute inset-x-0 bottom-0 w-full bg-gray-900 border-t-2 border-gray-300">
       <div className="max-w-5xl p-6 mx-auto lg:flex">
-        <div className="sm:flex sm:mb-4">
-          <ul className="sm:w-1/3 lg:mr-20">
+        <div className="sm:grid sm:grid-cols-12 sm:mb-4">
+          <ul className="sm:col-start-1 sm:col-span-2">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -49,7 +49,7 @@ const Footer = () => {
               <Link to="/contact">Get In Touch</Link>
             </li>
           </ul>
-          <ul className="mb-2 sm:w-1/3 lg:mr-20">
+          <ul className="mb-2 sm:col-start-3 sm:col-span-4">
             <li>
               <Link to="/collections">Art</Link>
               <ul>
@@ -63,7 +63,7 @@ const Footer = () => {
               </ul>
             </li>
           </ul>
-          <ul className="mb-2 sm:w-1/3 lg:mr-20">
+          <ul className="mb-2 sm:col-start-7 sm:col-span-4">
             <li>
               <Link to="/blog">Blog</Link>
               <ul>
@@ -92,8 +92,8 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto text-contrast">
         <div className="flex flex-col items-center justify-center font-light md:flex-row">
           © {new Date().getFullYear()}, Website by&nbsp;
-          <a href="https://sandywyper.dev" className="text-lg">
-            SW Web Solutions
+          <a href="https://tinderboxwebsolutions.com" className="text-lg">
+            tinderbox Web Solutions
           </a>
         </div>
       </div>
