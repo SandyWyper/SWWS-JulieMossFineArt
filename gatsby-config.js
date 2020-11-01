@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-layout',
+    `simple-react-lightbox`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
