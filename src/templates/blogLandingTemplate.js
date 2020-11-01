@@ -71,7 +71,7 @@ const BlogList = (props) => {
               ))}
             </div>
           </div>
-          <div className="w-full max-w-2xl mx-auto font-normal">
+          <div className="w-full max-w-2xl mx-auto font-bold">
             {!isFirst && (
               <Link to={`/blog/${prevPage}`} rel="prev" className="float-left">
                 ← Previous Page

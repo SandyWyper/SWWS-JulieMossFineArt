@@ -111,14 +111,14 @@ class ContactForm extends Component {
               <input
                 type="submit"
                 value="Send Message"
-                className="w-full px-4 py-2 font-normal bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
+                className="w-full px-4 py-2 font-bold bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
               />
             </div>
             <div className="sm:ml-2 sm:w-1/2">
               <input
                 type="reset"
                 value="Reset"
-                className="w-full px-4 py-2 font-normal bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
+                className="w-full px-4 py-2 font-bold bg-gray-300 shadow cursor-pointer hover:opacity-75 focus:outline-none focus:bg-gray-900 focus:text-white"
               />
             </div>
           </div>

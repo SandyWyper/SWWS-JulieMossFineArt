@@ -92,7 +92,7 @@ const ArtworkNavInner = ({ path }) => {
     // return for collectionCategories map
     return (
       <React.Fragment key={`${pathify(category)}-container-${i}`}>
-        <Link className={`art-category-nav font-normal ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
+        <Link className={`art-category-nav font-bold ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
           {category}
         </Link>
         <div>

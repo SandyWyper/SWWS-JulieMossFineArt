@@ -50,7 +50,7 @@ const FeaturedArticle = () => {
         <div className="absolute bottom-0 p-6 mx-2 -mb-16 text-center bg-white sm:mx-8">
           <h5>{title}</h5>
           <p className="mb-1 text-sm">{description}</p>
-          <p className="mx-auto mb-0 font-normal">read more ...</p>
+          <p className="mx-auto mb-0 font-bold">read more ...</p>
         </div>
       </Link>
     </div>
