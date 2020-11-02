@@ -27,7 +27,7 @@ const BlogList = (props) => {
             fluid={{ ...featuredPost.frontmatter.mainImage.image.childImageSharp.fluid, sizes: '(max-width: 501px) calc(100vw - 2rem), 450px' }}
             alt={featuredPost.frontmatter.mainImage.imageAlt}
           />
-          <div className="absolute max-w-sm p-6 text-center bg-white featured-blog-text ">
+          <div className="absolute max-w-sm p-6 text-center bg-white shadow-md featured-blog-text">
             <h5 className="mb-2">{featuredPost.frontmatter.title}</h5>
             <p className="mb-2 text-sm">{featuredPost.frontmatter.description}</p>
             <p className="mx-auto mb-0 btn">read more ...</p>

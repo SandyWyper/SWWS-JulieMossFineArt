@@ -34,7 +34,7 @@ const ArtworkTemplate = (props) => {
 
   const ArtWorkInfo = () => (
     <div className="max-w-xl mx-auto">
-      <h3 className="mb-0 leading-tight">{frontmatter.title}</h3>
+      <h3 className="mb-0 text-2xl leading-tight md:text-3xl">{frontmatter.title}</h3>
       {frontmatter.details && <p className="font-bold">{frontmatter.details}</p>}
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
     </div>
@@ -70,14 +70,14 @@ const ArtworkTemplate = (props) => {
                     }
                   })}
                 <ArtWorkInfo />
-                <div className="w-full max-w-xl mx-auto font-bold">
+                <div className="w-full max-w-xl mx-auto mt-4">
                   {prev && (
-                    <Link to={prev} rel="prev" className="float-left">
+                    <Link to={prev} rel="prev" className="float-left font-bold">
                       ← Previous
                     </Link>
                   )}
                   {next && (
-                    <Link to={next} rel="next" className="float-right">
+                    <Link to={next} rel="next" className="float-right font-bold">
                       Next →
                     </Link>
                   )}
