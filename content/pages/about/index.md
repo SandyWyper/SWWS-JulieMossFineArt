@@ -12,7 +12,7 @@ I look for the connections between my experiences whilst in nature and how they 
 
 The resulting paintings are therefore a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
 
-Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University. A finalist in the Windsor and Newton painting prize her recent work was selected for stage 2 of the John Moore’s prize, and she has been selected several times for the RWA exhibition in Bristol. Julie is an active member of the Newlyn Society of Artists. 
+Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University. A finalist in the Windsor and Newton painting prize and John Ruskin Prize her recent work was selected for stage 2 of the John Moore’s prize, and she has been selected several times for the RWA exhibition in Bristol. Julie is an active member of the Newlyn Society of Artists. 
 
 Previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family.
 Julie’s work has been exhibited in the 2019 Venice Biennale and recently the Royal Academy summer exhibition, and is held in private collections including the Gallery of Modern Art in Malaysia.
