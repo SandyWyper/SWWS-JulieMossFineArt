@@ -4,7 +4,7 @@ heading: ""
 subheading: ""
 collections:
   - title: "Bringing nature home "
-    description: Paintings inspired by the gardens, plants and green spaces of Cornwall
+    description: "Paintings inspired by gardens, plants and green spaces "
     image1:
       image: /uploads/now-is-not-the-time.jpg
       alt: "'Now is not the time'  oils on canvas 153cm x 153cm 2020 "
