@@ -32,6 +32,10 @@ Pre selected John Moores prize 2018
 Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
+#### Permanent collections
+
+**Malaysia Gallery of Modern Art Daiichi**
+
 #### Galleries
 
 Fig tree gallery Antigua
