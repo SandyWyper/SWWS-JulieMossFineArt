@@ -6,24 +6,28 @@
   src: url('./fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Light';
   src: url('./fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Light';
   src: url('./fonts/Open_Sans/OpenSans-LightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Extra Bold';
   src: url('./fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 // ---------------- Heading font --------------------------
 

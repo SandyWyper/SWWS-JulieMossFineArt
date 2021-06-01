@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-layout',
     `simple-react-lightbox`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
@@ -84,7 +85,7 @@ module.exports = {
         short_name: `Julie Moss`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#FFFFFF`,
+        theme_color: `#DE3069`,
         display: `minimal-ui`,
         icon: `./static/uploads/favicon.png`, // This path is relative to the root of the site.
       },

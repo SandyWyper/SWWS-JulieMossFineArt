@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center font-light md:flex-row">
           © {new Date().getFullYear()}, Website by&nbsp;
           <a href="https://tinderboxwebsolutions.com" className="text-lg">
-            tinderbox Web Solutions
+            Tinderbox Web Solutions
           </a>
         </div>
       </div>

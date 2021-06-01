@@ -27,7 +27,7 @@ const BlogList = (props) => {
             fluid={{ ...featuredPost.frontmatter.mainImage.image.childImageSharp.fluid, sizes: '(max-width: 501px) calc(100vw - 2rem), 450px' }}
             alt={featuredPost.frontmatter.mainImage.imageAlt}
           />
-          <div className="absolute max-w-sm p-6 text-center bg-white shadow-md featured-blog-text">
+          <div className="absolute max-w-sm p-6 text-center bg-white shadow-md md:w-1/2 featured-blog-text">
             <h5 className="mb-2">{featuredPost.frontmatter.title}</h5>
             <p className="mb-2 text-sm">{featuredPost.frontmatter.description}</p>
             <p className="mx-auto mb-0 btn">read more ...</p>
@@ -44,7 +44,7 @@ const BlogList = (props) => {
         <section className="max-w-5xl px-4 pt-24 mx-auto mb-32 text-center">
           <div className="max-w-lg mx-auto mb-20">
             <h1 className="mb-4">{title}</h1>
-            <p className="text-lg">{description}</p>
+            <p className="text-base lg:text-lg">{description}</p>
           </div>
 
           <LatestArticle />
@@ -54,7 +54,7 @@ const BlogList = (props) => {
           <div className="max-w-5xl px-4 mx-auto">
             <div className="flex flex-wrap justify-center mb-16">
               {posts.map(({ node }) => (
-                <div key={node.id} className="relative w-full max-w-sm sm:w-1/2 lg:w-1/3">
+                <div key={node.id} className="relative w-full max-w-sm my-12 md:mx-10 sm:w-1/2 lg:w-1/3">
                   <Link to={node.fields.slug}>
                     <Img
                       className="min-h-400"
