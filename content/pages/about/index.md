@@ -32,12 +32,21 @@ Pre selected John Moores prize 2018
 Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
+#### Permanent collections
+
+**Malaysia Gallery of Modern Art Daiichi**
+
+#### Galleries
+
+Fig tree gallery Antigua
+
 #### Selected Exhibitions
 
-2020 RA Summer Exhibition London Oct 6th -jan 3rd 
+2021 Finding Sanctuary online exhibition visionary art collective march 27th- may 10th 
 
-2020 NSA Edge of Dark Tremenheere Gallery Cornwall Oct10-Nov 1st\
-\
+2020 RA Summer Exhibition London Oct 
+
+2020 NSA Edge of Dark Tremenheere Gallery Cornwall \
 2020 Huss hotel Gstaad Switzerland 
 
 2019  Daiichi Gallery of Modern Art Penang, Malaysia 
