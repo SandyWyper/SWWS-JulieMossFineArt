@@ -25,16 +25,13 @@ Julie’s work has been exhibited in the 2019 Venice Biennale and recently the R
 
 #### Publications and prizes
 
-Fresh Paint magazine Feb 2016 / Oct. 2016
-Turps Banana issue 14 2014
-Finalist John Ruskin prize Holden Gallery 2019
-Pre selected John Moores prize 2018
-Finalist Windsor and Newton painting prize Griffin Gallery London 
+Art Seen Magazine May 2021                                                                                                                                   longlisted jacksons Artprize 2021                                                                                                                           Finalist John Ruskin prize Holden Gallery 2019                                                                                                          Pre selected John Moores prize 2018.                                                                                                                               Fresh Paint magazine Feb 2016 / Oct. 2016
+Turps Banana issue 14 2014                                                                                                                                     Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 #### Permanent collections
 
-**Malaysia Gallery of Modern Art Daiichi**
+###### Daichi Gallery of Modern Art Malaysia
 
 #### Galleries
 
@@ -42,9 +39,7 @@ Fig tree gallery Antigua
 
 #### Selected Exhibitions
 
-2021 Finding Sanctuary online exhibition visionary art collective march 27th- may 10th 
-
-2020 RA Summer Exhibition London Oct 
+2021 Artcan open London  postphoned untill Nov 2021                                                                                        2021Finding Sanctuary online exhibition visionary art collective                                                                              2020 RA Summer Exhibition London 
 
 2020 NSA Edge of Dark Tremenheere Gallery Cornwall \
 2020 Huss hotel Gstaad Switzerland 
