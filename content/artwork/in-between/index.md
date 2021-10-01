@@ -1,5 +1,5 @@
 ---
-title: in between
+title: In between
 category: Bringing nature home
 date: 2021-10-01T10:04:43.846Z
 excerpt: oils on canvas 153cm x 153cm 2021
