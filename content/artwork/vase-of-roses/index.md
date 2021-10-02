@@ -1,7 +1,7 @@
 ---
-title: 'vase of roses '
+title: vase of roses
 category: Bringing nature home
-details: 'oils on board '
+details: oils on board
 date: 2021-02-14T10:41:15.140Z
 isFeatured: false
 images:

@@ -6,6 +6,6 @@ excerpt: oils on canvas 153cm x 153cm 2021
 isFeatured: false
 images:
   - image: untitled-julie-moss-153cm-x-153cm-2021.jpg
-    alt: "Oils on canvas 153cm x 153cm "
+    alt: "Oils on canvas 153cm x 153cm"
 ---
 oils on canvas 153cm x 153cm 2021

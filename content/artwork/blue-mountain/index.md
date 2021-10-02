@@ -1,7 +1,7 @@
 ---
 title: Blue mountain
 category: Works on paper
-details: "watercolours on paper "
+details: "watercolours on paper"
 date: 2020-08-11T23:00:00.000Z
 isFeatured: false
 images:

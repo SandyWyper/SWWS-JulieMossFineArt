@@ -7,4 +7,6 @@ isFeatured: false
 images:
   - image: sacred-space.jpg
     alt: Out Of Place
+  - image: out-of-place-studio-shot-.jpg
+    alt: In the studio
 ---
