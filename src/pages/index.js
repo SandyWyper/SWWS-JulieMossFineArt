@@ -90,12 +90,12 @@ const IndexPage = ({
             </div>
           </Fade>
         </section>
-        <Fade duration={1500}>
+        {/* <Fade duration={1500}>
           <section className="max-w-5xl px-4 mx-auto mb-12 lg:mb-24">
             <FeaturedArt />
           </section>
-        </Fade>
-        <hr />
+        </Fade> */}
+        {/* <hr /> */}
         <Fade duration={1500}>
           <section className="max-w-md px-4 mx-auto mb-16 text-center">
             <NewsletterSignup />
