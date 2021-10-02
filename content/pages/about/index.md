@@ -8,13 +8,12 @@ As a shy child I could always be found digging in the dirt in my grandmothers ga
 
 I entered Bolton School of Art aged just 13, Art was a way to make my voice heard. After leaving school I studied floristry and had a brief career as a textile designer which gave me a love of pattern, colour and light found within plants and flowers.
 
-I look for the connections between my experiences whilst in nature and how they relate to me as a woman and my place in the world. The initial meaning of an experience may not reveal itself and remain hidden for some time, perhaps until an oil painting is complete and its true significance is unearthed. 
-
 The resulting paintings are therefore a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
 
-Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University. A finalist in the Windsor and Newton painting prize and John Ruskin Prize her recent work was selected for stage 2 of the John Moore’s prize, and she has been selected several times for the RWA exhibition in Bristol. Julie is an active member of the Newlyn Society of Artists. 
+Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University, previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family. 
 
-Previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family.
+A finalist in the Windsor and Newton painting prize and John Ruskin Prize, her work was selected for stage 2 of the John Moore’s prize. She has been selected several times for the RWA exhibition in Bristol and Julie is a member of the Newlyn Society of Artists. 
+
 Julie’s work has been exhibited in the 2019 Venice Biennale and recently the Royal Academy summer exhibition, and is held in private collections including the Gallery of Modern Art in Malaysia.
 
 #### Education
@@ -25,26 +24,31 @@ Julie’s work has been exhibited in the 2019 Venice Biennale and recently the R
 
 #### Publications and prizes
 
-Fresh Paint magazine Feb 2016 / Oct. 2016
-Turps Banana issue 14 2014
-Finalist John Ruskin prize Holden Gallery 2019
-Pre selected John Moores prize 2018
-Finalist Windsor and Newton painting prize Griffin Gallery London 
+Contemporary Art collectors Art book end of 2021
+
+Art Seen Magazine May 2021                                                                                                                                   floorr magazine 
+
+longlisted jacksons Artprize 2021                                                                                                                           Finalist John Ruskin prize Holden Gallery 2019                                                                                                          Pre selected John Moores prize 2018.                                                                                                                               Fresh Paint magazine Feb 2016 / Oct. 2016
+Turps Banana issue 14 2014                                                                                                                                     Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 #### Permanent collections
 
-**Malaysia Gallery of Modern Art Daiichi**
+###### Daichi Gallery of Modern Art Malaysia
 
 #### Galleries
+
+Waterside Gallery St Mawes
 
 Fig tree gallery Antigua
 
 #### Selected Exhibitions
 
-2021 Finding Sanctuary online exhibition visionary art collective march 27th- may 10th 
+2021 Autumn exhibition curators salon 29th september -november 7th
 
-2020 RA Summer Exhibition London Oct 
+2021 finding Sanctuary visonary Art collective
+
+2020 Royal Academy Summer/winter exhibition
 
 2020 NSA Edge of Dark Tremenheere Gallery Cornwall \
 2020 Huss hotel Gstaad Switzerland 
