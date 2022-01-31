@@ -4,11 +4,20 @@ mainImage:
   image: /uploads/fullsizeoutput_1817.jpeg
   imageAlt: studio shot
 ---
-As a shy child I could always be found digging in the dirt in my grandmothers garden, hidden amongst my beloved plants and flowers. I also loved the colouring books in which you added water to a seemingly blank page and colours and images would appear as if by magic. Its a technique I still use today, especially with my inks and watercolours, drawing first with clear water then dropping colour onto the page to see what appears.
+My grandmother’s roses are what started my love of pretty much everything I hold dear to my heart; gardens, painting, family, dreaming and getting lost amongst the flowers.
 
-I entered Bolton School of Art aged just 13, Art was a way to make my voice heard. After leaving school I studied floristry and had a brief career as a textile designer which gave me a love of pattern, colour and light found within plants and flowers.
+I love magical spaces which seem to be elevated out of the ordinary, timeless places which are perhaps slightly overgrown and hidden from view and need to be protected.
 
-The resulting paintings are therefore a mix of a factual record of a moment in time and an emotional response to being in a particular place. It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation. 
+As a child I loved the colouring books with blank pages which when you applied water colours would appear as if by magic to reveal an image.\
+It’s a technique I still use today when I sketch with my ink brushes, drawing with water first then allowing the coloured inks to meander across the paper until an image starts to form.
+
+The immediacy and tactility of oils and inks dictates my choice of materials whilst colour and light are used to express emotion.\
+My oil paintings provide a continuous journey of revelation and discovery, with the hidden, ephemeral and transient the constant thread that ties it all together. I am interested in threshold spaces where transitional states of being come into play: the interior and exterior such as doorways, greenhouses and windows.
+
+The resulting paintings are a mix of a factual record of a moment in time and an emotional response to being in a particular place.\
+It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation.
+
+
 
 Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University, previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family. 
 
@@ -24,7 +33,7 @@ Julie’s work has been exhibited in the 2019 Venice Biennale and recently the R
 
 #### Publications and prizes
 
-Contemporary Art collectors Art book end of 2021
+Contemporary Art collectors Art book 2022
 
 Art Seen Magazine May 2021                                                                                                                                   floorr magazine 
 
@@ -43,6 +52,8 @@ Waterside Gallery St Mawes
 Fig tree gallery Antigua
 
 #### Selected Exhibitions
+
+2022 Weary Harold ASC gallery london 18th Feb- 18th March
 
 2021 Autumn exhibition curators salon 29th september -november 7th
 
