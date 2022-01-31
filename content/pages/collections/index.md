@@ -1,5 +1,5 @@
 ---
-title: Collections
+title: Artwork
 heading: ""
 subheading: ""
 collections:
