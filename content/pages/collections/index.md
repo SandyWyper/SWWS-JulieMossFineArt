@@ -32,18 +32,6 @@ collections:
     image3:
       image: /uploads/boogie-wonderland-julie-moss-2020.jpg
       alt: "Boogie wonderland oils on canvas 61cm x 61cm "
-  - title: "Works on paper "
-    description: A selection of sketches from the sketchbook inspired by travel and
-      gardens using mainly inks, botanical dyes and watercolours.
-    image1:
-      image: /uploads/jungle-sketch.jpg
-      alt: Jungle inks on paper
-    image2:
-      image: /uploads/no-mans-land-sketch-.jpg
-      alt: "'No Mans Land' watercolours on paper"
-    image3:
-      image: /uploads/watercolour-sketch-.jpg
-      alt: "Pitons inks and watercolours on paper "
   - title: Serendipity
     description: |-
       "The fact of something interesting or pleasant happening by chance" 
