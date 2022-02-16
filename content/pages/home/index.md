@@ -8,14 +8,14 @@ myArt:
   title: Art
   description: "\n"
   myArtImage:
-    image: /uploads/restored-order.jpg
-    imageAlt: Art cover image
+    image: /uploads/plantation-house-j-moss.jpg
+    imageAlt: "Plantation House "
 myBlog:
   myBlogImage:
     image: /uploads/must-come-down.jpg
     imageAlt: "'Must come down\" oils on paper"
-  title: Works in progress
-  description: studio news
+  title: Notes from the studio
+  description: notebook
 isFeaturedArtShown: true
 isFeaturedArticleShown: true
 ---
