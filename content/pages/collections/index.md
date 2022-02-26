@@ -56,4 +56,15 @@ collections:
     image3:
       image: /uploads/static-caravan.jpg
       alt: Static caravan
+  - title: Archive
+    description: "Paintings either sold or in collections "
+    image1:
+      image: /uploads/plantation-house-j-moss.jpg
+      alt: "Plantation house oils on canvas "
+    image2:
+      image: /uploads/boogie-wonderland-julie-moss-2020.jpg
+      alt: "Boogie Wonderland oils on canvas "
+    image3:
+      image: /uploads/fragile-julie-moss.jpeg
+      alt: "Fragile oils on canvas "
 ---
