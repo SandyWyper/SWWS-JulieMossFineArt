@@ -4,16 +4,16 @@ heading: ""
 subheading: ""
 collections:
   - title: Painting
-    description: "oils on canvas "
+    description: Available work    Oil paintings
     image1:
       image: /uploads/heligan-oils-on-wood-board-2-julie-moss-.jpg
-      alt: Heligan     oils on cradled wood
+      alt: "Heligan     oils on cradled wood. 41cm x 31cm "
     image2:
-      image: /uploads/plantation-house-j-moss.jpg
-      alt: "Plantation house    oils on canvas "
+      image: /uploads/burn-baby-burn-.jpg
+      alt: "Burn baby burn oils on canvas 153cm x 153cm "
     image3:
       image: /uploads/now-is-not-the-time.jpg
-      alt: "Oils on canvas "
+      alt: " Now is not the time   oils on canvas 153cm x 153cm "
   - title: "Bringing nature home "
     description: "Paintings inspired by gardens, plants and green spaces "
     image1:
