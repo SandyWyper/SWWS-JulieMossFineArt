@@ -26,7 +26,7 @@ collections:
       alt: Rock garden oils on paper (Framed )
     description: "A selection of works on paper "
   - title: Archive
-    description: "Paintings either sold or in collections "
+    description: Paintings no longer available
     image1:
       image: /uploads/plantation-house-j-moss.jpg
       alt: "Plantation house oils on canvas "
