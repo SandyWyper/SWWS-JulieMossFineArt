@@ -14,17 +14,6 @@ collections:
     image3:
       image: /uploads/now-is-not-the-time.jpg
       alt: " Now is not the time   oils on canvas 153cm x 153cm "
-  - title: Archive
-    description: "Paintings either sold or in collections "
-    image1:
-      image: /uploads/plantation-house-j-moss.jpg
-      alt: "Plantation house oils on canvas "
-    image2:
-      image: /uploads/boogie-wonderland-julie-moss-2020.jpg
-      alt: "Boogie Wonderland oils on canvas "
-    image3:
-      image: /uploads/fragile-julie-moss.jpeg
-      alt: "Fragile oils on canvas "
   - title: "Works on paper "
     image1:
       image: /uploads/golden-hour-oils-on-paper-julie-moss.jpg
@@ -36,4 +25,15 @@ collections:
       image: /uploads/rock-garden-.jpg
       alt: Rock garden oils on paper (Framed )
     description: "A selection of works on paper "
+  - title: Archive
+    description: "Paintings either sold or in collections "
+    image1:
+      image: /uploads/plantation-house-j-moss.jpg
+      alt: "Plantation house oils on canvas "
+    image2:
+      image: /uploads/boogie-wonderland-julie-moss-2020.jpg
+      alt: "Boogie Wonderland oils on canvas "
+    image3:
+      image: /uploads/fragile-julie-moss.jpeg
+      alt: "Fragile oils on canvas "
 ---
