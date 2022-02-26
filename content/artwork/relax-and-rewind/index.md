@@ -1,6 +1,6 @@
 ---
 title: Relax and rewind
-category: Bringing nature home
+category: Painting
 details: Oils on canvas 60cm x 60cm
 date: 2020-08-06T11:01:00.000Z
 isFeatured: false
