@@ -1,7 +1,7 @@
 ---
 title: ""
 mainImage:
-  image: /uploads/fullsizeoutput_1817.jpeg
+  image: /uploads/studio-shot-julie-moss-2.jpg
   imageAlt: studio shot
 ---
 My grandmother’s roses are what started my love of pretty much everything I hold dear to my heart; gardens, painting, family, dreaming and getting lost amongst the flowers.
