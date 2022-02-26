@@ -45,4 +45,15 @@ collections:
     image3:
       image: /uploads/static-caravan.jpg
       alt: Static caravan
+  - title: Painting
+    description: "oils on canvas "
+    image1:
+      image: /uploads/heligan-oils-on-wood-board-2-julie-moss-.jpg
+      alt: Heligan     oils on cradled wood
+    image2:
+      image: /uploads/plantation-house-j-moss.jpg
+      alt: "Plantation house    oils on canvas "
+    image3:
+      image: /uploads/now-is-not-the-time.jpg
+      alt: "Oils on canvas "
 ---
