@@ -1,8 +1,9 @@
 ---
 title: Plantation House
-category: Wanderlust
+category: "Archive "
 details: Oils on canvas 123cm x 123cm
 date: 2019-10-30T11:59:40.362Z
+excerpt: "Paintings no longer available either sold or in collections "
 isFeatured: false
 images:
   - image: plantation-house-j-moss.jpg
