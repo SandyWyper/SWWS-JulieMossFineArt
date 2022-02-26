@@ -1,7 +1,7 @@
 ---
 title: Truth be known
-category: Bringing nature home
-details: oils on canvas 100cm x 100cm
+category: Painting
+details: Oils on canvas 100cm x 100cm
 date: 2021-02-14T12:01:38.970Z
 isFeatured: false
 images:
