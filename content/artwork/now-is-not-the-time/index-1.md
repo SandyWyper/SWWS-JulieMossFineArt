@@ -1,8 +1,8 @@
 ---
 title: Now is not the time
-category: Bringing nature home
+category: Painting
 details: "oils on canvas 153cm x 153cm "
-date: 2020-09-02T13:42:57.613Z
+date: 2021-09-02T13:42:00.000Z
 excerpt: ""
 isFeatured: false
 images:
