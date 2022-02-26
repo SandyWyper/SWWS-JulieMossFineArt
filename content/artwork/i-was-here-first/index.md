@@ -1,6 +1,6 @@
 ---
 title: I Was Here First
-category: Bringing Nature Home
+category: Painting
 details: Oil on canvas 153cm x 153cm 2015
 date: 2018-08-25T14:44:00.000Z
 isFeatured: false
