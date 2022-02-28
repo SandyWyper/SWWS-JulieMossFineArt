@@ -77,9 +77,6 @@ const Nav = ({ path }) => {
     to: {
       opacity: !isOpen ? 0 : 1,
       width: !isOpen ? '0%' : '100%',
-      // height: !isOpen ? '0%' : '100%',
-      // zIndex: !isOpen ? -20 : 50,
-      // display: !isOpen ? 'none' : 'block',
     },
   });
 
