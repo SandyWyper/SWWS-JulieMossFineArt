@@ -1,11 +1,9 @@
 ---
-title: In between
-category: Bringing nature home
-date: 2021-10-01T10:04:43.846Z
-excerpt: oils on canvas 153cm x 153cm 2021
+title: In Between
+category: Painting
+date: 2022-02-26T18:37:43.029Z
 isFeatured: false
 images:
-  - image: untitled-julie-moss-153cm-x-153cm-2021.jpg
-    alt: "Oils on canvas 153cm x 153cm"
+  - image: in-between-julie-moss-153cm-x-153cm-2021.jpg
+    alt: "In Between Oils on canvas 153cm x 153cm "
 ---
-oils on canvas 153cm x 153cm 2021

@@ -1,6 +1,6 @@
 ---
 title: Out Of Place
-category: Bringing nature home
+category: Painting
 details: Oils on canvas 153cm x 153cm 2019
 date: 2017-08-25T15:01:00.000Z
 isFeatured: false
