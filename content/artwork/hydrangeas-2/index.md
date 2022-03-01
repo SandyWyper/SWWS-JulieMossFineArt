@@ -1,5 +1,5 @@
 ---
-title: "Hydrangeas "
+title: Hydrangeas
 category: Painting
 details: oils on canvas 2019
 date: 2019-08-25T14:29:00.000Z

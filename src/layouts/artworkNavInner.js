@@ -58,7 +58,7 @@ const ArtworkNavInner = ({ path }) => {
   const artwork = data.allMarkdownRemark.edges;
   // organise artworks into their categories
   const groupedCollections = groupBy(artwork, function (item) {
-    return item.node.frontmatter.category;
+    return item.node.frontmatter.category.trim();
   });
 
   // Array of categories

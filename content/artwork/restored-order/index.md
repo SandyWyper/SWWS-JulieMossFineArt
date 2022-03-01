@@ -1,6 +1,6 @@
 ---
 title: Restored order
-category: "Painting "
+category: Painting
 details: Oils on canvas 153cm x 153cm
 date: 2017-01-15T15:53:00.000Z
 isFeatured: false
@@ -10,4 +10,3 @@ images:
   - image: img_1445.jpg
     alt: hanging in context
 ---
-oils on canvas 153cm x 153cm

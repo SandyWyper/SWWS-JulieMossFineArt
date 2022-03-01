@@ -159,7 +159,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // const collectionCategories = Object.keys(grouped);
 
   // Number of artworks to display per page
-  const artworkPerPagePerCollection = 20;
+  const artworkPerPagePerCollection = 25;
   // Create art collections pages
   for (const category in grouped) {
     const numCollectionPages = Math.ceil(grouped[category].length / artworkPerPagePerCollection);
