@@ -17,8 +17,6 @@ My oil paintings provide a continuous journey of revelation and discovery, with 
 The resulting paintings are a mix of a factual record of a moment in time and an emotional response to being in a particular place.\
 It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation.
 
-
-
 Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University, previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family. 
 
 A finalist in the Windsor and Newton painting prize and John Ruskin Prize, her work was selected for stage 2 of the John Moore’s prize. She has been selected several times for the RWA exhibition in Bristol and Julie is a member of the Newlyn Society of Artists. 
@@ -43,19 +41,15 @@ Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 #### Permanent collections
 
-###### Daichi Gallery of Modern Art Malaysia
+Daichi Gallery of Modern Art
 
-#### Galleries
-
-Waterside Gallery St Mawes
-
-Fig tree gallery Antigua
+**Represented** by: Waterside Gallery St Mawes, Fig tree gallery Antigua
 
 #### Selected Exhibitions
 
 2022 Weary Harold ASC gallery london 18th Feb- 18th March
 
-2021 Autumn exhibition curators salon 29th september -november 7th
+2021 Autumn exhibition curators salon 
 
 2021 finding Sanctuary visonary Art collective
 
