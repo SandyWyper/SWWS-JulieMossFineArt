@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './nav';
-import ArtworkNav from './artworkNav';
+// import ArtworkNav from './artworkNav';
 import PropTypes from 'prop-types';
 import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 
@@ -29,7 +29,7 @@ const Index = ({ path, pageContext: { artworkNav }, children, location }) => {
         }}
       >
         <Nav path={path} />
-        <ArtworkNav show={showArtworkNav} path={path} />
+        {/* <ArtworkNav show={showArtworkNav} path={path} /> */}
         <main>
           <TransitionViews>{children}</TransitionViews>
         </main>

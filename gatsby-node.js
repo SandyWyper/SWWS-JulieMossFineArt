@@ -152,8 +152,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Simplify data tree
   const artwork = artworkData.data.allMarkdownRemark.edges;
+
+  // trim white space off keys and values in the data
+  const trimmedValues = JSON.parse(JSON.stringify(artwork).replace(/"\s+|\s+"/g, '"'));
+
   // organise artworks into their categories
-  const grouped = groupBy(artwork, function (item) {
+  const grouped = groupBy(trimmedValues, function (item) {
     return item.node.frontmatter.category;
   });
   // const collectionCategories = Object.keys(grouped);
@@ -174,7 +178,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           totalPages: numCollectionPages,
           currentPage: i + 1,
           collectionName: category,
-          artworkNav: true,
+          artworkNav: false,
+          allCollections: grouped,
         },
       });
     });

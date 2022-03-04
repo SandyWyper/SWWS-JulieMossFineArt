@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSpring, animated } from 'react-spring';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import ArtworkNavInner from './artworkNavInner';
 
 const ArtworkNav = ({ show, path }) => {
@@ -12,12 +12,12 @@ const ArtworkNav = ({ show, path }) => {
   });
 
   return (
-    <div className="relative z-30 max-w-5xl mx-auto">
+    <div className="relative z-30 max-w-6xl mx-auto">
       <animated.div style={navSpring} className="bg-white art-nav">
         <div className="px-4">
-          <Link to="/collections" className="heading">
+          {/* <Link to="/collections" className="heading">
             Collections
-          </Link>
+          </Link> */}
           <ArtworkNavInner path={path} />
         </div>
       </animated.div>

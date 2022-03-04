@@ -40,18 +40,8 @@ hr {
     grid-template-columns: 15rem auto;
     .artwork-space {
       grid-column: 2 / 3;
-      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      // border-left: 1px solid rgba(0, 0, 0, 0.1);
     }
-  }
-}
-
-.footer-padding {
-  padding-bottom: 26.8235294118rem;
-  @screen sm {
-    padding-bottom: 17.2058823529rem;
-  }
-  @screen lg {
-    padding-bottom: 12.4705882353rem;
   }
 }
 
@@ -71,4 +61,11 @@ input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.artwork-deets {
+  @screen lg {
+    padding-left: 2rem;
+    min-width: 400px;
+  }
 }

@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 const Thankyou = () => (
   <>
     <SEO title="Thankyou" />
-    <div className="relative min-h-screen footer-padding">
+    <div className="relative min-h-screen">
       <section className="max-w-5xl px-4 pt-24 mx-auto text-center">
         <div className="">
           <h1 className="mb-10">Thank you</h1>

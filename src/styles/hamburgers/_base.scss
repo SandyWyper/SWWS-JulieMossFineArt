@@ -4,6 +4,9 @@
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
+  @screen lg {
+    padding: $hamburger-padding-y 2.5rem;
+  }
 
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -21,8 +24,7 @@
   &:hover {
     @if $hamburger-hover-use-filter == true {
       filter: $hamburger-hover-filter;
-    }
-    @else {
+    } @else {
       opacity: $hamburger-hover-opacity;
     }
   }
@@ -31,8 +33,7 @@
     &:hover {
       @if $hamburger-hover-use-filter == true {
         filter: $hamburger-active-hover-filter;
-      }
-      @else {
+      } @else {
         opacity: $hamburger-active-hover-opacity;
       }
     }
@@ -72,7 +73,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: block;
   }
 

@@ -24,8 +24,8 @@ const ArtworkNavInner = ({ path }) => {
                 image {
                   id
                   childImageSharp {
-                    fixed(width: 100) {
-                      ...GatsbyImageSharpFixed_withWebp
+                    fluid(srcSetBreakpoints: [50, 100, 200, 300], sizes: "120px") {
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }
@@ -80,27 +80,26 @@ const ArtworkNavInner = ({ path }) => {
       // return for groupCollections map
       if (eachArtImage !== null) {
         return (
-          <Link key={eachArtImage.image.id} className={`artThumb ${isCurrent && 'isActive'}`} to={eachArt.node.fields.slug.slice(0, -1)}>
-            <Img fixed={{ ...eachArtImage.image.childImageSharp.fixed }} alt={eachArtImage.alt} />
-          </Link>
+          <div key={eachArtImage.image.id} className={`art-thumb ${isCurrent ? 'is-active' : ''}`}>
+            <Link to={eachArt.node.fields.slug.slice(0, -1)}>
+              <Img fluid={{ ...eachArtImage.image.childImageSharp.fluid }} alt={eachArtImage.alt} />
+            </Link>
+          </div>
         );
       } else {
         return null;
       }
     });
 
-    // return for collectionCategories map
     return (
       <React.Fragment key={`${pathify(category)}-container-${i}`}>
-        <Link className={`art-category-nav font-bold ${activeTab === i ? 'isActive' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
+        <Link className={`art-category-nav font-bold ${activeTab === i ? 'is-active' : ''}`} to={pathify(category)} index={i} onClick={activateTab}>
           {category}
         </Link>
-        <div>
-          <div className={`category-image-grid ${activeTab === i ? 'isActive' : ''}`} aria-hidden={activeTab !== i}>
-            <Masonry gutter={'1'} columnsCount={2}>
-              {collectionImages.map((image) => image)}
-            </Masonry>
-          </div>
+        <div className={`category-image-grid ${activeTab === i ? 'is-active' : ''}`} aria-hidden={activeTab !== i}>
+          <Masonry gutter={'10px'} columnsCount={2}>
+            {collectionImages.map((image) => image)}
+          </Masonry>
         </div>
       </React.Fragment>
     );

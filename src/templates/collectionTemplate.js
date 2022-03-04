@@ -20,29 +20,42 @@ const CollectionTemplate = (props) => {
   const isLast = currentPage === totalPages;
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
   const nextPage = (currentPage + 1).toString();
-  const sharingImage =
-    collectionArtwork['0'].node.frontmatter.images !== null
-      ? collectionArtwork['0'].node.frontmatter.images['0'].image.childImageSharp.resize.src
-      : null;
+  const sharingImage = collectionArtwork['0'].node.frontmatter.images !== null ? collectionArtwork['0'].node.frontmatter.images['0'].image.childImageSharp.resize.src : null;
+
+  const allCollections = Object.keys(props.pageContext.allCollections);
 
   return (
     <>
       <SEO title={`Julie Moss - ${props.pageContext.collectionName}`} description={description} url={props.location.href} image={sharingImage} />
-      <div className="relative min-h-screen footer-padding">
-        <section className="max-w-5xl px-4 pt-24 mx-auto text-left artwork-grid">
-          <div className="flex flex-col w-full pb-12 lg:pl-4 artwork-space">
-            <div>
-              <h1 className="mb-8 leading-none">{props.pageContext.collectionName}</h1>
+      <div className="relative min-h-screen">
+        <section className="max-w-6xl px-4 pt-24 mx-auto text-left lg:px-10">
+          <div className="flex flex-col w-full pb-12">
+            <div className={`md:flex md:items-end mb-4`}>
+              {allCollections.map((collection, i) => {
+                return props.path.includes(pathify(collection, i)) ? (
+                  <Link to={pathify(collection)} key={`collection-link-${i}`}>
+                    <h1 className={`mb-2 leading-tight ${props.path.includes(pathify(collection)) ? '' : 'opacity-50'}`}>{collection}&nbsp;/&nbsp;</h1>
+                  </Link>
+                ) : (
+                  <Link to={pathify(collection)} key={`collection-link-${i}`}>
+                    <h2 className={`mb-2 leading-tight  ${props.path.includes(pathify(collection)) ? '' : 'opacity-50'}`}>
+                      {collection}
+
+                      {i !== allCollections.length - 1 ? <span>&nbsp;/</span> : ''}
+                      <span>&nbsp;</span>
+                    </h2>
+                  </Link>
+                );
+              })}
+
+              {/* <h1 className="mb-8 leading-none">{props.pageContext.collectionName}</h1> */}
             </div>
             {description !== undefined && <p className="text-lg">{description}</p>}
             <div>
-              <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 450: 2 }}>
-                <Masonry gutter={'10px'}>
+              <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 600: 2 }}>
+                <Masonry gutter={'3rem'}>
                   {collectionArtwork.map((art, i) => {
-                    const each =
-                      art.node.frontmatter.hasOwnProperty('images') & (art.node.frontmatter.images !== null)
-                        ? art.node.frontmatter.images['0']
-                        : null;
+                    const each = art.node.frontmatter.hasOwnProperty('images') & (art.node.frontmatter.images !== null) ? art.node.frontmatter.images['0'] : null;
                     if (each !== null) {
                       return (
                         <Fade key={`${each.alt}-${i}`}>
@@ -90,12 +103,7 @@ const CollectionTemplate = (props) => {
 
 export const artQuery = graphql`
   query collectionArt($collectionName: String!, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: $collectionName } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { category: { eq: $collectionName } } }, sort: { fields: [frontmatter___date], order: DESC }, limit: $limit, skip: $skip) {
       edges {
         node {
           id

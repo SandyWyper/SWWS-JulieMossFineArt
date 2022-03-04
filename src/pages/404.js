@@ -7,7 +7,7 @@ import Robot404 from '../components/Robot404';
 const NotFoundPage = () => (
   <>
     <SEO title="404: Not found" />
-    <div className="relative min-h-screen footer-padding">
+    <div className="relative min-h-screen">
       <section className="max-w-5xl px-4 pt-24 mx-auto md:flex">
         <div className="md:w-1/2">
           <h1 className="mb-0 opacity-50">NOT FOUND</h1>

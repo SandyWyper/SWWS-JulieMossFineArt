@@ -9,21 +9,13 @@ import Footer from '../components/footer';
 const BlogTemplate = (props) => {
   const { next, prev } = props.pageContext;
   const { frontmatter, html } = props.data.markdownRemark;
-  const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image
-    ? props.data.markdownRemark.frontmatter.mainImage.image.childImageSharp.resize.src
-    : null;
+  const sharingImage = props.data.markdownRemark.frontmatter.mainImage.image ? props.data.markdownRemark.frontmatter.mainImage.image.childImageSharp.resize.src : null;
 
   return (
     <>
-      <SEO
-        title={frontmatter.title}
-        description={frontmatter.description.slice(0, 160)}
-        image={sharingImage}
-        url={props.location.href}
-        imageAlt={frontmatter.mainImage.imageAlt}
-      />
-      <div className="relative min-h-screen footer-padding">
-        <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
+      <SEO title={frontmatter.title} description={frontmatter.description.slice(0, 160)} image={sharingImage} url={props.location.href} imageAlt={frontmatter.mainImage.imageAlt} />
+      <div className="relative ">
+        <section className="max-w-5xl px-4 pt-24 mx-auto mb-24 lg:px-10">
           {frontmatter.mainImage.image && (
             <Img
               className="max-w-md mx-auto mb-4"

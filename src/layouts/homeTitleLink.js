@@ -37,7 +37,7 @@ const HomeTitleLink = ({ path }) => {
 
   return (
     <animated.div style={showSpring} className="py-2">
-      <Link to="/" className="pl-4 home-link">
+      <Link to="/" className="pl-4 lg:pl-10 home-link">
         Julie Moss
       </Link>
     </animated.div>

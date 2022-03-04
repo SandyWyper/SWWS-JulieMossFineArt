@@ -14,6 +14,9 @@
 }
 
 .nav-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   a {
     font-family: 'Libre Caslon Display', 'Times New Roman', serif;
     font-size: 1.5rem;
@@ -132,7 +135,7 @@ button:focus {
   z-index: -1;
   height: auto;
   background-color: white;
-  width: 14.5rem;
+  width: 16rem;
   display: none;
   margin-top: 6.2rem;
 
@@ -177,8 +180,8 @@ button:focus {
   height: 0;
   overflow: hidden;
   transition: height 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  &.isActive {
-    height: calc(100vh - 28rem);
+  &.is-active {
+    height: calc(100vh - 10.95rem);
     overflow-y: scroll;
   }
   // scroll shadows
@@ -197,9 +200,9 @@ button:focus {
   scrollbar-width: none; /* Firefox */
 }
 
-.artThumb {
+.art-thumb {
   opacity: 0.5;
-  &.isActive {
+  &.is-active {
     opacity: 1;
   }
 }

@@ -40,8 +40,7 @@ const Nav = ({ path }) => {
     `
   );
   // destructure data
-  const { collections } = data.markdownRemark.frontmatter;
-  const posts = data.allMarkdownRemark.edges;
+  // const posts = data.allMarkdownRemark.edges;
 
   // Nav open or not state
   const [isOpen, setIsOpen] = useState(false);
@@ -99,7 +98,7 @@ const Nav = ({ path }) => {
 
   return (
     <animated.nav style={showNavSpring} className="fixed inset-x-0 z-40 w-full bg-white">
-      <div className="relative max-w-5xl mx-auto">
+      <div className="relative max-w-6xl mx-auto">
         <HomeTitleLink path={path} />
         <div className="absolute top-0 right-0 mt-2 md:mt-3">
           <button onClick={menuToggle} className={`hamburger hamburger--collapse relative ${isOpen && 'is-active'}`} type="button">
@@ -119,6 +118,11 @@ const Nav = ({ path }) => {
                       </Link>
                     </li>
                     <li className="item">
+                      <Link to={pathify(data.markdownRemark.frontmatter.collections[0].title)} onClick={linkToggle} onKeyDown={handleKeyDown}>
+                        View Work
+                      </Link>
+                    </li>
+                    <li className="item">
                       <Link to="/about" onClick={linkToggle} onKeyDown={handleKeyDown}>
                         About
                       </Link>
@@ -129,37 +133,9 @@ const Nav = ({ path }) => {
                       </Link>
                     </li>
                     <li className="item">
-                      <Link to="/collections" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                        Art
-                      </Link>
-                      <ul>
-                        {collections.slice(0, 3).map((collection, i) => (
-                          <li key={`${i}-${collection.title}`}>
-                            <Link className="sub-link" to={pathify(collection.title)} onClick={linkToggle} onKeyDown={handleKeyDown}>
-                              {collection.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                    <li className="item">
                       <Link to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                        Blog
+                        Notes From The Studio
                       </Link>
-                      <ul>
-                        {posts.map((post, i) => (
-                          <li key={post.node.id}>
-                            <Link className="sub-link" to={post.node.fields.slug} onClick={linkToggle} onKeyDown={handleKeyDown}>
-                              {post.node.frontmatter.title}
-                            </Link>
-                          </li>
-                        ))}
-                        <li>
-                          <Link className="hidden sub-link xsm:block" to="/blog" onClick={linkToggle} onKeyDown={handleKeyDown}>
-                            more ...
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </nav>
