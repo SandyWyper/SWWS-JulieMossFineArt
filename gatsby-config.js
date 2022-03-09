@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-layout',
     `simple-react-lightbox`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
