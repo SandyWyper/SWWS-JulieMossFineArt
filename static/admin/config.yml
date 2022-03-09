@@ -6,7 +6,6 @@ backend:
 media_folder: static/uploads
 public_folder: /uploads
 
-logo_url: https://juliemossfineart.co.uk/uploads/image00001.jpg
 
 collections:
   - name: "artwork"
