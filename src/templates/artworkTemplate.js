@@ -7,14 +7,18 @@ import Footer from '../components/footer';
 import Fade from 'react-reveal/Fade';
 import SimpleReactLightbox from 'simple-react-lightbox';
 import { SRLWrapper } from 'simple-react-lightbox';
+import pathify from '../lib/pathify';
 
 import Mag from '../icons/magnifyingGlass';
 
 const ArtworkTemplate = (props) => {
   const { frontmatter, html } = props.data.markdownRemark;
   const { next, prev } = props.pageContext;
+  const collectionName = pathify(props.pageContext.collectionName);
   const sharingImageAlt = frontmatter.images !== null ? frontmatter.images[0].alt : null;
   const sharingImage = frontmatter.images !== null ? frontmatter.images[0].image.childImageSharp.resize.src : null;
+
+  const allCollections = Object.keys(props.pageContext.allCollections);
 
   const lightboxOptions = {
     settings: {
@@ -41,16 +45,38 @@ const ArtworkTemplate = (props) => {
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
     </div>
   );
+  console.log('collectionName', collectionName);
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
       <div className="relative">
         <SimpleReactLightbox>
           <SRLWrapper options={lightboxOptions}>
-            <section className={`max-w-6xl px-4 lg:px-10 pt-24 mx-auto text-left pb-12 min-h-screen flex flex-col justify-center`}>
-              <div className="">
+            <section className={`max-w-6xl px-4 lg:px-10 pt-24 mx-auto text-left pb-12`}>
+              <div className={`md:flex md:items-end mb-4`}>
+                {allCollections.map((collection, i) => {
+                  return collectionName.includes(pathify(collection)) ? (
+                    <Link to={pathify(collection)} key={`collection-link-${i}`}>
+                      <h1 className={`mb-2 text-2xl leading-tight`}>
+                        {collection}
+                        {i !== allCollections.length - 1 ? <span>&nbsp;/</span> : ''}
+                        <span>&nbsp;</span>
+                      </h1>
+                    </Link>
+                  ) : (
+                    <Link to={pathify(collection)} key={`collection-link-${i}`}>
+                      <h2 className={`mb-2  text-2xl leading-tight  ${props.path.includes(pathify(collection)) ? '' : 'opacity-50'}`}>
+                        {collection}
+                        {i !== allCollections.length - 1 ? <span>&nbsp;/</span> : ''}
+                        <span>&nbsp;</span>
+                      </h2>
+                    </Link>
+                  );
+                })}
+              </div>
+              <div className="flex flex-col justify-center layout-height">
                 <div className="lg:flex lg:items-end">
-                  <div className="pb-12 lg:w-2/3 lg:pb-0">
+                  <div className="pb-12 lg:w-1/2 lg:pb-0">
                     <Mag className="w-4 mb-2" />
                     {frontmatter.images !== null &&
                       frontmatter.images.map((art, i) => {

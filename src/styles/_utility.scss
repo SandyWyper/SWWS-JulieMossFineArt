@@ -69,3 +69,7 @@ input {
     min-width: 400px;
   }
 }
+
+.layout-height {
+  min-height: calc(100vh - 8rem);
+}

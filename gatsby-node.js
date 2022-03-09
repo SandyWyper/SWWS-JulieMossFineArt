@@ -178,7 +178,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           totalPages: numCollectionPages,
           currentPage: i + 1,
           collectionName: category,
-          artworkNav: false,
           allCollections: grouped,
         },
       });
@@ -193,7 +192,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           slug: node.fields.slug,
           prev: index === 0 ? null : grouped[category][index - 1].node.fields.slug,
           next: index === grouped[category].length - 1 ? null : grouped[category][index + 1].node.fields.slug,
-          artworkNav: true,
+          collectionName: category,
+          allCollections: grouped,
         },
       });
     });
