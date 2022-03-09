@@ -41,11 +41,23 @@ const ArtworkTemplate = (props) => {
   const ArtWorkInfo = () => (
     <div className="artwork-deets">
       <h3 className="mb-0 text-2xl leading-tight md:text-3xl">{frontmatter.title}</h3>
-      {frontmatter.details && <p className="mb-0 font-bold">{frontmatter.details}</p>}
+      {frontmatter.details && <p className="mt-2 mb-0 font-bold">{frontmatter.details}</p>}
       {html && <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />}
+      {frontmatter.isForSale ? (
+        <div className="">
+          <h6 className="mt-4 mb-0">
+            Available for purchase&nbsp;:&nbsp;
+            <Link to="/contact">
+              <span className="mb-0 underline">Enquire</span>
+            </Link>
+          </h6>
+        </div>
+      ) : (
+        <span />
+      )}
     </div>
   );
-  console.log('collectionName', collectionName);
+  console.log('props', props);
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
@@ -134,6 +146,7 @@ export const data = graphql`
       frontmatter {
         title
         details
+        isForSale
         images {
           alt
           image {

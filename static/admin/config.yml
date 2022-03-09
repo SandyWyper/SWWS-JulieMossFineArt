@@ -6,7 +6,7 @@ backend:
 media_folder: static/uploads
 public_folder: /uploads
 
-logo_url: https://juliemossfineart.co.uk/uploads/SWWS-icon-96x96.png
+logo_url: https://juliemossfineart.co.uk/uploads/image00001.jpg
 
 collections:
   - name: "artwork"
@@ -51,18 +51,7 @@ collections:
         name: "home"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
-          - { label: "Intro", name: "intro", widget: "object", fields: [{ label: "Intro text", name: "introText", widget: "text"}, { label: "Intro image", name: "introImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}
-          - { label: "My art", name: "myArt", widget: "object", fields: [{ label: "Title", name: "title", widget: "text"}, { label: "Description", name: "description", widget: "text"}, { label: "My art image", name: "myArtImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}
-          - { label: "My blog", name: "myBlog", widget: "object", fields: [{ label: "Title", name: "title", widget: "text"}, { label: "Description", name: "description", widget: "text"}]}
-      - file: "content/pages/collections/index.md"
-        label: "Art Collections"
-        name: "collections"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "collections-page" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Heading", name: "heading", widget: "string", required: false }
-          - { label: "Subheading", name: "subheading", widget: "string", required: false }
-          - { label: "Collections", name: "collections", widget: "list", fields: [{ label: "Title", name: "title", widget: "string"}, { label: "Description", name: "description", widget: "text"}, { label: "Image1", name: "image1", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}]}, { label: "Image2", name: "image2", widget: "object", fields: [{ label: "Image", name: "image", widget: "image"}, { label: "Alt", name: "alt", widget: "string"}]}, {label: "Image3", name: "image3", widget: "object", fields: [{ label: "Image", name: "image", widget: "image"}, { label: "Alt", name: "alt", widget: "string"}]}]}
+          - { label: "Intro", name: "intro", widget: "object", fields: [{ label: "Intro text", name: "introText", widget: "text"}, { label: "Intro image", name: "introImage", widget: "object", fields: [{ label: "Image", name: "image", widget: "image" }, { label: "Image description", name: "imageAlt", widget: "string" }]}]}       
       - file: "content/pages/about/index.md"
         label: "About"
         name: "about"

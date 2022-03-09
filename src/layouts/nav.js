@@ -91,9 +91,9 @@ const Nav = ({ path }) => {
   );
 
   const showNavSpring = useSpring({
-    marginTop: isShown ? '0rem' : '-5.2rem',
-    // opacity: isShown ? '1' : '0',
-    config: { mass: 1, tension: 120, friction: 24, clamp: true },
+    // marginTop: isShown ? '0rem' : '-5.2rem',
+    opacity: isShown ? '1' : '0',
+    config: { mass: 1, tension: 120, friction: 20, clamp: true },
   });
 
   return (
