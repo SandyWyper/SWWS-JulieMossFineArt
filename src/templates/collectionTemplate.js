@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import pathify from '../lib/pathify';
 import Footer from '../components/footer';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import CategorySelect from '../components/categorySelect';
+// import CategorySelect from '../components/categorySelect';
 import Fade from 'react-reveal/Fade';
 
 const CollectionTemplate = (props) => {
@@ -20,10 +20,7 @@ const CollectionTemplate = (props) => {
   const isLast = currentPage === totalPages;
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
   const nextPage = (currentPage + 1).toString();
-  const sharingImage =
-    collectionArtwork['0'].node.frontmatter.images !== null
-      ? collectionArtwork['0'].node.frontmatter.images['0'].image.childImageSharp.resize.src
-      : null;
+  const sharingImage = collectionArtwork['0'].node.frontmatter.images !== null ? collectionArtwork['0'].node.frontmatter.images['0'].image.childImageSharp.resize.src : null;
 
   const allCollections = Object.keys(props.pageContext.allCollections);
 
@@ -59,10 +56,7 @@ const CollectionTemplate = (props) => {
               <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 600: 2 }}>
                 <Masonry gutter={'3rem'}>
                   {collectionArtwork.map((art, i) => {
-                    const each =
-                      art.node.frontmatter.hasOwnProperty('images') & (art.node.frontmatter.images !== null)
-                        ? art.node.frontmatter.images['0']
-                        : null;
+                    const each = art.node.frontmatter.hasOwnProperty('images') & (art.node.frontmatter.images !== null) ? art.node.frontmatter.images['0'] : null;
                     if (each !== null) {
                       return (
                         <Fade key={`${each.alt}-${i}`}>
@@ -98,9 +92,9 @@ const CollectionTemplate = (props) => {
               )}
             </div>
           </div>
-          <div className="mb-8 lg:hidden lg:mb-0">
+          {/* <div className="mb-8 lg:hidden lg:mb-0">
             <CategorySelect path={props.path} />
-          </div>
+          </div> */}
         </section>
       </div>
       <Footer />
@@ -110,12 +104,7 @@ const CollectionTemplate = (props) => {
 
 export const artQuery = graphql`
   query collectionArt($collectionName: String!, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: $collectionName } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { category: { eq: $collectionName } } }, sort: { fields: [frontmatter___date], order: DESC }, limit: $limit, skip: $skip) {
       edges {
         node {
           id
