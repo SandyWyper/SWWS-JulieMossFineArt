@@ -57,7 +57,7 @@ const ArtworkTemplate = (props) => {
       )}
     </div>
   );
-  console.log('props', props);
+
   return (
     <>
       <SEO title={`Julie Moss - ${frontmatter.title}`} url={props.location.href} image={sharingImage} imageAlt={sharingImageAlt} />
