@@ -1,7 +1,7 @@
 ---
-title: Boogie Wonderland.     sold
+title: Boogie Wonderland
 category: Painting
-details: Oil on canvas 2020
+details: Oil on canvas 2020 - SOLD
 date: 2020-07-03T23:00:00.000Z
 isFeatured: false
 images:

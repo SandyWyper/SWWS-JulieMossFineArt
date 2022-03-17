@@ -1,7 +1,7 @@
 ---
-title: Burn, baby, burn
+title: Burn, Baby, Burn
 category: Painting
-details: "Oils on canvas 153cm x 153cm 2019 "
+details: 'Oils on canvas 153cm x 153cm 2019'
 date: 2019-12-18T11:54:39.103Z
 isFeatured: false
 images:

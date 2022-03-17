@@ -1,5 +1,5 @@
 ---
-title: vase of tulips
+title: Vase of Tulips
 category: Painting
 details: Oils on board
 date: 2021-02-14T11:33:15.940Z

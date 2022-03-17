@@ -1,5 +1,5 @@
 ---
-title: vase of roses
+title: Vase of Roses
 category: Painting
 details: Oils on board
 date: 2021-02-14T10:41:15.140Z
