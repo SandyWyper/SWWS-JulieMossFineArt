@@ -43,9 +43,15 @@ Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
 Daichi Gallery of Modern Art
 
-**Represented** by: Waterside Gallery St Mawes, Fig tree gallery Antigua
+**Represented** by: 
+
+Waterside Gallery St Mawes,  <https://watersidegallery.co.uk>
+
+Fig tree gallery Antigua <https://figtreestudioart.com>
 
 #### Selected Exhibitions
+
+2022 Memory NSA Tremenheere Gallery 9th April -1st May
 
 2022 Weary Harold ASC gallery london 18th Feb- 18th March
 
