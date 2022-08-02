@@ -49,6 +49,8 @@ Waterside Gallery St Mawes,  <https://watersidegallery.co.uk>
 
 Fig tree gallery Antigua <https://figtreestudioart.com>
 
+you can now find my work on <https://riseart.com>
+
 #### Selected Exhibitions
 
 2022 Memory NSA Tremenheere Gallery 9th April -1st May
