@@ -31,11 +31,9 @@ Julie’s work has been exhibited in the 2019 Venice Biennale and recently the R
 
 #### Publications and prizes
 
-Contemporary Art collectors Art book 2022
-
 Art Seen Magazine May 2021                                                                                                                                   floorr magazine 
 
-longlisted jacksons Artprize 2021                                                                                                                           Finalist John Ruskin prize Holden Gallery 2019                                                                                                          Pre selected John Moores prize 2018.                                                                                                                               Fresh Paint magazine Feb 2016 / Oct. 2016
+longlisted jacksons Art prize 2021                                                                                                                           Finalist John Ruskin prize Holden Gallery 2019                                                                                                          Pre selected John Moores prize 2018.                                                                                                                               Fresh Paint magazine Feb 2016 / Oct. 2016
 Turps Banana issue 14 2014                                                                                                                                     Finalist Windsor and Newton painting prize Griffin Gallery London 
 Finalist in Tribe prize, Edgar Modern Gallery, Bath
 
