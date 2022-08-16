@@ -1,6 +1,6 @@
 ---
 intro:
-  introText: Julie Moss
+  introText: Julie Moss Fine Art
   introImage:
     image: /uploads/now-is-not-the-time.jpg
     imageAlt: "\"Now is not the time'  oils on canvas 2020"
