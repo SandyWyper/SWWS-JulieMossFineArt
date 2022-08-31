@@ -54,7 +54,7 @@ const BlogList = (props) => {
           <div className="max-w-6xl px-4 mx-auto lg:px-10">
             <div className="flex flex-wrap items-end mb-16 lg:mb-0">
               {posts.map(({ node }) => (
-                <div key={node.id} className="relative w-full mb-12 lg:mb-0 md:px-4 sm:w-1/2 lg:w-1/3">
+                <div key={node.id} className="relative w-full mb-12 md:px-4 sm:w-1/2 lg:w-1/3 ">
                   <Link to={node.fields.slug}>
                     <Img
                       className=""

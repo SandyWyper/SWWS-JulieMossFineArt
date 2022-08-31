@@ -12,8 +12,8 @@ const About = (props) => {
   return (
     <>
       <SEO title="About" decription="A little about me" url={props.location.href} />
-      <div className="relative min-h-screen">
-        <section className="max-w-5xl px-4 pt-24 mx-auto mb-24">
+      <div className="relative min-h-screen bg-gray-300">
+        <section className="max-w-5xl px-4 pt-24 mx-auto pb-24">
           <Img
             className="max-w-xl mx-auto mb-6"
             fluid={{

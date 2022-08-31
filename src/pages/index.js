@@ -22,9 +22,9 @@ const IndexPage = ({
       <div className="relative">
         <section className="flex flex-col items-center justify-center max-w-lg min-h-screen px-4 mx-auto lg:px-10 lg:justify-evenly lg:flex-row lg:max-w-6xl">
           <div className="mb-12 text-center lg:mb-0 lg:w-5/12 lg:pr-4">
-            <h1 className="mb-4 leading-tight">Julie Moss</h1>
+            <h1 className="mb-4 leading-tight xl:text-6xl">Julie Moss</h1>
             <h2 className="sub-heading">Fine Art</h2>
-            {/* <p className="">{intro.introText}</p> */}
+            <p className="">{intro.introText}</p>
             <Link to="/painting" className="btn">
               view work
             </Link>

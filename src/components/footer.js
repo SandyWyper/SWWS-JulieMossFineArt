@@ -35,7 +35,7 @@ const Footer = () => {
     <footer className="bg-gray-900 border-t-2 border-gray-300">
       <div className="max-w-5xl p-6 mx-auto">
         <div className="mb-6 md:pt-6">
-          <ul className="sm:text-center md:flex md:justify-evenly">
+          <ul className="sm:text-center md:flex md:justify-around md:justify-evenly">
             <li className="mb-2">
               <Link to="/">Home</Link>
             </li>
