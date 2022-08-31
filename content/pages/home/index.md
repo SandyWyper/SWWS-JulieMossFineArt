@@ -1,6 +1,6 @@
 ---
 intro:
-  introText: Julie Moss Fine Art
+  introText: Julie Moss works from her home in Cornwall.
   introImage:
     image: /uploads/now-is-not-the-time.jpg
     imageAlt: "\"Now is not the time'  oils on canvas 2020"
