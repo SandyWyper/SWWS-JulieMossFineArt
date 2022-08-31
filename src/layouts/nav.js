@@ -97,7 +97,7 @@ const Nav = ({ path }) => {
   });
 
   return (
-    <animated.nav style={showNavSpring} className="fixed inset-x-0 z-40 w-full bg-white">
+    <animated.nav style={showNavSpring} className="fixed inset-x-0 z-40 w-full">
       <div className="relative max-w-6xl mx-auto">
         <HomeTitleLink path={path} />
         <div className="absolute top-0 right-0 mt-2 md:mt-3">
