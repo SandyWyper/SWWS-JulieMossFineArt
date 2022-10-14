@@ -51,9 +51,11 @@ you can now find my work on <https://riseart.com>
 
 #### Selected Exhibitions
 
-2022 Memory NSA Tremenheere Gallery 9th April -1st May
+2022 the map is not the territory NSA Tremenheere gallery 8th -30th oct 
 
-2022 Weary Harold ASC gallery london 18th Feb- 18th March
+2022 Memory NSA Tremenheere Gallery 
+
+2022 Weary Harold ASC gallery london 
 
 2021 Autumn exhibition curators salon 
 
