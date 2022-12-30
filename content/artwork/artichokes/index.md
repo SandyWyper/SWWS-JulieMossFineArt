@@ -8,3 +8,4 @@ images:
   - image: artichokes..jpg
     alt: oils on canvas 35cm x 45cm 2022
 ---
+oils on canvas from my garden series
