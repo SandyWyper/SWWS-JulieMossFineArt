@@ -1,6 +1,6 @@
 ---
 title: "Lupins "
-category: Paintings
+category: Painting
 date: 2022-12-29T11:57:37.576Z
 isForSale: true
 images:
