@@ -8,6 +8,6 @@ isFeatured: true
 images:
   - image: now-is-not-the-time-julie-moss.jpg
     alt: "Now is not the time oils on canvas 153cm x 153cm "
-  - image: art-rooms-.jpg
-    alt: showing scale
+  - image: now-is-not-the-time-in-situ.jpg
+    alt: "oils on canvas 153cm x 153cm "
 ---
