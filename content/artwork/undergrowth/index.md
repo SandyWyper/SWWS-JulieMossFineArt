@@ -1,6 +1,6 @@
 ---
 title: Undergrowth
-category: Artwork
+category: Painting
 date: 2022-12-29T12:08:26.841Z
 isForSale: true
 images:
