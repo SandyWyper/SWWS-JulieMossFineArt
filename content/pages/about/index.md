@@ -51,7 +51,7 @@ you can now find my work on <https://riseart.com>
 
 #### Selected Exhibitions
 
-2022 the map is not the territory NSA Tremenheere gallery 8th -30th oct 
+2022 the map is not the territory NSA Tremenheere gallery 
 
 2022 Memory NSA Tremenheere Gallery 
 
@@ -63,11 +63,14 @@ you can now find my work on <https://riseart.com>
 
 2020 Royal Academy Summer/winter exhibition
 
-2020 NSA Edge of Dark Tremenheere Gallery Cornwall \
+2020 NSA Edge of Dark Tremenheere Gallery
+
 2020 Huss hotel Gstaad Switzerland 
 
 2019  Daiichi Gallery of Modern Art Penang, Malaysia 
-2019 shortlisted John Ruskin prize ‘Agent of change’ Holden Gallery 
+
+
+2019 finalist John Ruskin prize ‘Agent of change’ Holden Gallery 
 
 2019 Woman’s  Essence Palazzo Ca Zenobio Venice collateral event 58th Biennale Di Venezia 
 
