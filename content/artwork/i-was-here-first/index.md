@@ -2,7 +2,7 @@
 title: I Was Here First
 category: Painting
 details: Oil on canvas 153cm x 153cm 2015
-date: 2018-08-25T14:44:00.000Z
+date: 2020-11-18T15:44:00.000Z
 isFeatured: false
 images:
   - image: i-was-here-first.jpeg
