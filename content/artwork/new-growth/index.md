@@ -1,6 +1,6 @@
 ---
 title: New Growth
-category: Artwork
+category: Painting
 date: 2022-12-29T11:59:54.516Z
 isForSale: true
 images:
