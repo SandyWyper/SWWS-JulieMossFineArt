@@ -1,6 +1,6 @@
 ---
 title: Red hot pokers
-category: Artwork
+category: Painting
 date: 2022-12-29T12:05:38.441Z
 isForSale: true
 images:
