@@ -1,6 +1,6 @@
 ---
 title: Artichokes
-category: Artwork
+category: Painting
 details: "oils on canvas "
 date: 2022-12-29T11:52:54.979Z
 isForSale: true
