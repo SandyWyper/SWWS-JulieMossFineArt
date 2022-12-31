@@ -1,6 +1,6 @@
 ---
 title: lilacs
-category: Artwork
+category: Painting
 date: 2022-12-29T12:03:33.434Z
 isForSale: true
 images:
