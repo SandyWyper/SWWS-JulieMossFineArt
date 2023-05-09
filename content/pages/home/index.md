@@ -4,8 +4,8 @@ intro:
     unique visual language is defined by poetic observations of the natural
     world "
   introImage:
-    image: /uploads/now-is-not-the-time.jpg
-    imageAlt: "\"Now is not the time'  oils on canvas 2020"
+    image: /uploads/julie-moss-weeping-willow-.jpg
+    imageAlt: Weeping willow '  oils on canvas 2023
 myArt:
   title: Art
   description: "\n"
