@@ -4,18 +4,25 @@ mainImage:
   image: /uploads/studio-shot-julie-moss-2.jpg
   imageAlt: studio shot
 ---
-My grandmother’s roses are what started my love of pretty much everything I hold dear to my heart; gardens, painting, family, dreaming and getting lost amongst the flowers.
+ *My grandmother's roses started my love of almost everything I hold dear to my heart; gardens, family, painting, dreaming and getting lost amongst the flowers.*
 
-I love magical spaces which seem to be elevated out of the ordinary, timeless places which are perhaps slightly overgrown and hidden from view and need to be protected.
+*Growing up on the edge of the Lancashire moorland, my grandmother’s garden was an oasis in an otherwise barren landscape.*
 
-As a child I loved the colouring books with blank pages which when you applied water colours would appear as if by magic to reveal an image.\
-It’s a technique I still use today when I sketch with my ink brushes, drawing with water first then allowing the coloured inks to meander across the paper until an image starts to form.
+*My latest body of work continues my ongoing investigations into the role of the garden as a place of sanctuary. The term garden refers to an enclosed space set apart from untamed nature, a sacred place sheltered from the outside world.*
 
-The immediacy and tactility of oils and inks dictates my choice of materials whilst colour and light are used to express emotion.\
-My oil paintings provide a continuous journey of revelation and discovery, with the hidden, ephemeral and transient the constant thread that ties it all together. I am interested in threshold spaces where transitional states of being come into play: the interior and exterior such as doorways, greenhouses and windows.
+*My paintings are not a portrait of one singular landscape, but rather a combination of many, an intuitive non naturalistic colour palette references a mood and explores the margins between control and nature whilst an undercurrent of environmental issues flows throughout my work.*
 
-The resulting paintings are a mix of a factual record of a moment in time and an emotional response to being in a particular place.\
-It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation.
+*I incorporate various symbolic elements such as water which alludes to purity, the secret language of flowers, and paths that signify journey’s taken or yet to be undertaken.*
+
+*As an avid horticulturist and ex florist, I have cultivated a garden however small wherever I have lived which I then recreate within my large-scale immersive oil paintings, enticing the viewer into my fantastical world.*
+
+*In my latest series of watercolour studies on Fabriano paper my aim is to show not only the diverse range of our British wildflowers but also highlight the loss of green spaces.*
+
+*It is in the shift between what is remembered and imagined that the works take shape, a dichotomy of fragility and preservation.*
+
+- - -
+
+[](<>)
 
 Julie Moss lives and works in Cornwall and studied Fine Art at Falmouth University, previously Julie grew up in Lancashire and attended Bolton school of Art in 1973 -76, after training to become a florist and working as a textile designer she moved to Cornwall to raise her family. 
 
@@ -51,6 +58,8 @@ you can now find my work on <https://riseart.com>
 
 #### Selected Exhibitions
 
+2023 Bloom online exhibition Create Magazine 
+
 2022 the map is not the territory NSA Tremenheere gallery 
 
 2022 Memory NSA Tremenheere Gallery 
@@ -68,7 +77,6 @@ you can now find my work on <https://riseart.com>
 2020 Huss hotel Gstaad Switzerland 
 
 2019  Daiichi Gallery of Modern Art Penang, Malaysia 
-
 
 2019 finalist John Ruskin prize ‘Agent of change’ Holden Gallery 
 
